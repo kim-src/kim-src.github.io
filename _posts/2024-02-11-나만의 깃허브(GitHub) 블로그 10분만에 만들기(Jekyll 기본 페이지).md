@@ -58,7 +58,7 @@ tags:
 > - 참고로 C드라이브와 가까울수록 로컬 저장소(= 폴더)에 접근이 용이합니다.
 > - 왜냐하면 Git Bash에서는 복사/붙여넣기 기능을 사용하는 것이 수월하지 않기 때문입니다.
 > - 아래는 Git Bash를 다운로드 할 수 있는 Git 사이트 링크입니다.
-> - <a href="https://git-scm.com/downloads">Git Bash 다운로드 링크(보통 최신 버전 설치)</a>
+<a href="https://git-scm.com/downloads">Git Bash 다운로드 링크(보통 최신 버전 설치)</a>
 
 ### 📌 Git Bash 실행 및 로컬 저장소 접근
 > - Git bash의 경우 폴더 접근(= 더블클릭)을 "/"로 표시합니다.
@@ -95,7 +95,7 @@ tags:
 > - 이들을 Spring으로 비유하면 Bundler는 pom.xml이고 Jekyll은 project 자체입니다.
 > - 아래는 Ruby Development Kit를 다운로드 할 수 있는 사이트 링크입니다.
 > - 참고로 버전 호환성을 위해 Ruby Devkit의 3.1.3-1 (x64) 버전을 추천합니다.
-> - <a href="https://rubyinstaller.org/downloads/archives/">Ruby Development Kit 다운로드 링크 (3.1.3-1 (x64) 설치)</a>
+<a href="https://rubyinstaller.org/downloads/archives/">Ruby Development Kit 다운로드 링크 (3.1.3-1 (x64) 설치)</a>
 <p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/a527c0d2-a6cf-4c48-adc0-e14efdf9a852" width="500px" alt="figure"></p>
 
 ### 📌 Git Bash로 Jekyll 설치
@@ -187,8 +187,8 @@ tags:
 <br>
 
 ### 🎁 5. References
-> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>
-> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
+<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>
+<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
 
 <br>
 
