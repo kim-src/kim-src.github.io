@@ -49,7 +49,7 @@ tags:
 >   Kim-src.github.io
 >   ```
 > - 아래는 Repository 생성창 모습입니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/26b0e2b4-22a9-4c59-9718-39333cf324de" width="500px"></p>
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/26b0e2b4-22a9-4c59-9718-39333cf324de" width="500px" alt="figure"></p>
 
 ### 📌 블로그 전용 로컬 저장소 설정
 > - 블로그 생성을 희망하는 로컬 저장소를 선택해야 됩니다.
@@ -58,7 +58,7 @@ tags:
 > - 참고로 C드라이브와 가까울수록 로컬 저장소(= 폴더)에 접근이 용이합니다.
 > - 왜냐하면 Git Bash에서는 복사/붙여넣기 기능을 사용하는 것이 수월하지 않기 때문입니다.
 > - 아래는 Git Bash를 다운로드 할 수 있는 Git 사이트 링크입니다.
-> - [Git Bash 다운로드 링크(보통 최신 버전 설치)](https://git-scm.com/downloads)
+[Git Bash 다운로드 링크(보통 최신 버전 설치)](https://git-scm.com/downloads)
 
 ### 📌 Git Bash 실행 및 로컬 저장소 접근
 > - Git bash의 경우 폴더 접근(= 더블클릭)을 "/"로 표시합니다.
@@ -70,7 +70,7 @@ tags:
 >   $ cd /c/Users/ceoba/Dropbox/'2. PJT'
 >   ```
 > - 아래는 Git Bash로 작성자의 블로그 전용 로컬 저장소에 접근한 모습입니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/c53815f4-ef24-484f-88bc-340d1ba0ee3e" width="500px"></p>
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/c53815f4-ef24-484f-88bc-340d1ba0ee3e" width="500px" alt="figure"></p>
 
 ### 📌 로컬 저장소에 GitHub Repository 연동
 > - 현재 온라인 저장소인 GitHub Repository가 준비되었을 것입니다.
@@ -95,8 +95,8 @@ tags:
 > - 이들을 Spring으로 비유하면 Bundler는 pom.xml이고 Jekyll은 project 자체입니다.
 > - 아래는 Ruby Development Kit를 다운로드 할 수 있는 사이트 링크입니다.
 > - 참고로 버전 호환성을 위해 Ruby Devkit의 3.1.3-1 (x64) 버전을 추천합니다.
-> - [Ruby Development Kit 다운로드 링크 (3.1.3-1 (x64) 설치)](https://rubyinstaller.org/downloads/archives/)
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/a527c0d2-a6cf-4c48-adc0-e14efdf9a852" width="500px"></p>
+[Ruby Development Kit 다운로드 링크 (3.1.3-1 (x64) 설치)](https://rubyinstaller.org/downloads/archives/)
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/a527c0d2-a6cf-4c48-adc0-e14efdf9a852" width="500px" alt="figure"></p>
 
 ### 📌 Git Bash로 Jekyll 설치
 > - Jekyll은 Git Bash에서 설치 가능합니다.
@@ -140,7 +140,7 @@ tags:
 > - 위 내용을 입력하면 Git Bash에 Jekyll 설치 관련 사항이 출력됩니다.
 > - 그리고 로컬 저장소명 우측에 '(main)'이라는 문구가 도시됩니다.
 > - 또한 로컬 저장소의 main 폴더는 아래와 같은 상태로 변경됩니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" width="500px"></p>
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" width="500px" alt="figure"></p>
 
 ### 📌 새로운 Bundle Tool 생성
 > - 다음으로 Bundle Tool에 대한 설치가 필요합니다.
@@ -153,7 +153,7 @@ tags:
 >   ```
 > - 위 내용을 입력하면 Git Bash에 Bundle tool 설치 관련 사항이 출력됩니다.
 > - 그리고 로컬 저장소의 main 폴더는 아래와 같은 상태로 다시 변경됩니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" width="500px"></p>
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" width="500px" alt="figure"></p>
 
 ### 📌 Jekyll의 기본 웹 페이지 호출
 > - 드디어 기본 웹 페이지 호출 단계이며 로컬 서버 주소(URL)를 생성하겠습니다.
@@ -172,7 +172,7 @@ tags:
 
 ### 📌 성공적으로 호출된 웹 페이지
 > - 아래 이미지는 성공적으로 호출된 Jekyll의 기본 웹 페이지입니다.
-<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/33d309a9-8c3c-4b76-9728-a33b6b939968" width="500px"></p>
+<p align="center"><img src="https://github.com/Kim-src/Images/assets/150884526/33d309a9-8c3c-4b76-9728-a33b6b939968" width="500px" alt="figure"></p>
 
 <br>
 
@@ -187,8 +187,8 @@ tags:
 <br>
 
 ### 🎁 5. References
-> - [프로의 개발일지 블로그 1](https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/)
-> - [프로의 개발일지 블로그 2](https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/)
+[프로의 개발일지 블로그 1](https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/)
+[프로의 개발일지 블로그 2](https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/)
 
 <br>
 
