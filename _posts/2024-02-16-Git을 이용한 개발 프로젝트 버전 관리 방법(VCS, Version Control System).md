@@ -1,14 +1,14 @@
 ---
-title: 나만의 깃허브(GitHub) 블로그 10분만에 만들기(Jekyll 기본 페이지)
-date: 2024-02-11 21:30:23 +09:00
-categories: [블로그, 개발일지]
+title: Git을 이용한 개발 프로젝트 버전 관리 방법(VCS, Version Control System)
+date: 2024-02-16 21:13:23 +09:00
+categories: [Git, 버전관리]
 tags:
   [
-    블로그,
-    개발일지,
-    Ruby,
-    Jekyll,
-    Chirpy
+    Git,
+    GitHub,
+    깃,
+    버전관리,
+    VCS
   ]
 ---
 
@@ -181,13 +181,13 @@ tags:
 > - Jekyll의 기본 웹 페이지 호출하기까지 고생 많으셨습니다.
 > - 다음 글에서는 기본 Jekyll 블로그에 Chirpy 테마를 적용시켜보겠습니다.
 > - 또한 로컬 서버 주소만이 아니라 도메인 주소로 블로그에 접속해보겠습니다.
-> - 블로그 꾸미는 방법에 대한 글을 추후 작성하겠습니다.
+> - 아래는 다음 글의 링크입니다.
 
 <br>
 
 ### 🎁 5. References
-<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>  
-<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>  
+<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>
+<a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
 
 <br>
 

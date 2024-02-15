@@ -45,7 +45,7 @@ social:
     # - https://www.linkedin.com/in/username
 
 google_site_verification: # fill in to your verification string
-
+<meta name="google-site-verification" content="Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M" />
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
@@ -76,7 +76,7 @@ theme_mode: # [light | dark]
 img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "https://github.com/Kim-src/Images/assets/150884526/9ba1ebbb-a79c-4e4c-a5f6-2149bb301cd8"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
