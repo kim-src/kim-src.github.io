@@ -1,6 +1,6 @@
 ---
 title: 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI 개발(ver. 0.1.0)
-date: 2024-03-02 21:13:24 +09:00
+date: 2024-02-24 21:13:24 +09:00
 categories: [VisualCavity, AI Projects]
 tags: [Python, TensorFlow, AI, OpenCV, Numpy]
 ---
