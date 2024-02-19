@@ -19,6 +19,8 @@ tags: [VS Code, Visual Studio Code, Extension, 익스텐션, 플러그인]
 > - 그래서 이 글에서는 VS Code 초기 사용 시 필요한 Extension을 추천 드리겠습니다.
 > - 참고로 모든 기능은 설치 후 '사용' 상태로 설정하셔야 됩니다.
 
+<br>
+
 ### 🔔 Extension 추천
 ### 📌 Material Theme
 > - VS Code의 전체적인 색 테마를 설정하는 기능입니다.
