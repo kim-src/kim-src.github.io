@@ -5,7 +5,7 @@ categories: [VS Code, Extension]
 tags: [VS Code, Visual Studio Code, Extension, 익스텐션, 플러그인]
 ---
 
-<!-- 2024-02-18 글 작성 완료; 2024-02-18 페이지 호출 검토 완료 -->
+<!-- 2024-02-18 글 작성 시작; 2024-02-18 페이지 호출 검토 완료 -->
 
 # ✅ Visual Studio Code의 기본 Extension 추천
 
