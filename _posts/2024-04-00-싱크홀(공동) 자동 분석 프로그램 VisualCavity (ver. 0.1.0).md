@@ -5,8 +5,8 @@ categories: [VisualCavity, Desktop Application]
 tags: [VisualCavity, Desktop Application, Software, Program, Software Program, AI Program]
 ---
 
-<!-- 2024-00-00 글 작성 필요; 2024-00-00 페이지 호출 검토 필요 -->
-# ✅ 싱크홀(공동) 자동 분석 프로그램 VisualCavity
+<!-- 2099-01-01 글 작성 시작; 2099-01-01 페이지 호출 검토 필요 -->
+## ✅ 싱크홀(공동) 자동 분석 프로그램 VisualCavity
 
 <br>
 

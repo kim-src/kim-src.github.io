@@ -6,7 +6,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 ---
 
 <!-- 2024-02-19 글 작성 시작; 2024-02-20 페이지 호출 완료 -->
-# ✅ Python vs Java : Library and Framework
+## ✅ Python vs Java : Library and Framework
 
 <br>
 

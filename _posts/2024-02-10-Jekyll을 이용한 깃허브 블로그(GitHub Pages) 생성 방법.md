@@ -2,19 +2,11 @@
 title: Jekyll을 이용한 깃허브 블로그(GitHub Pages) 생성 방법
 date: 2024-02-10 21:00:00 +09:00
 categories: [GitHub, GitHub Pages]
-tags:
-  [
-    블로그,
-    GitHub Pages,
-    Ruby,
-    Jekyll,
-    Chirpy
-  ]
+tags: [블로그, GitHub Pages, Ruby, Jekyll, Chirpy]
 ---
 
 <!-- 2024-02-16 글 작성 시작; 2024-02-19 페이지 호출 검토 완료 -->
-
-# ✅ 나만의 깃허브 블로그 만드는 방법
+## ✅ 나만의 깃허브 블로그 만드는 방법
 
 <br>
 
