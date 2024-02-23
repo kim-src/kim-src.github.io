@@ -5,6 +5,9 @@ categories: [VisualCavity, AI Model]
 tags: [Python, TensorFlow, AI, AI Model, Numpy]
 ---
 
+데이터 업로드 기간 명시
+SourceData : 0000-00-00 ~ 2024-02-23
+
 <!-- 2099-01-01 글 작성 시작; 2099-01-01 페이지 호출 검토 필요 -->
 ## ✅ 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI 개발(ver. 0.1.0)
 
