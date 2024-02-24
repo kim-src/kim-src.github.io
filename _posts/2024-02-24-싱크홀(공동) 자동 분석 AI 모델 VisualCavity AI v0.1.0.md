@@ -17,16 +17,19 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 > - 상세내용 : 싱크홀(공동) 자동 분석 프로그램 제작을 위한 이미지 학습 AI 모델
 > - 개발목적 : 3D-GPR 데이터 분석 난이도 하향
 > - 주요자료 : 지하 물리 탐사로 획득한 15만장의 싱크홀 또는 지장물 이미지
-<figure>
-  <img src="https://github.com/Kim-src/Images/assets/150884526/ff1bb03b-0237-463a-b371-5421133b8383" class="img" alt="figure">
-  <figcaption>싱크홀 이미지 예시</figcaption>
-</figure>
-(지하로 투과되었다가 반사된 전자기파가 시각화 된 모습)
 
-### 📌 용어 정리
-> - CNN : 신경망(Convolutional Neural Network)의 축약어이며 
+### 📌 개념 정리
+> - CNN : 신경망(Convolutional Neural Network)의 축약어이며, 이미지 학습용 딥러닝의 한 종류임
 > - GPR : 지하투과레이더(Ground Penetrating Radar)의 축약어이며, 지하 탐사시 사용되는 장비임
-> - 
+> - 싱크홀 : 전문 용어로는 공동(cavity)이라고 하며, 지면 아래에 발생된 빈 공간을 의미함
+> - 지장물 : 하수도관, 상수도관, 가스관 등 지하에 매설된 무언가를 의미함
+> - 맨홀: 지장물과 지상 공간을 잇는 매개체 역할을 함
+> - GPR 장비를 이용한 지하 물리 탐사 모습은 아래와 같음  
+
+<figure>
+  <img src="https://github.com/Kim-src/Images/assets/150884526/826eef0b-8e0d-492c-bc45-aeac0f5a80c9" class="img" alt="figure">
+  <figcaption>GPR 지하 물리 탐사 모습</figcaption>
+</figure>
 
 <br>
 
@@ -36,23 +39,43 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 > - 주로 사용된 Python 라이브러리는 TensorFlow, OpenCV 입니다.
 
 ### 📌 이미지 학습을 위한 코딩 순서
->   1. Python 내부 라이브러리 사용
->   2. 학습시킬 싱크홀 이미지 1장에 대한 JPG 및 XML 파일의 경로 설정
->   3. 이미지 전처리를 위한 함수 정의
->   4. 이미지 로드 및 전처리를 위한 함수 작성
->   5. XML 파일에서 이미지 정보 습득을 위한 함수 정의
->   6. XML 파일을 파싱 후 데이터 추출
->   7. CNN 모델 구성(CNN : 컨볼루션 신경망 : Convolution Neural Network)
->   8. 모델 컴파일(Compile : 사람이 작성한 코드를 컴퓨터에게 이해시키는 과정)
->   9. 모델에 입력할 이미지 및 레이블 데이터 세팅
->   10. 이미지 데이터를 모델에 맞게 형태 변환
->   11. 모델 훈련(epochs 활용)
+> 1. Python 내부 라이브러리 사용
+> 2. 학습시킬 싱크홀 이미지 1장에 대한 JPG 및 XML 파일의 경로 설정
+> 3. 이미지 전처리를 위한 함수 정의
+> 4. 이미지 로드 및 전처리를 위한 함수 작성
+> 5. XML 파일에서 이미지 정보 습득을 위한 함수 정의
+> 6. XML 파일을 파싱 후 데이터 추출
+> 7. CNN 모델 구성(CNN : 컨볼루션 신경망 : Convolution Neural Network)
+> 8. 모델 컴파일(Compile : 사람이 작성한 코드를 컴퓨터에게 이해시키는 과정)
+> 9. 모델에 입력할 이미지 및 레이블 데이터 세팅
+> 10. 이미지 데이터를 모델에 맞게 형태 변환
+> 11. 모델 훈련(epochs 활용)
+
+### 📌 GPR 이미지 소개
+> - GPR 장비를 이용하여 파악된 지하 단면은 일부 편집이 필요합니다.
+> - 왜냐하면 이미지 학습을 위한 관심 영역을 설정해야 되기 때문입니다.
+> - 지하 단면의 길이는 차량형 GPR 탐사 장비가 이동한 거리 만큼입니다.
+> - 예를들면 1 km의 지하 단면 이미지에서 관심있는 일부만 편집해야 됩니다.
+> - 더 나아가 Bounding Box 좌표로 AI가 학습해야 될 부분을 설정해야 됩니다.
+> - 아래는 GPR 장비로 파악된 "대칭형 공동(싱크홀)" 및 "맨홀(지장물)" 이미지의 예시입니다.  
+
+<div class="image-container">
+  <figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/d048da8d-c5db-47fa-ae1e-2c080ca4338a" class="img" alt="figure">
+    <figcaption>공동에 대한 GPR 탐사 결과</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/ff1bb03b-0237-463a-b371-5421133b8383" class="img" alt="figure">
+    <figcaption>맨홀에 대한 GPR 탐사 결과</figcaption>
+  </figure>
+</div>
+
 
 <br>
 
 ### 🔔 3. Results : 전체 코드
 ### 📌 이미지 학습에 사용된 코드 및 간략한 설명
-> - 싱크홀 이미지 학습 AI 모델 제작을 위해 작성된 전체 코드는 아래와 같습니다.
+> - 이미지 학습 AI 모델 제작을 위해 작성된 전체 코드는 아래와 같습니다.
 > - 또한 대부분의 코드에 해당 코드 작성 이유를 서술하였습니다.
 
 ### 📌 AI 모델의 이미지 학습을 위한 Python 코드
@@ -152,7 +175,10 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 > - 다음 글에 업그레이드 버전에 대한 내용을 작성하였습니다.
 > - 아래는 AI 모델의 이미지 학습 결과에 대한 출력 내용입니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/13d1bca2-cc95-4c9f-be4c-32cb624a64f8" class="img" alt="figure">
+<figure>
+  <img src="https://github.com/Kim-src/Images/assets/150884526/13d1bca2-cc95-4c9f-be4c-32cb624a64f8" class="img" alt="figure">
+  <figcaption>VisualCavity AI v0.1.0의 Epoch 현황</figcaption>
+</figure>
 
 <br>
 
@@ -164,22 +190,27 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 
 ### 🔔 6. Appendix
 ### 🚀 개발 현황 : VisualCavity AI (현재 ver. 0.1.0)
-> - v0.1.0 : Training 싱크홀 이미지 1장 학습 완료(2024-01-09)
->>   기초 모델 구축 및 단일 싱크홀 이미지 학습
-> - v0.1.4 : 싱크홀 이미지에 대한 Train, Validation, Test 데이터셋 비중 조절
->>   ㅇㅇ
-> - v0.1.8 : Test 데이터셋을 포함한
-> - v0.2.0 : Training 싱크홀 이미지 11,205장 학습 완료
-> - v0.3.0 : Validation 싱크홀 이미지 1,401장을 이용하여 학습된 이미지 11,205장에 대한 검토 완료
-> - v0.4.0 : Training 싱크홀 이미지 34,136장 학습 완료
-> - v0.5.0 : Validation 싱크홀 이미지 장을 이용하여 학습된 이미지 34,136장에 대한 검토 완료
-> - v0.4.0 : Training 싱크홀 이미지 34,136장 학습 완료
-> - v0.5.0 : Validation 싱크홀 이미지 장을 이용하여 학습된 이미지 34,136장에 대한 검토 완료
-> - v0.6.0 : Training 싱크홀 및 지장물 이미지 170,774장 학습 완료
-> - v0.7.0 : Validation 싱크홀 및 지장물 이미지 21,346장을 이용하여 학습된 이미지 170,774장에 대한 검토 완료
-> - v0.8.0 : Training 싱크홀 이미지 98,435장 학습 완료
-> - v0.9.0 : Validation 싱크홀 이미지 12,304장을 이용하여 학습된 이미지 11,205장에 대한 검토 완료
-> - v1.0.0 : AI를 이용한 싱크홀 분석 모델 생성(싱크홀 분석 프로그램에 본 AI 모델을 적용시킬 예정)
+> - v0.1.0 : Train 싱크홀 이미지 1장 학습 완료(2024-01-09)  
+>   - 기초 모델을 구축하였고 단일 싱크홀 이미지를 학습시킴  
+> - v0.1.3 : 싱크홀 및 지장물 이미지에 대한 Train, Validation, Test 데이터셋 비중 조절  
+>   - 기존 : Train 170,774장, Validation 21,346장
+>   - 변경 : Train 134,484장, Validation 28,818장, Test 28,818장  
+> - v0.1.7 : Test 데이터셋을 포함한 VisualCavity 개발 계획 재구성  
+>   - 현재 : 초기 AI 모델 개발 계획  
+>   - 추후 : 발전된 AI 모델 개발 계획(v0.1.7 이후 전반적인 개발 계획 변경 예정)  
+> - v0.2.0 : Train 싱크홀 이미지 11,205장 학습 완료  
+>   - 기존 모델에 싱크홀 이미지만이 아닌 지장물 이미지를 추가적으로 학습시킴  
+>   - 싱크홀 및 지장물을 구분할 수 있는 능력을 상승시킴  
+> - v0.3.0 : Validation 싱크홀 이미지 1,401장을 이용하여 학습된 이미지 11,205장에 대한 검토 완료  
+> - v0.4.0 : Train 싱크홀 이미지 34,136장 학습 완료  
+> - v0.5.0 : Validation 싱크홀 이미지 장을 이용하여 학습된 이미지 34,136장에 대한 검토 완료  
+> - v0.4.0 : Train 싱크홀 이미지 34,136장 학습 완료  
+> - v0.5.0 : Validation 싱크홀 이미지 장을 이용하여 학습된 이미지 34,136장에 대한 검토 완료  
+> - v0.6.0 : Train 싱크홀 및 지장물 이미지 170,774장 학습 완료  
+> - v0.7.0 : Validation 이미지 21,346장을 이용하여 학습된 이미지 170,774장에 대한 검토 완료  
+> - v0.8.0 : Train 싱크홀 이미지 98,435장 학습 완료  
+> - v0.9.0 : Validation 싱크홀 이미지 12,304장을 이용하여 학습된 이미지 11,205장에 대한 검토 완료  
+> - v1.0.0 : AI를 이용한 싱크홀 분석 모델 생성(싱크홀 분석 프로그램에 본 AI 모델을 적용시킬 예정)  
 
 <br>
 <br>
