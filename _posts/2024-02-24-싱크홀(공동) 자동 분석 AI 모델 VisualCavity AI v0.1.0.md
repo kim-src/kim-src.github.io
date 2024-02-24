@@ -13,10 +13,20 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 ### 🔔 1. Introduction
 ### 📌 모델 소개
 > - 모델명 : VisualCavity AI (ver. 0.1.0)
-> - 모델분류 : 싱크홀 이미지 학습 CNN AI 모델
+> - 모델분류 : 이미지 학습 CNN AI 모델
 > - 상세내용 : 싱크홀(공동) 자동 분석 프로그램 제작을 위한 이미지 학습 AI 모델
 > - 개발목적 : 3D-GPR 데이터 분석 난이도 하향
-> - 주요자료 : GPR 공동 탐사 데이터 및 15만장의 이미지
+> - 주요자료 : 지하 물리 탐사로 획득한 15만장의 싱크홀 또는 지장물 이미지
+<figure>
+  <img src="https://github.com/Kim-src/Images/assets/150884526/ff1bb03b-0237-463a-b371-5421133b8383" class="img" alt="figure">
+  <figcaption>싱크홀 이미지 예시</figcaption>
+</figure>
+(지하로 투과되었다가 반사된 전자기파가 시각화 된 모습)
+
+### 📌 용어 정리
+> - CNN : 신경망(Convolutional Neural Network)의 축약어이며 
+> - GPR : 지하투과레이더(Ground Penetrating Radar)의 축약어이며, 지하 탐사시 사용되는 장비임
+> - 
 
 <br>
 
@@ -154,10 +164,11 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 
 ### 🔔 6. Appendix
 ### 🚀 개발 현황 : VisualCavity AI (현재 ver. 0.1.0)
-> - v0.1.0
->> - 기초 모델 구축 및 단일 싱크홀 이미지 학습
-
 > - v0.1.0 : Training 싱크홀 이미지 1장 학습 완료(2024-01-09)
+>>   기초 모델 구축 및 단일 싱크홀 이미지 학습
+> - v0.1.4 : 싱크홀 이미지에 대한 Train, Validation, Test 데이터셋 비중 조절
+>>   ㅇㅇ
+> - v0.1.8 : Test 데이터셋을 포함한
 > - v0.2.0 : Training 싱크홀 이미지 11,205장 학습 완료
 > - v0.3.0 : Validation 싱크홀 이미지 1,401장을 이용하여 학습된 이미지 11,205장에 대한 검토 완료
 > - v0.4.0 : Training 싱크홀 이미지 34,136장 학습 완료
