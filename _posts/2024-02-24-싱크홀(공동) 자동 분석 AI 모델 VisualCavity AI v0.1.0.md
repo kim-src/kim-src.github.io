@@ -39,7 +39,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 > - 주로 사용된 Python 라이브러리는 TensorFlow, OpenCV 입니다.
 > - AI 학습용 이미지 데이터 출처는 과학기술정보통신부 주관의 <a href="https://www.aihub.or.kr/">AI Hub 사이트</a>입니다.
 
-### 📌 이미지 학습을 위한 코딩 순서
+### 📌 AI 모델 구축을 위한 코딩 순서
 > 1. Python 내부 라이브러리 사용
 > 2. 학습시킬 싱크홀 이미지 1장에 대한 JPG 및 XML 파일의 경로 설정
 > 3. 이미지 전처리를 위한 함수 정의
@@ -76,7 +76,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 
 ### 🔔 3. Results : 전체 코드
 ### 📌 이미지 학습에 사용된 코드 및 간략한 설명
-> - 이미지 학습 AI 모델 제작을 위해 작성된 전체 코드는 아래와 같습니다.
+> - 이미지 학습 AI 모델 구축을 위해 작성된 전체 코드는 아래와 같습니다.
 > - 또한 대부분의 코드에 해당 코드 작성 이유를 서술하였습니다.
 
 ### 📌 AI 모델의 이미지 학습을 위한 Python 코드
@@ -154,20 +154,20 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 <br>
 
 ### 🔔 4. Conclustions
-### 📌 AI 모델의 이미지 학습 현황 판단 방법
+### 📌 VisualCavity AI v0.1.0 테스트 결과 판단 방법
 > - Python을 이용한 CNN AI 모델의 이미지 학습이 완료되었으며 이 이미지 학습은 머신 러닝의 일종입니다.
 > - 머신 러닝 중 AI 이미지 학습 결과는 Epoch로 판단할 수 있습니다.
 > - Epoch=1은 머신 러닝의 신경망(Neural Network)이 데이터 세트를 한 번 통과하는 과정을 의미합니다.
 > - 본 AI 모델의 Epochs는 5로 설정했기 때문에 신경망이 전체 데이터 세트를 다섯 번 통과하였습니다.
 > - 아래는 5번의 Epoch로 판단할 수 있는 AI 모델의 이미지 학습 현황입니다.
 
-### 📌 Epoch로 알아보는 AI 모델의 이미지 학습 현황
+### 📌 VisualCavity AI v0.1.0 테스트 결과
 > - Epoch 1/5 : AI 모델이 데이터를 2초 동안 한 번 통과하였고 정확도는 100% (= 1)입니다.
 > - Epoch 2/5 : AI 모델의 학습 정확도가 100% 유지되었고 손실 정도는 0에 가깝습니다.
 > - Epoch 3/5 ~ 5/5 : AI 모델의 학습 정확도가 100%이고 손실 정도는 0입니다.
 > - Epoch 값 자체로만 봤을 때는 AI 모델에 이미지가 완벽히 학습되었다고 볼 수 있습니다.
 
-### 📌 AI 모델의 이미지 학습 결과 해석
+### 📌 VisualCavity AI v0.1.0 테스트 결과 해석
 > - 정량적인 Epoch 결과는 완벽하지만 정성적으로 평가하였을 때 이 모델은 문제가 있습니다.
 > - 다양성 부족 : 이미지 데이터가 유사한 경우 AI 모델이 쉽게 데이터 패턴을 학습했을 것입니다.
 > - 과적합 : AI 모델이 이미지 데이터에 과도하게 fitting 되어 있어서 일반화되지 않은 것 같습니다.
@@ -190,7 +190,7 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 <br>
 
 ### 🔔 6. Appendix
-### 🚀 개발 현황 : VisualCavity AI (현재 ver. 0.1.0)
+### 🚀 VisualCavity AI 개발 현황 (현재 ver. 0.1.0)
 > - v0.1.0 : Train 싱크홀 이미지 1장 학습 완료(2024-01-09)  
 >   - 기초 모델을 구축하였고 단일 싱크홀 이미지를 학습시킴  
 > - v0.1.3 : 싱크홀 및 지장물 이미지에 대한 Train, Validation, Test 데이터셋 비중 조절  
