@@ -12,16 +12,26 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, M
 
 ### 🔔 1. Introduction
 ### 📌 모델 소개
-> - 모델명 : VisualCavity AI (ver. 0.1.0)
+> - 모델명 : VisualCavity AI (ver. 0.1.3)
 > - 모델분류 : 이미지 학습 CNN AI 모델
 > - 상세내용 : 싱크홀(공동) 자동 분석 프로그램 제작을 위한 이미지 학습 AI 모델
 > - 개발목적 : 3D-GPR 데이터 분석 난이도 하향
-> - 주요자료 : 지하 물리 탐사로 획득한 약 20만장의 싱크홀 또는 지장물 이미지
+> - 주요자료 : 지하 물리 탐사로 획득한 74,838장의 싱크홀 또는 지장물 이미지
+
+### 📌 VisualCavity AI v0.1.0 소개
+> - <a href="https://kim-src.github.io/posts/%EC%8B%B1%ED%81%AC%ED%99%80(%EA%B3%B5%EB%8F%99)-%EC%9E%90%EB%8F%99-%EB%B6%84%EC%84%9D-AI-%EB%AA%A8%EB%8D%B8-VisualCavity-AI-v0.1.0/">해당 AI 모델의 깃허브 블로그 글(링크)</a>
+> - <a href="https://github.com/Kim-src/VisualCavity">해당 AI 모델의 깃허브 README.md(링크)</a>
 
 <br>
 
 ### 🔔 2. Methodology
-### 📌 부제목
+### 📌 기존 이미지 데이터 분석
+> - 기존의 싱크홀 및 지장물 이미지 데이터는 총 192,120장입니다.
+> - 데이터를 더 분석해보니 해당 데이터는 3D 구성 데이터 중 일부만으로 구성되어 있었습니다.
+> - 3D 데이터는 종단면(Y-Z), 횡단면(X-Z), 평단면(X-Y) 세 가지로 구분됩니다.
+> - 기존 데이터의 데이터 셋은 종단면 및 평단면으로만 구분되었습니다.
+> - 종단면
+> - 그런데 기존 데이터는 크게 두 가지 단면 종단면(Longitudinal Section)과 평단면(Plan Section) 세
 
 <br>
 
