@@ -37,7 +37,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 ### 📌 개발 환경
 > - Google Colab에서 Python 코드를 작성하였습니다.
 > - 주로 사용된 Python 라이브러리는 TensorFlow, OpenCV 입니다.
-> - 데이터 출처는 과학기술정보통신부 주관의 <a href="https://www.aihub.or.kr/">AI Hub 사이트</a>입니다.
+> - AI 학습용 이미지 데이터 출처는 과학기술정보통신부 주관의 <a href="https://www.aihub.or.kr/">AI Hub 사이트</a>입니다.
 
 ### 📌 이미지 학습을 위한 코딩 순서
 > 1. Python 내부 라이브러리 사용
