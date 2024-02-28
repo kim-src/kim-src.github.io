@@ -2,10 +2,10 @@
 title: 인터넷 작동 원리 (How does the internet work)
 date: 2024-03-16 21:00:00 +09:00
 categories: [Fundamental, Computer Science]
-tags: [Fundamental, Computer Science, Internet, How does the internet work?]
+tags: [Fundamental, Computer Science, Internet, How does the internet work]
 ---
 
-<!-- 2024-02-28 글 작성 시작; 2099-01-01 페이지 호출 필요 -->
+<!-- 2024-02-28 글 작성 시작; 2024-02-28 페이지 호출 완료 -->
 ## ✅ "How does the internet work?"
 
 <br>
@@ -28,7 +28,7 @@ tags: [Fundamental, Computer Science, Internet, How does the internet work?]
 ### 📌 네트워크 분류
 > - 이 네트워크 개념은 몇 가지 분류에 따라 아래와 같이 구분됩니다.
 >   1. 규모에 따른 네트워크 분류 → PAN, LAN, MAN, WAN 등
->   2. 무선(wireless) 상태의 네트워크 분류 → SAN, VPN 등
+>   2. 무선(wireless) 상태의 네트워크 분류 → VPN, SAN 등
 >   3. 데이터 전송 방식에 따른 네트워크 분류 → 패킷 교환 방식, 셀 릴레이 방식 등
 >   4. 노드(node) 연결 형태에 따른 네트워크 분류 → 버스형, 스타형, 링형 등
 > - 여러 네트워크 개념 중 이번 글에서는 규모에 따른 유선 네트워크 분류만을 다뤄보겠습니다.

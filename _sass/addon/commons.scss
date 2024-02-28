@@ -1,7 +1,8 @@
 /* The common styles */
 
 html {
-  @media (prefers-color-scheme: light) {
+
+    @media (prefers-color-scheme: light) {
     &:not([data-mode]),
     &[data-mode='light'] {
       @include light-scheme;
@@ -24,6 +25,7 @@ html {
   }
 
   font-size: 17px; // 기존 16px에서 17px로 글자 크기 증대
+
 }
 
 body {
