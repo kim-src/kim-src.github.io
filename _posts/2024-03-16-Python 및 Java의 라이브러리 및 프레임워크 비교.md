@@ -1,8 +1,8 @@
 ---
 title: Python 및 Java의 라이브러리 및 프레임워크 비교
 date: 2024-03-16 21:00:00 +09:00
-categories: [Fundamental, Python vs Java]
-tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Python]
+categories: [Fundamental, Programming Language]
+tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Python, Programming Language]
 ---
 
 <!-- 2024-02-19 글 작성 시작; 2024-02-20 페이지 호출 완료 -->

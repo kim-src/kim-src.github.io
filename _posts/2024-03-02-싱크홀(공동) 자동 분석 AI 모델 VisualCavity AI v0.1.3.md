@@ -5,7 +5,7 @@ categories: [VisualCavity, VisualCavity AI]
 tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, Machine Learning, Deep Learning, CNN]
 ---
 
-<!-- 2024-02-26 글 작성 시작; 2099-01-01 페이지 호출 필요 -->
+<!-- 2024-02-26 글 작성 시작; 2024-02-27 페이지 호출 완료 -->
 ## ✅ 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI
 
 <br>

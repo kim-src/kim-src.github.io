@@ -1,7 +1,7 @@
 ---
 title: VS Code 기본 extension(플러그인) 초기 설정
 date: 2024-02-17 21:00:00 +09:00
-categories: [Fundamental, VS Code Extension]
+categories: [Fundamental, IDE-Framework-Library]
 tags: [VS Code, Visual Studio Code, Extension, 익스텐션, 플러그인, Fundamental, VS Code Extension]
 ---
 
