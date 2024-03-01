@@ -1,7 +1,7 @@
 ---
 title: Template
 date: 2099-01-01 21:00:00 +09:00
-categories: [A, B]
+categories: [GitHub, Repository]
 tags: [A, B, C, D, E]
 ---
 
