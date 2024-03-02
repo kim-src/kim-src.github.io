@@ -1,5 +1,5 @@
 ---
-title: 인터넷 작동 원리(How does the internet work)
+title: 인터넷 작동 원리(How does the internet work 정답)
 date: 2024-03-16 21:00:00 +09:00
 categories: [Fundamental, Computer Science]
 tags: [Fundamental, Computer Science, Internet, How does the internet work]
