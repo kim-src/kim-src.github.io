@@ -1,7 +1,7 @@
 ---
-title: Template
+title: 깃허브 레포지토리 생성 방법과 Commit 및 Push 의미
 date: 2099-01-01 21:00:00 +09:00
-categories: [GitHub, Repository]
+categories: [GitHub, IDE Integration]
 tags: [A, B, C, D, E]
 ---
 
@@ -36,21 +36,15 @@ tags: [A, B, C, D, E]
 > - 저장 기록뿐만 아니라 저장 당시의 폴더 및 파일 내용도 그대로 저장됩니다.
 <br>
 
-### 🔔 3. Results
-### 📌 부제목
-
-<br>
-
-### 🔔 4. Conclusions
-### 📌 부제목
-
-<br>
-
-### 🎁 5. References
-
-<a href="https://kim-src.github.io/">Kim-src Blog</a>
-
-<img src="https://github.com/Kim-src/Images/assets/150884526/9ba1ebbb-a79c-4e4c-a5f6-2149bb301cd8" class="img" alt="figure">
+### 🔔 3. Postscript
+### 📌 Git을 이용한~
+> - "글 예시"
+> - 다음 글에서는 본인 및 타인 깃허브 계정에 있는 프로젝트 파일을 가져와보겠습니다.
+> - 깃허브 활용 능력을 더 높일 수 있는 좋은 기회일 것 같습니다.
+> - 가져오는 것은 ```git pull``` 기능이 대표적입니다.
+> - 그런데 방법은 IDE마다 상이하며 STS3는 업로드 방식과 비슷하게 버튼을 클릭하여 import 합니다.
+> - 아래 링크는 다음 글 링크입니다.
+> - <a href="https://kim-src.github.io/categories/ide-integration/">STS3에 본인 및 타인의 깃허브 계정 프로젝트 파일 가져오기</a>
 
 <br>
 <br>
