@@ -1,11 +1,11 @@
 ---
-title: Template
-date: 2099-01-01 21:00:00 +09:00
-categories: [A, B]
-tags: [A, B, C, D, E]
+title: HTTP 개념 및 작동 원리(What is HTTP 로드맵 답)
+date: 2024-04-06 21:00:00 +09:00
+categories: [Fundamental, Computer Science]
+tags: [Fundamental, Computer Science, HTTP, What is HTTP]
 ---
 
-<!-- 2099-01-01 글 작성 시작; 2099-01-01 페이지 호출 완료 -->
+<!-- 2024-03-03 글 작성 시작; 2099-01-01 페이지 호출 필요 -->
 ## ✅ 블로그 제목
 
 <br>

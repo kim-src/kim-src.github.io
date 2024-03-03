@@ -5,7 +5,7 @@ categories: [Toy Project, StockScraper]
 tags: [Toy Project, Toy, StockScraper, Stock, Web Crawling]
 ---
 
-<!-- 2099-01-01 글 작성 시작; 2099-01-01 페이지 호출 필요 -->
+<!-- 2024-03-01 글 작성 시작; 2024-03-02 페이지 호출 완료 -->
 ## ✅ 웹 크롤링을 이용한 데이터 분석 방법
 
 <br>
@@ -14,7 +14,7 @@ tags: [Toy Project, Toy, StockScraper, Stock, Web Crawling]
 ### 📌 프로젝트 소개
 > - 개발 환경 : Google Colab
 > - 개발 목적 : Python을 이용한 웹 크롤링 경험 및 Colab 활용 겸험 습득
-> - 개발 내용 : 네이버 증권 사이트를 이용한 삼성전자 주식 종가 정보 수집
+> - 개발 내용 : 네이버 증권 사이트를 이용한 삼성전자 주식 정보 수집
 > - 개발 역량 : Colab 활용, Python의 BeautifulSoup, Pandas, Requests 활용, 웹 크롤링 이해
 > - 상세 내용은 <a href="https://github.com/Kim-src/StockScraper">깃허브 README</a> 참고
 > - Tool :  
@@ -97,7 +97,7 @@ for page in range(1, 6): # 페이지 수를 의미하는 1부터 5까지의 숫�
 </figure>
 
 ### 📌 Pandas
-> - 삼성전자 종가 분석을 위한 Pandas 전체 코드는 아래와 같습니다.  
+> - 삼성전자 주식 정보 분석을 위한 Pandas 전체 코드는 아래와 같습니다.  
 > - 데이터 취득 결과는 이미지로 첨부하였습니다.
 
 ``` python
