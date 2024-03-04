@@ -3,7 +3,7 @@ name: Scheduled Rebuild
 on:
   schedule:
     # 매일 UTC ??:??에 빌드를 스케줄합니다. 시간대에 맞게 조정할 수 있습니다.
-    - cron: '18 04 * * *'
+    - cron: '45 04 * * *'
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
     - name: Build and deploy Jekyll site to GitHub Pages
       uses: jekyll/actions-pages@v1
       with:
-        token: ${{ secrets.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 }}
+        token: ${{ secrets.KIM_GITHUB_PAGES }}
