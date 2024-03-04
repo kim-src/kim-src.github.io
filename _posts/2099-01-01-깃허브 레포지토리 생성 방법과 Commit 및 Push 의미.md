@@ -21,7 +21,7 @@ tags: [A, B, C, D, E]
 > - 무언가를 입력할 수 없는 페이지가 호출되기 때문입니다.
 > - New Repository의 중앙에는 '''$ git commit''' 등의 코드가 작성되어 있습니다.
 > - 아래 문단부터는 '''$ git''' 관련 코드를 자세히 살펴보겠습니다.
-> - <a href="블로그 링크">깃허브 레포지토리 생성 방법 링크</a>
+> - <a href="https://kim-src.github.io/categories/ide-integration/">깃허브 레포지토리 생성 방법 링크</a>
 
 ### 📌 '''$ git init'''
 

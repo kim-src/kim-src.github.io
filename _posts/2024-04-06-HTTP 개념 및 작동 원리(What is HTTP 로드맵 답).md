@@ -6,109 +6,51 @@ tags: [Fundamental, Computer Science, HTTP, What is HTTP]
 ---
 
 <!-- 2024-03-03 글 작성 시작; 2099-01-01 페이지 호출 필요 -->
-## ✅ 블로그 제목
+## ✅ What is HTTP?
 
 <br>
 
-### 🔔 1. Introduction
-### 📌 부제목
+### 🔔 Introduction
+### 📌 HTTP란
+> - HTTP가 무엇이냐는 질문에 가장 잘 어울리는 답변은 "인터넷이요"라고 생각됩니다.
+> - 우리가 수시로 접속하는 인터넷 주소 앞에는 보통 HTTPS로 시작되기 때문입니다.
+> - HTTP라는 단어는 분명 익숙한데 HTTP를 정의하기란 쉽지 않습니다.
+> - HTTP가 아닌 인터넷 환경은 상상하기 어렵기 때문인 것 같습니다.
+> - 이번 글에는 초심자도 이해할 수 있도록 HTTP가 무엇인지 작성하였습니다.
+
+### 🔔 Step 1. 문자적 접근
+### 📌 HTTP 뜻
+> - HTTP는 Hypertext Transfer Protocol의 축약어입니다.
+> - Hypertext는 '최고의 글'이라는 의미로 Hyper 및 Text의 합성어입니다.
+> - Transfer는 '이동'이라는 뜻이 있습니다.
+> - Protocol은 '약속', '규약'이라는 의미가 있습니다.
+> - 즉, HTTP는 Hypertext라는 것의 이동에 필요한 하나의 약속을 의미합니다.
+
+### 🔔 Step 2. 과거 인터넷 환경
+### 📌 블루스크린
+> - HTTP는 1990년대 초부터 전 세계에 보급되기 시작됐습니다.
+> - 당시의 웹 페이지는 Hypertext가 아니라 Text로만 구성되어 있었습니다.
+> - 이는 일명 '블루스크린'이라고 불렸으며 웹의 초창기 형태는 아래 이미지와 같습니다.
+
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/74f42719-d2cb-4b19-8175-820a5ff6022c" class="img" alt="figure">
+    <figcaption>나우누리 웹 페이지</figcaption>
+</figure>
+
+### 📌 BBS 전자 게시판
+> - 블루스크린이라고 불렸던 BBS (Bulletin Board System)는 과거 우리나라의 인터넷 형태였습니다.
+> - 이를 이용한 기업은 나우누리, 하이텔, 천리안 등이 있었습니다.
+> - 현대 시대의 웹 페이지와는 확연한 이질감이 느껴지는 모습입니다.
+> - 이 BBS 환경에서는 시각적인 이미지를 찾기 어렵습니다.
+> - 또한 하이퍼링크를 통한 웹 페이지 이동을 할 수 없습니다.
+
+
+
+
 
 <br>
 
-### 🔔 2. Methodology
-### 📌 부제목
-
-<br>
-
-### 🔔 3. Results
-### 📌 부제목
-
-<br>
-
-### 🔔 4. Conclusions
-### 📌 부제목
-
-<br>
-
-### 🎁 5. References
-
-<a href="https://kim-src.github.io/">Kim-src Blog</a>
-
-<img src="https://github.com/Kim-src/Images/assets/150884526/9ba1ebbb-a79c-4e4c-a5f6-2149bb301cd8" class="img" alt="figure">
 
 <br>
 <br>
 <br>
-
-### 📌 Shields.io의 배지 창고
-## 🔔 Kim이 개발중인 프로젝트
-
-### 🚀 [소프트웨어 개발 프로젝트 : "싱크홀(공동) AI 자동 분석 프로그램, VisualCavity](https://github.com/Kim-src/VisualCavity)"
-
-> #### AI 모델 기술스택
-<p>
-<img alt="Google Colab" src="https://img.shields.io/badge/-Google_Colab-F9AB00?style=flat-square&logo=google-colab&logoColor=white" />
-<img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img alt="tensorflow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" />
-<img alt="Keras" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=flat-square&logo=Keras&logoColor=white" />
-<img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-%23323330.svg?style=flat-square&logo=opencv&logoColor=white" />
-<img alt="ElementTree" src="https://img.shields.io/badge/-ElementTree-blue?style=flat-square&logo=python&logoColor=white" />
-<img alt="numpy" src="https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white" />
-</p>
-
-> #### 소프트웨어 프로그램 기술스택
-<p>
-<img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
-<img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img alt="Django" src="https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white" />
-<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-</p>
-
-<br>
-<br>
-
-### 🚀 [웹 개발 프로젝트 : "최신 트렌드를 경험할 수 있는 웹 사이트, MyVision]()"
-
-> #### 웹 기술스택
-<p>
-<img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
-<img alt="MySQL" src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-<img alt="Spring Boot" src="https://img.shields.io/badge/-SpringBoot-6DB33F?style=flat-square&logo=spring&logoColor=white" />
-<img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
-<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img alt="SQL" src="https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=sql&logoColor=white" />
-<img alt="Tomcat" src="https://img.shields.io/badge/-Tomcat-FFD700?style=flat-square&logo=apache-tomcat&logoColor=black" />
-<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-</p>
-
-<br>
-<br>
-
-### 📌 깃허브 블로그
-
-> [블로그 링크](https://kim-src.github.io/)
-<p>
-<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />
-<img alt="Ruby" src="https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white" />
-<img alt="Jekyll" src="https://img.shields.io/badge/-Jekyll-CC0000?style=flat-square&logo=jekyll&logoColor=white" />
-<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img alt="SASS" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-<img alt="Git Bash" src="https://img.shields.io/badge/Git%20Bash-FFE000?style=flat&logo=git&logoColor=white" />
-<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-</p>
-
-## ✅ KimLibrary_STS3 도서관 웹 페이지 제작
-> - Tool :  
-<img alt="STS3" src="https://img.shields.io/badge/-STS3-6DB33F?style=flat-square&logo=spring&logoColor=white" />
-<img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
-<img alt="JSP" src="https://img.shields.io/badge/-JSP-007396?style=flat-square&logo=java&logoColor=white" />
-<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img alt="MySQL" src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-<img alt="Tomcat" src="https://img.shields.io/badge/-Tomcat-FFD700?style=flat-square&logo=apache-tomcat&logoColor=black" />
