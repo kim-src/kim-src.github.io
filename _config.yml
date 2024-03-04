@@ -14,11 +14,6 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-# 코드 추가 : 2024-03-04 11:41
-# 미래 날짜를 가진 포스트(글)도 빌드 시 포함시키기 위한 코드
-# 기존 future: true가 작성되어있지 않은 상태에서는 미래 날짜를 가진 포스트가 빌드에 포함되지 않나?
-# future: true
-
 title: Kim-src Blog # the main title
 
 tagline: 곰곰이 고민하는 곰 # it will display as the sub-title

@@ -1,6 +1,6 @@
 ---
 title: 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI v0.1.0
-date: 2024-02-24 21:00:00 +09:00
+date: 2024-02-24 18:00:00 +09:00
 categories: [VisualCavity, VisualCavity AI]
 tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, Software, SW]
 ---
