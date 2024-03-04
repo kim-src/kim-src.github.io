@@ -3,7 +3,7 @@ name: Scheduled Rebuild
 on:
   schedule:
     # 매일 UTC ??:??에 빌드를 스케줄합니다. 시간대에 맞게 조정할 수 있습니다.
-    - cron: '45 04 * * *'
+    - cron: '52 04 * * *'
 
 jobs:
   build:
