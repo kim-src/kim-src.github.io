@@ -2,18 +2,29 @@ name: Scheduled Rebuild
 
 on:
   schedule:
-    # 매일 UTC ??:??에 빌드를 스케줄합니다. 시간대에 맞게 조정할 수 있습니다.
-    - cron: '52 04 * * *'
+    - cron: '15 08 * * *' # 'MM HH * * *' HH KOREAN -09:00
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.3' # ruby -v
 
-    - name: Build and deploy Jekyll site to GitHub Pages
-      uses: jekyll/actions-pages@v1
-      with:
-        token: ${{ secrets.KIM_GITHUB_PAGES }}
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.KIM_GITHUB_PAGES }}
+          publish_dir: ./_site  # Jekyll 빌드의 결과물이 위치하는 디렉토리
