@@ -20,11 +20,11 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 
 ### 🔔 1. Introduction
 ### 📌 모델 소개
-> - 모델명 : VisualCavity AI (ver. 0.1.0)
-> - 모델분류 : 이미지 학습 CNN AI 모델
-> - 상세내용 : 싱크홀(공동) 자동 분석 프로그램 제작을 위한 이미지 학습 AI 모델
-> - 개발목적 : 3D-GPR 데이터 분석 난이도 하향
-> - 주요자료 : 지하 물리 탐사로 획득한 약 20만장의 싱크홀 또는 지장물 이미지
+> - 개발 환경 : Google Colab
+> - 개발 목적 : GPR 데이터 분석 수준 하향
+> - 개발 내용 : 싱크홀(공동) 자동 분석 프로그램(VIsualCavity) 제작을 위한 이미지 학습 AI 모델
+> - 개발 역량 : Python 라이브러리, XML 파싱, AI의 이미지 학습 과정 및 딥러닝 모델 이해
+> - 주요 자료 : 지하 물리 탐사로 획득한 70,732장의 싱크홀 또는 지장물 이미지
 
 ### 📌 개념 정리
 > - CNN : 신경망(Convolutional Neural Network)의 축약어이며, 이미지 학습용 딥러닝의 한 종류임

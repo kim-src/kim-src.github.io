@@ -1,23 +1,36 @@
 ---
-title: AI 싱크홀 공동 분석 프로그램 VisualCavity v0.1.0
-date: 2099-01-01 18:00:00 +09:00
+title: AI 싱크홀(공동) 분석 프로그램 VisualCavity v0.1.0
+date: 2024-04-13 18:00:00 +09:00
 categories: [VisualCavity, Desktop Application]
 tags: [VisualCavity, Desktop Application, Software, Program, Software Program, AI Program]
 ---
 
-<!-- 2099-01-01 글 작성 시작; 2099-01-01 페이지 호출 검토 필요 -->
+<!-- 2024-03-05 글 작성 시작; 2099-01-01 페이지 호출 완료 -->
 ## ✅ 싱크홀(공동) 자동 분석 프로그램 VisualCavity
 
 <br>
 
 ### 🔔 1. Introduction
-
-### 📌 부제목
+### 📌 프로그램 소개
+> - 개발 환경 : Eclipse
+> - 개발 목적 : VisualCavity AI를 GPR 데이터 분석용 데스크톱 어플리케이션에 접목
+> - 개발 내용 : GPR 데이터 분석용 자사 데스크톱 어플리케이션 프로그램
+> - 개발 역량 : 도메인 지식, 프로그램 기획력, Java & Python 계열 언어 활용력
+> - 비고 : 개발 완료 후 PyInstaller 등을 이용한 실행 파일(exe) 변환 필요
+> - 기술 스택 :  
+<img alt="Eclipse" src="https://img.shields.io/badge/-Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white" />
+<img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
+<img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img alt="Django" src="https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white" />
+<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
 
 <br>
 
 ### 🔔 2. Methodology
-### 📌 A. 개발 환경 설정
+### 📌 ChatGPT를 이용한 프로젝트 기획
 - Eclipse에서 개발하겠습니다.
 - 가능하다면 Spring Boot로 개발하려고 합니다.
 - Spring Boot로 프로토타입을 제작 후 Spring Framework 등으로 더 발전시키려고 합니다.
