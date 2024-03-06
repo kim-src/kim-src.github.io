@@ -30,14 +30,14 @@ tags: [VisualCavity, Desktop Application, Software, Program, Software Program, A
 <br>
 
 ### 🔔 2. Methodology
-### 📌 ChatGPT를 이용한 프로젝트 기획
-- Eclipse에서 개발하겠습니다.
-- 가능하다면 Spring Boot로 개발하려고 합니다.
-- Spring Boot로 프로토타입을 제작 후 Spring Framework 등으로 더 발전시키려고 합니다.
-- References 이미지와 비슷한 프로그램을 제작하려고 합니다.
-- 관련된 코드를 아주 상세하게, 초보자도 보고 쉽게 따라할 수 있도록 최대한 길게 알려주세요.
+### 🎯 프로젝트 기획
+> - Eclipse에서 데스크톱 어플리케이션을 개발하려고 합니다.
+> - Spring Boot로 프로토타입을 제작 후 Spring Framework 등으로 더 발전시키려고 합니다.
+> - 추후 실행 파일(exe)로 변환하려고 합니다.
+> - References 이미지와 비슷한 프로그램을 제작하려고 합니다.
 
-### B. 프로젝트 구조 생성
+### 🎯 프로젝트 구조 생성
+### 📌 프론트엔드
 - 새 프로젝트의 기본 구조를 구성하려고 합니다.
 - 이름은 VisualCavity입니다.
 - 프로그램 구조 자체는 일반적인 프로그램(excel, vs code 등)의 모습과 비슷합니다.
