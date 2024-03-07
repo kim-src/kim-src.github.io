@@ -13,8 +13,8 @@ tags: [VisualCavity, Desktop Application, Software, Program, Software Program, A
 ### 🔔 1. Introduction
 ### 📌 프로그램 소개
 > - 개발 환경 : Eclipse
-> - 개발 목적 : VisualCavity AI를 GPR 데이터 분석용 데스크톱 어플리케이션에 접목
-> - 개발 내용 : GPR 데이터 분석용 자사 데스크톱 어플리케이션 프로그램
+> - 개발 목적 : VisualCavity AI를 GPR 데이터 분석용 데스크톱 애플리케이션에 접목
+> - 개발 내용 : GPR 데이터 분석용 자사 데스크톱 애플리케이션 프로그램
 > - 개발 역량 : 도메인 지식, 프로그램 기획력, Java & Python 계열 언어 활용력
 > - 비고 : 개발 완료 후 PyInstaller 등을 이용한 실행 파일(exe) 변환 필요
 > - 기술 스택 :  
@@ -31,7 +31,7 @@ tags: [VisualCavity, Desktop Application, Software, Program, Software Program, A
 
 ### 🔔 2. Methodology
 ### 🎯 프로젝트 기획
-> - Eclipse에서 데스크톱 어플리케이션을 개발하려고 합니다.
+> - Eclipse에서 데스크톱 애플리케이션을 개발하려고 합니다.
 > - Spring Boot로 프로토타입을 제작 후 Spring Framework 등으로 더 발전시키려고 합니다.
 > - 추후 실행 파일(exe)로 변환하려고 합니다.
 > - References 이미지와 비슷한 프로그램을 제작하려고 합니다.

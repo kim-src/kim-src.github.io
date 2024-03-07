@@ -22,15 +22,15 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 
 ### 🔔 1. Application Program Framework
 ### 📌 Django vs Spring
-> - Django는 Python의 대표적인 웹 및 데스크톱 어플리케이션의 프레임워크입니다.  
+> - Django는 Python의 대표적인 웹 및 데스크톱 애플리케이션의 프레임워크입니다.  
 >   Django를 활용하는 대표적인 기업은 Youtube, Instagram, Dropbox 등이 있습니다.  
-> - Spring은 Java의 대표적인 웹 및 데스크톱 어플리케이션의 프레임워크입니다.  
+> - Spring은 Java의 대표적인 웹 및 데스크톱 애플리케이션의 프레임워크입니다.  
 >   우리나라의 전반적인 정부 행정 시스템은 Spring으로 구축되었으며 SI 기업에서 주로 사용됩니다.  
 
 ### 📌 Flask vs Spark
-> - Flask는 Python의 어플리케이션 프레임워크로 간결성과 유연성이 특징입니다.  
+> - Flask는 Python의 애플리케이션 프레임워크로 간결성과 유연성이 특징입니다.  
 >   Flask를 활용하는 대표적인 기업은 Netflix, LinkedIn, Pinterest 등이 있습니다.  
-> - Apache Spark는 Java의 빅데이터 처리가 필요한 어플리케이션 프레임워크입니다.  
+> - Apache Spark는 Java의 빅데이터 처리가 필요한 애플리케이션 프레임워크입니다.  
 >   Spark를 활용하는 대표적인 기업은 Facebook, Amazon, Uber 등이 있습니다.  
 
 <br>
@@ -48,7 +48,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 >   Pandas를 활용하는 대표적인 기업은 금융회사인 J.P.Morgan, Uber 등입니다.  
 >   Pandas는 또한 필자의 Toy-Projects 중 하나인 <a href="https://github.com/Kim-src/Toy-Projects/tree/main/Python/Stock%20Information">주식 종가 조회 프로그램</a> 개발에도 사용되었습니다.  
 > - Tablesaw는 Pandas와 유사한 데이터 분석 기능을 제공하는 Java의 라이브러리입니다.  
->   Tablewas를 활용하는 대표적인 기업은 Netflix 등이며 데이터 중심의 어플리케이션 개발에 이용됩니다.  
+>   Tablewas를 활용하는 대표적인 기업은 Netflix 등이며 데이터 중심의 애플리케이션 개발에 이용됩니다.  
 
 ### 📌 TensorFlow vs DL4J
 > - Tensorflow는 Google이 개발한 Python의 머신 러닝 프레임워크입니다.  
@@ -74,7 +74,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 > - Requests는 Python의 라이브러리이며 HTTP 요청을 쉽게 보낼 수 있어 웹 크롤링 시 사용됩니다.  
 >   Requests를 활용하는 대표적인 기업은 Google, Facebook, AWS (Amazon Web Service) 등입니다.  
 >   Requests는 또한 필자의 Toy-Projects 중 하나인 <a href="https://github.com/Kim-src/Toy-Projects/tree/main/Python/Stock%20Information">주식 종가 조회 프로그램</a> 개발에도 사용되었습니다.  
-> - OkHttp는 주로 Android 어플리케이션 개발 중 HTTP 통신에 사용되는 Java의 라이브러리입니다.  
+> - OkHttp는 주로 Android 애플리케이션 개발 중 HTTP 통신에 사용되는 Java의 라이브러리입니다.  
 >   OkHttp의 특징은 네트워크 연결이 종료된 상황에서도 자동으로 네트워크 연결을 요청하는 기능입니다.  
 >   OkHttp는 비즈니스용 제품 서비스 기업인 Square에서 개발되었으며 Twitter 등에서도 활용 중입니다.  
 
@@ -101,7 +101,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 > - Python의 OpenCV의 사용 사례는 얼굴 인식, 이미지 필터링 등이 있습니다.  
 > - 이는 Google 뿐만 아니라 필자가 개발중인 <a href="https://github.com/Kim-src/VisualCavity">싱크홀(공동) 자동 분석 AI 모델</a>에도 이용중입니다.  
 > - Java의 OpenCV 역시 좋은 이미지 및 동영상 데이터 처리 도구입니다.  
-> - Java의 OpenCV는 안드로이드 및 데스크톱 어플리케이션 프로그램 개발에 활발히 사용됩니다.  
+> - Java의 OpenCV는 안드로이드 및 데스크톱 애플리케이션 프로그램 개발에 활발히 사용됩니다.  
 
 <br>
 
