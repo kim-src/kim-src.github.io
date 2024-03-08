@@ -1,6 +1,6 @@
 ---
 title: HTTP 및 HTTPS와 WEB, DNS, Domain, BBS와의 관계
-date: 2024-04-06 18:00:00 +09:00
+date: 2024-03-08 18:00:00 +09:00
 categories: [Fundamental, Computer Science]
 tags: [Fundamental, Computer Science, HTTP, What is HTTP, Domain, DNS, WEB, WEB 1.0, WEB 2.0, WEB 3.0, BBS]
 ---
