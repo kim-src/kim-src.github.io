@@ -1,8 +1,7 @@
 /* The common styles */
 
 html {
-
-    @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: light) {
     &:not([data-mode]),
     &[data-mode='light'] {
       @include light-scheme;
@@ -25,7 +24,6 @@ html {
   }
 
   font-size: 17px; // 기존 16px에서 17px로 글자 크기 증대
-
 }
 
 body {
@@ -99,6 +97,7 @@ figcaption {
   text-align: center; // 캡션 가운데 정렬
 }
 
+/* 2024-03-10 16:02 인용문 스타일 변경 전 기존 코드
 blockquote {
   border-left: 5px solid var(--blockquote-border-color);
   padding-left: 1rem;
@@ -131,6 +130,26 @@ blockquote {
   @include prompt('info', '\f06a');
   @include prompt('warning', '\f06a');
   @include prompt('danger', '\f071');
+}
+*/
+
+/* 2024-03-10 16:10 인용문 스타일 변경 후 코드 : velog.io 스타일 참조 */
+blockquote {
+  margin: 2rem 0px;
+  // margin-top: 2rem;
+  // margin-right: 0px;
+  // margin-bottom: 2rem;
+  // margin-left: 0px;
+  border-left: 4px solid var(--blockquote-border-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--blockquote-box-color);
+  padding: 1rem 1rem 1rem 1rem;
+  // padding-top: 1rem;
+  // padding-right: 1rem;
+  // padding-bottom: 1rem;
+  // padding-left: 1rem;
+  color: var(--blockquote-text-color);
 }
 
 kbd {
@@ -181,6 +200,58 @@ i {
     @extend %no-cursor;
   }
 }
+
+/* Kim styles */
+/* Color Chart : 2024-03-10 16:45 */
+
+/* Velog.io styles */
+/* Color Chart : 2024-03-10 16:25 */
+/*
+body[data-theme="dark"] {
+  --bg-page1: #121212;
+  --bg-page2: #121212;
+  --bg-element1: #1E1E1E;
+  --bg-element2: #1E1E1E;
+  --bg-element3: #252525;
+  --bg-element4: #2E2E2E;
+  --bg-element5: #F1F3F5;
+  --bg-element6: #F8F9FA;
+  --bg-element7: #252525;
+  --bg-element8: #0c0c0c;
+  --bg-invert: #FFFFFF;
+  --bg-inline-code: #363636;
+  --bg-tag: #252525;
+  --text1: #ECECEC;
+  --text2: #D9D9D9;
+  --text3: #ACACAC;
+  --text4: #595959;
+  --border1: #E0E0E0;
+  --border2: #A0A0A0;
+  --border3: #4D4D4D;
+  --border4: #2A2A2A;
+  --primary1: #96F2D7;
+  --primary2: #63E6BE;
+  --destructive1: #FFC9C9;
+  --destructive2: #FFA8A8;
+  --button-text: #121212;
+  --slight-layer: rgba(255, 255, 255, 0.1);
+  --opaque-layer: rgba(0, 0, 0, 0.85);
+  --editor-footer: #2E2E2E;
+  --prism-bg: #1E1E1E;
+  --prism-default-text: #e0e6f1;
+  --prism-selection-bg: #383e49;
+  --prism-code-block-bg: #1e1e1e;
+  --prism-code-1: #7c858d;
+  --prism-code-2: #abb2bf;
+  --prism-code-3: #e06c75;
+  --prism-code-4: #d19a66;
+  --prism-code-5: #98c379;
+  --prism-code-6: #56b6c2;
+  --prism-code-7: #c678dd;
+  --prism-code-8: #61afef;
+  --prism-code-9: #c678dd;
+  --prism-line-number: #5c6370;
+*/
 
 /* --- Panels --- */
 
