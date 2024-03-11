@@ -135,19 +135,19 @@ blockquote {
 
 /* 2024-03-10 16:10 인용문 스타일 변경 후 코드 : velog.io 스타일 참조 */
 blockquote {
-  margin: 2rem 0px;
+  margin: 2rem 0rem 2rem 0rem; // blockquote 외부 간격
   // margin-top: 2rem;
-  // margin-right: 0px;
+  // margin-right: 0rem;
   // margin-bottom: 2rem;
-  // margin-left: 0px;
-  border-left: 4px solid var(--blockquote-border-color);
+  // margin-left: 0rem;
+  border-left: 4px solid var(--blockquote-border-color); // blockquote 좌측 막대
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background: var(--blockquote-box-color);
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 0.25rem 1rem; // blockquote 내부 간격
   // padding-top: 1rem;
   // padding-right: 1rem;
-  // padding-bottom: 1rem;
+  // padding-bottom: 0.25rem;
   // padding-left: 1rem;
   color: var(--blockquote-text-color);
 }
