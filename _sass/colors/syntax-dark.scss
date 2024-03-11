@@ -3,15 +3,15 @@
  */
 
 @mixin dark-syntax {
-  --language-border-color: #2d2d2d;
-  --highlight-bg-color: #151515;
+  --language-border-color: #1e1e1e; // 코드 인용구 박스 테두리 색상
+  --code-color: #ececec; // 코드 글자 색상
+  --highlight-lineno-color: #ff9c8f; // 코드 인용구 행 번호 색상
   --highlighter-rouge-color: #c9def1;
-  --highlight-lineno-color: #808080;
   --inline-code-bg: #323238;
-  --code-color: #b0b0b0;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: #353535;
-  --code-header-icon-color: #565656;
+  --highlight-bg-color: #ffdcb9; // 코드 인용구 제목 박스 배경 색상
+  --code-header-text-color: #121212; // 코드 인용구 제목 박스 글자 색상
+  --code-header-muted-color: #ff9c8f; // 코드 인용구 제목 박스 동그라미 색상
+  --code-header-icon-color: #121212; // 코드 인용구 제목 박스 붙여넣기 아이콘 등 생상
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
 
@@ -32,7 +32,7 @@
   .highlight,
   .highlight .w {
     color: #d0d0d0;
-    background-color: #151515;
+    background-color: #1e1e1e; // 코드 인용구 박스 내부 배경 색상
   }
 
   .highlight .err {

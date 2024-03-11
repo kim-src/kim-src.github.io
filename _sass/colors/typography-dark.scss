@@ -9,16 +9,16 @@
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: #ececec; // 글자 색상
-  --text-muted-color: #ececec; // 마커(-) 색상
+  --text-color: #ffffff; // 본문 글자 색상
   --text-muted-hightlight-color: #ececec;
-  --heading-color: #cccccc;
+  --heading-color: #f0f0f0; // 제목 글자 색상
   --label-color: #a7a7a7;
-  --blockquote-border-color: #63e6be; // 인용구 좌측 막대 색상
+  --blockquote-border-color: #ffdcb9; // 인용구 좌측 막대 색상
+  --text-muted-color: #ffffff; // 인용구 마커(-) 색상, 사이드바 글자 색상 등(사이드바 수정 필요)
   --blockquote-box-color: #1e1e1e; // 인용구 내부 배경 색상
   --blockquote-text-color: #ececec; // 인용구 내부 글자 색상
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
+  --link-color: #ffdcb9; // 링크 글자 색상
+  --link-underline-color: #ffdcb9; // 링크 글자 밑줄 색상
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
