@@ -4,22 +4,22 @@
 
 @mixin dark-scheme {
   /* Framework color */
-  --main-bg: #121212; // 배경 색상
+  --main-bg: #131313; // 배경 색상
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: #ffffff; // 본문 글자 색상
-  --text-muted-hightlight-color: #ececec;
+  --text-color: #ececec; // 본문 글자 색상
+  --text-muted-hightlight-color: var(--text-color);
   --heading-color: #f0f0f0; // 제목 글자 색상
   --label-color: #a7a7a7;
-  --blockquote-border-color: #ffdcb9; // 인용구 좌측 막대 색상
-  --text-muted-color: #ffffff; // 인용구 마커(-) 색상, 사이드바 글자 색상 등(사이드바 수정 필요)
-  --blockquote-box-color: #1e1e1e; // 인용구 내부 배경 색상
-  --blockquote-text-color: #ececec; // 인용구 내부 글자 색상
   --link-color: #ffdcb9; // 링크 글자 색상
-  --link-underline-color: #ffdcb9; // 링크 글자 밑줄 색상
-  --button-bg: #1e1e1e;
+  --link-underline-color: #ff9c8f; // 링크 글자 밑줄 색상
+  --blockquote-border-color: var(--link-color); // 인용구 좌측 막대 색상
+  --text-muted-color: var(--text-color); // 인용구 마커(-) 색상, 사이드바 글자 색상 등(사이드바 수정 필요)
+  --blockquote-box-color: #1e1e1e; // 인용구 내부 배경 색상
+  --blockquote-text-color: var(--text-color); // 인용구 내부 글자 색상
+  --button-bg: var(--blockquote-box-color);
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #212122;
@@ -35,13 +35,18 @@
     rgba(255, 255, 255, 0) 100%
   );
 
+  // 노란색 : fdf058
+  // 연두색 : 84fd58
+  // 보통녹색 : 64b049
+  // 진한녹색 : 228100
+
   /* Sidebar */
   --site-title-color: #717070;
   --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e;
+  --sidebar-bg: var(--main-bg); // 사이드바 배경 색상
   --sidebar-border-color: #292929;
   --sidebar-muted-color: #868686;
-  --sidebar-active-color: rgb(255, 255, 255, 0.95);
+  --sidebar-active-color: #ffdcb9; //사이드바 액션 색상
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
   --sidebar-btn-color: #787878;
@@ -68,7 +73,7 @@
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
+  --card-bg: var(--blockquote-box-color);
   --card-hovor-bg: #464d51;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
