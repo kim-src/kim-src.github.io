@@ -130,7 +130,7 @@ h1 + .post-meta {
     @extend %btn-post-nav;
 
     &:not(:hover) {
-      color: var(--link-color);
+      color: var(--beige-1);
     }
 
     &:hover {

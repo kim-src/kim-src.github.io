@@ -27,10 +27,10 @@ html {
 }
 
 body {
-  background: var(--main-bg);
+  background: var(--black-1);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
-  color: var(--text-color);
+  color: var(--white-1);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
 }
@@ -150,7 +150,7 @@ blockquote {
   border-left: 4px solid var(--blockquote-border-color); // blockquote 좌측 막대
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: var(--blockquote-box-color);
+  background: var(--dark-gray-1);
   padding: 1rem 1rem 0.25rem 0.5rem; // blockquote 내부 간격
   // padding-top: 1rem;
   // padding-right: 1rem;
@@ -176,7 +176,7 @@ kbd {
 }
 
 footer {
-  background-color: var(--main-bg);
+  background-color: var(--black-1);
   height: $footer-height;
   border-top: 1px solid var(--main-border-color);
 
@@ -614,7 +614,7 @@ main {
   border: 1px solid !important;
   padding: 1px 3px;
   border-radius: 3px;
-  color: var(--link-color);
+  color: var(--beige-1);
 
   &:focus {
     box-shadow: none;
@@ -1028,7 +1028,7 @@ search {
   width: 100%;
   border-radius: 1rem;
   border: 1px solid var(--search-border-color);
-  background: var(--main-bg);
+  background: var(--black-1);
   padding: 0 0.5rem;
 
   i {
@@ -1045,7 +1045,7 @@ search {
 
 /* 'Cancel' link */
 #search-cancel {
-  color: var(--link-color);
+  color: var(--beige-1);
   display: none;
   white-space: nowrap;
 
@@ -1057,7 +1057,7 @@ search {
   border: 0;
   border-radius: 0;
   padding: 0.18rem 0.3rem;
-  color: var(--text-color);
+  color: var(--white-1);
   height: auto;
 
   &:focus {
