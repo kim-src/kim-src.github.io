@@ -41,16 +41,16 @@
   // 진한녹색 : 228100
 
   /* Sidebar */
-  --site-title-color: #717070;
-  --site-subtitle-color: #868686;
+  --site-title-color: #999999; // 사이드바 제목 글자 색상
+  --site-subtitle-color: var(--site-title-color);
   --sidebar-bg: var(--main-bg); // 사이드바 배경 색상
   --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
-  --sidebar-active-color: #ffdcb9; //사이드바 액션 색상
-  --sidebar-hover-bg: #262626;
+  --sidebar-muted-color: var(--site-title-color);
+  --sidebar-active-color: var(--link-color); //사이드바 액션 글자 색상
+  --sidebar-hover-bg: var(--link-underline-color); // 사이드바 액션 배경 색상
   --sidebar-btn-bg: #232328;
-  --sidebar-btn-color: #787878;
-  --avatar-border-color: rgb(206, 206, 206, 0.9);
+  --sidebar-btn-color: var(--site-title-color);
+  --avatar-border-color: var(--site-title-color);
 
   /* Topbar */
   --topbar-bg: rgb(27, 27, 30, 0.64);
