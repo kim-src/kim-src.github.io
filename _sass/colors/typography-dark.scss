@@ -3,32 +3,31 @@
  */
 
 @mixin dark-scheme {
-  /* Color Chart */
-  --white-1: #ececec;
-  --black-1: #131313;
-  --dark-gray-1: #1e1e1e;
-  --beige-1: #ffdcb9;
-  --light-red-1: #ff9c8f;
-
   /* Framework color */
-  --main-bg: var(--black-1); // 배경 색상
-  --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45);
+  --white-1: #ececec;
+  --white-2: #f0f0f0;
+  --black-1: #131313;
+  --gray-1: #999999;
+  --gray-2: #292929;
+  --gray-3: #1e1e1e;
+  --red-1: #ff9c8f;
+  --beige-1: #ffdcb9;
 
   /* Common color */
+  --main-bg: var(--black-1); // 배경 색상
+  --mask-bg: rgb(68, 69, 70);
+  --main-border-color: var(--gray-2); // 본문 경계선 색상
   --text-color: var(--white-1); // 본문 글자 색상
   --text-muted-hightlight-color: var(--white-1);
-  --heading-color: #f0f0f0; // 제목 글자 색상
-  --label-color: #a7a7a7;
+  --heading-color: var(--white-1); // 제목 글자 색상
+  --label-color: var(--beige-1); // 우측바 글자 색상
   --link-color: var(--beige-1); // 링크 글자 색상
-  --link-underline-color: var(--light-red-1); // 링크 글자 밑줄 색상
+  --link-underline-color: var(--red-1); // 링크 글자 밑줄 색상
   --blockquote-border-color: var(--beige-1); // 인용구 좌측 막대 색상
-  --text-muted-color: var(
-    --white-1
-  ); // 인용구 마커(-) 색상, 사이드바 글자 색상 등(사이드바 수정 필요)
-  --blockquote-box-color: var(--dark-gray-1); // 인용구 내부 배경 색상
+  --text-muted-color: var(--white-1); // 인용구 마커(-) 색상
+  --blockquote-box-color: var(--gray-3); // 인용구 내부 배경 색상
   --blockquote-text-color: var(--white-1); // 인용구 내부 글자 색상
-  --button-bg: var(--dark-gray-1);
+  --button-bg: var(--gray-3);
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--white-1);
   --btn-backtotop-border-color: #212122;
@@ -50,16 +49,16 @@
   // 진한녹색 : 228100
 
   /* Sidebar */
-  --site-title-color: #999999; // 사이드바 제목 글자 색상
-  --site-subtitle-color: var(--site-title-color);
+  --site-title-color: var(--gray-1); // 사이드바 제목 글자 색상
+  --site-subtitle-color: var(--gray-1);
   --sidebar-bg: var(--black-1); // 사이드바 배경 색상
-  --sidebar-border-color: #292929;
-  --sidebar-muted-color: var(--site-title-color);
-  --sidebar-active-color: var(--beige-1); //사이드바 액션 글자 색상
-  --sidebar-hover-bg: var(--light-red-1); // 사이드바 액션 배경 색상
+  --sidebar-muted-color: var(--beige-1); // 사이드바 노액션 글자 색상
+  --sidebar-active-color: var(--beige-1); // 사이드바 액션 글자 색상
+  --sidebar-hover-bg: var(--gray-1); // 사이드바 액션 배경 색상
   --sidebar-btn-bg: var(--white-1); // 사이드바 하단 아이콘 배경 색상
-  --sidebar-btn-color: var(--site-title-color);
-  --avatar-border-color: var(--site-title-color);
+  --sidebar-btn-color: var(--gray-1);
+  --avatar-border-color: var(--gray-1);
+  // --sidebar-border-color: var(--gray-2); // 사이드바/본문 구분선 색상
 
   /* Topbar */
   --topbar-bg: rgb(27, 27, 30, 0.64);
@@ -82,7 +81,7 @@
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: var(--dark-gray-1);
+  --card-bg: var(--gray-3);
   --card-hovor-bg: #464d51;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
