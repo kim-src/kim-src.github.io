@@ -88,6 +88,7 @@ img {
   }
 }
 
+// <div class="image-container">
 .image-container {
   display: flex;
   justify-content: center;
@@ -379,6 +380,7 @@ sup {
   }
 }
 
+// 홈페이지 포스트 페이지 미리보기
 .post-preview {
   @extend %rounded;
 
@@ -762,8 +764,9 @@ $btn-mb: 0.5rem;
 
   #avatar {
     display: block;
-    width: 7rem;
-    height: 7rem;
+    margin-left: 2rem; // 마진 추가
+    width: 6rem;
+    height: 6rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */

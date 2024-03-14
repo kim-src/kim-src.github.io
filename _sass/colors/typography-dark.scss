@@ -4,14 +4,18 @@
 
 @mixin dark-scheme {
   /* Framework color */
-  --white-1: #ececec;
+  --white-1: #ececec; // 기본 글자
   --white-2: #f0f0f0;
   --black-1: #141414;
   --gray-1: #999999;
   --gray-2: #292929;
-  --gray-3: #1e1e1e;
-  --red-1: #ff9c8f;
-  --beige-1: #ffdcb9;
+  --gray-3: #1e1e1e; // 인용구 박스
+  --red-1: #ff9c8f; // 호버
+  --beige-1: #ffdcb9; // 링크
+  --yellow-1: #fdf058;
+  --green-1: #84fd58;
+  --green-2: #64b049;
+  --green-3: #228100;
 
   /* Common color */
   --main-bg: var(--black-1); // 배경 색상
@@ -22,7 +26,7 @@
   --heading-color: var(--white-1); // 제목 글자 색상
   --label-color: var(--beige-1); // 우측바 글자 색상
   --link-color: var(--beige-1); // 링크 글자 색상
-  --link-underline-color: var(--red-1); // 링크 글자 밑줄 색상
+  --link-underline-color: var(--beige-1); // 링크 글자 밑줄 색상
   --blockquote-border-color: var(--beige-1); // 인용구 좌측 막대 색상
   --text-muted-color: var(--white-1); // 인용구 마커(-) 색상
   --blockquote-box-color: var(--gray-3); // 인용구 내부 배경 색상
@@ -43,34 +47,29 @@
     rgba(255, 255, 255, 0) 100%
   );
 
-  // 노란색 : fdf058
-  // 연두색 : 84fd58
-  // 보통녹색 : 64b049
-  // 진한녹색 : 228100
-
   /* Sidebar */
   --site-title-color: var(--gray-1); // 사이드바 제목 글자 색상
   --site-subtitle-color: var(--gray-1);
   --sidebar-bg: var(--black-1); // 사이드바 배경 색상
-  --sidebar-muted-color: var(--beige-1); // 사이드바 노액션 글자 색상
-  --sidebar-active-color: var(--beige-1); // 사이드바 액션 글자 색상
-  --sidebar-hover-bg: var(--gray-1); // 사이드바 액션 배경 색상
+  --sidebar-muted-color: var(--gray-1); // 사이드바 노액션 글자 색상
+  --sidebar-active-color: var(--gray-1); // 사이드바 액션 글자 색상
+  --sidebar-hover-bg: var(--white-1); // 사이드바 액션 배경 색상
   --sidebar-btn-bg: var(--white-1); // 사이드바 하단 아이콘 배경 색상
-  --sidebar-btn-color: var(--gray-1);
-  --avatar-border-color: var(--gray-1);
+  --sidebar-btn-color: var(--gray-1); // 사이드바 하단 아이콘 색상
+  --avatar-border-color: var(--white-1);
   // --sidebar-border-color: var(--gray-2); // 사이드바/본문 구분선 색상
 
   /* Topbar */
-  --topbar-bg: rgb(27, 27, 30, 0.64);
+  --topbar-bg: var(--black-1);
   --topbar-text-color: var(--white-1);
-  --search-border-color: rgb(55, 55, 55);
-  --search-icon-color: rgb(100, 102, 105);
-  --input-focus-border-color: rgb(112, 114, 115);
+  --search-border-color: var(--white-1);
+  --search-icon-color: var(--white-1);
+  --input-focus-border-color: var(--gray-1);
 
   /* Home page */
-  --post-list-text-color: rgb(175, 176, 177);
+  --post-list-text-color: var(--gray-1);
   --btn-patinator-text-color: var(--white-1);
-  --btn-paginator-hover-color: #2e2e2e;
+  --btn-paginator-hover-color: var(--gray-2);
 
   /* Posts */
   --toc-highlight: rgb(116, 178, 243);
@@ -105,9 +104,9 @@
   --search-tag-bg: #292828;
 
   /* categories */
-  --categories-border: rgb(64, 66, 69, 0.5);
-  --categories-hover-bg: rgb(73, 75, 76);
-  --categories-icon-hover-color: white;
+  // --categories-border: rgb(64, 66, 69, 0.5);
+  --categories-hover-bg: var(--gray-1);
+  --categories-icon-hover-color: var(--white-1);
 
   /* archives */
   --timeline-node-bg: rgb(150, 152, 156);

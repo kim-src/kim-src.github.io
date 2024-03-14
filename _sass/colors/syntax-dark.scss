@@ -32,9 +32,7 @@
   .highlight,
   .highlight .w {
     color: #d0d0d0;
-    background-color: var(
-      --blockquote-box-color
-    ); // 코드 인용구 박스 내부 배경 색상
+    background-color: var(--gray-3); // 코드 박스 배경 색상
   }
 
   .highlight .err {
