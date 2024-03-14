@@ -6,7 +6,7 @@ tags: [Toy Project, Toy, StockScraper, Stock, Web Crawling]
 ---
 
 <!-- 2024-03-01 글 작성 시작; 2024-03-02 페이지 호출 완료 -->
-## ✅ 웹 크롤링을 이용한 데이터 분석 방법
+<h2>✅ 웹 크롤링을 이용한 데이터 분석 방법</h2>
 
 <br>
 

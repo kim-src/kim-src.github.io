@@ -6,7 +6,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 ---
 
 <!-- 2024-02-19 글 작성 시작; 2024-02-20 페이지 호출 완료 -->
-## ✅ 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI
+<h2>✅ 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI</h2>
 > - Tool :  
 <img alt="Google Colab" src="https://img.shields.io/badge/-Google_Colab-F9AB00?style=flat-square&logo=google-colab&logoColor=white" />
 <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -161,7 +161,7 @@ model.fit(X_train, y_train, epochs=5, batch_size=1)
 
 <br>
 
-### 🔔 4. Conclustions
+### 🔔 4. Conclusions
 ### 📌 VisualCavity AI v0.1.0 테스트 결과 판단 방법
 > - Python을 이용한 CNN AI 모델의 이미지 학습이 완료되었으며 이 이미지 학습은 머신 러닝의 일종입니다.
 > - 머신 러닝 중 AI 이미지 학습 결과는 Epoch로 판단할 수 있습니다.
