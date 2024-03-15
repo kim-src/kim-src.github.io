@@ -385,7 +385,7 @@ sup {
   @extend %rounded;
 
   border: 0;
-  background: var(--card-bg);
+  background: var(--main-bg);
   box-shadow: var(--card-shadow);
 
   &::before {

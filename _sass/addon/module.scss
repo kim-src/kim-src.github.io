@@ -55,17 +55,17 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: var(--orange-1) !important;
+  border-bottom: 1px solid var(--orange-1);
   text-decoration: none;
 }
 
 %link-color {
-  color: var(--beige-1);
+  color: var(--link-color);
 }
 
 %link-underline {
-  border-bottom: 1px solid var(--red-1);
+  border-bottom: 1px solid var(--link-underline-color);
 }
 
 %clickable-transition {

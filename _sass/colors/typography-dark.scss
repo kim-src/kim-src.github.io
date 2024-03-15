@@ -12,6 +12,7 @@
   --gray-3: #1e1e1e; // 인용구 박스
   --red-1: #ff9c8f; // 호버
   --beige-1: #ffdcb9; // 링크
+  --orange-1: #d2603a;
   --yellow-1: #fdf058;
   --green-1: #84fd58;
   --green-2: #64b049;
@@ -36,7 +37,6 @@
   --btn-backtotop-color: var(--white-1);
   --btn-backtotop-border-color: #212122;
   --btn-box-shadow: var(--black-1);
-  --card-header-bg: #292929;
   --checkbox-color: rgb(118, 120, 121);
   --checkbox-checked-color: var(--beige-1);
   --img-bg: radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%);
@@ -80,10 +80,6 @@
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: var(--gray-3);
-  --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
@@ -105,12 +101,17 @@
 
   /* categories */
   // --categories-border: rgb(64, 66, 69, 0.5);
+  --card-bg: var(--gray-3); // 카테고리 박스 색상
+  --card-header-bg: var(--gray-2);
+  --card-hovor-bg: var(--beige-1);
   --categories-hover-bg: var(--gray-1);
-  --categories-icon-hover-color: var(--white-1);
+  --categories-icon-hover-color: var(--beige-1);
+  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
+  rgb(137, 135, 135, 0.24) 0 0 0 1px;
 
   /* archives */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
+  --timeline-node-bg: var(--gray-1);
+  --timeline-color: var(--gray-2);
   --timeline-year-dot-color: var(--timeline-color);
 
   .light {
