@@ -6,7 +6,7 @@ tags: [Fundamental, Computer Science, Internet, How does the internet work]
 ---
 
 <!-- 2024-02-28 글 작성 시작; 2024-02-28 페이지 호출 완료 -->
-<h2>✅ How does the internet work?</h2>
+<h2>How does the internet work?</h2>
 
 <br>
 

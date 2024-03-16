@@ -6,7 +6,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, S
 ---
 
 <!-- 2024-02-19 글 작성 시작; 2024-02-20 페이지 호출 완료 -->
-<h2>✅ 싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI</h2>
+<h2>싱크홀(공동) 자동 분석 AI 모델 VisualCavity AI</h2>
 > - Tool :  
 <img alt="Google Colab" src="https://img.shields.io/badge/-Google_Colab-F9AB00?style=flat-square&logo=google-colab&logoColor=white" />
 <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />

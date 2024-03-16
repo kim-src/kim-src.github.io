@@ -385,7 +385,7 @@ sup {
   @extend %rounded;
 
   border: 0;
-  background: var(--main-bg);
+  background: var(--blockquote-box-color);
   box-shadow: var(--card-shadow);
 
   &::before {

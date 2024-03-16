@@ -68,36 +68,31 @@ refactor: true
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
-
-            <!-- 2024-03-14 09:45 기존 코드 -->
-            <!--
-              <div class="card-text content mt-0 mb-3">
-                <p>
-                  {% include no-linenos.html content=post.content %}
-                  {{ content | markdownify | strip_html | truncate: 200 | escape }}
-                </p>
-              </div>
-            -->
+            <h1 class="card-title my-2 mt-md-0">
+              <span class="icon-title">{{ "✅" }}</span>
+              {{ post.title }}
+            </h1>
 
             <!-- 2024-03-14 10:09 수정된 코드 -->
             <div class="card-text content mt-0 mb-3">
-              <!-- h2 태그로 묶인 내용만 미리보기로 추출 -->
-              {% capture preview_subtitle %}
-                {% if post.content contains "<h2>" %}
-                  <!-- h2 태그 내용의 시작과 끝 추출 -->
-                  {% assign h2_contents = post.content | split: "<h2>" %}
-                  {% for h2_content in h2_contents %}
-                    {% if forloop.first == false %}
-                      {% assign h2_inner_content = h2_content | split: "</h2>" %}
-                      {{ h2_inner_content.first | strip_html | truncatewords: 20 | escape }}
-                    {% endif %}
-                  {% endfor %}
-                {% else %}
-                  <!-- h2 태그 내용이 없을 경우 본문 내용 일부 추출-->
-                  {{ post.content | strip_html | truncatewords: 20 | escape }}
-                {% endif %}
-              {% endcapture %}
+                <!-- h2 태그로 묶인 내용만 미리보기로 추출 -->
+                {% capture preview_subtitle %}
+                  {% if post.content contains "<h2>" %}
+                    <!-- h2 태그 내용의 시작과 끝 추출 -->
+                    {% assign h2_contents = post.content | split: "<h2>" %}
+                    {% for h2_content in h2_contents %}
+                      {% if forloop.first == false %}
+                        {% assign h2_inner_content = h2_content | split: "</h2>" %}
+                        <span class="hyphen-subtitle">{{ "-" }}</span>
+                        {{ h2_inner_content.first | strip_html | truncatewords: 20 | escape }}
+                        <span class="hyphen-subtitle">{{ "-" }}</span>
+                      {% endif %}
+                    {% endfor %}
+                  {% else %}
+                    <!-- h2 태그 내용이 없을 경우 본문 내용 일부 추출-->
+                    {{ post.content | strip_html | truncatewords: 20 | escape }}
+                  {% endif %}
+                {% endcapture %}
 
               <p>{{ preview_subtitle }}</p>
             </div>

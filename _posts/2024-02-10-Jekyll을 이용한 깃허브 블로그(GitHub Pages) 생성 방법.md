@@ -6,7 +6,7 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 
 <!-- 2024-02-16 글 작성 시작; 2024-02-19 페이지 호출 검토 완료 -->
-<h2>- 나만의 깃허브 블로그 만드는 방법 -</h2>
+<h2>나만의 깃허브 블로그 만드는 방법</h2>
 > - Tool :  
 <img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />
 <img alt="Ruby" src="https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white" />

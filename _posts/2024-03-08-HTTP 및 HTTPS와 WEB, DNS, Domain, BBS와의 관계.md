@@ -6,7 +6,7 @@ tags: [Fundamental, Computer Science, HTTP, What is HTTP, Domain, DNS, WEB, WEB 
 ---
 
 <!-- 2024-03-03 글 작성 시작; 2024-03-06 페이지 호출 완료 -->
-<h2>✅ What is HTTP?</h2>
+<h2>What is HTTP?</h2>
 
 <br>
 
