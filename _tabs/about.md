@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+> - <a href="https://github.com/Kim-src">GitHub Profile (Kim-src)</a>
+> - <a href="https://www.linkedin.com/in/chang-seong-kim-7826142a0">LinkedIn Profile (Chang-Seong Kim)</a>
