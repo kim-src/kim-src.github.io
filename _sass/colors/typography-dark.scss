@@ -24,14 +24,14 @@
   --main-border-color: var(--gray-2); // 본문 경계선 색상
   --text-color: var(--white-1); // 본문 글자 색상
   --text-muted-hightlight-color: var(--white-1);
-  --heading-color: var(--white-1); // 제목 글자 색상
+  --heading-color: var(--text-color); // 제목 글자 색상
   --label-color: var(--beige-1); // 우측바 글자 색상
   --link-color: var(--beige-1); // 링크 글자 색상
   --link-underline-color: var(--beige-1); // 링크 글자 밑줄 색상
   --blockquote-border-color: var(--beige-1); // 인용구 좌측 막대 색상
   --text-muted-color: var(--white-1); // 인용구 마커(-) 색상
   --blockquote-box-color: var(--gray-3); // 인용구 내부 배경 색상
-  --blockquote-text-color: var(--white-1); // 인용구 내부 글자 색상
+  --blockquote-text-color: var(--text-color); // 인용구 내부 글자 색상
   --button-bg: var(--gray-3);
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--white-1);
