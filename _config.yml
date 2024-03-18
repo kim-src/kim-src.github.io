@@ -1,4 +1,5 @@
 # The Site Configuration
+# contact.yml, sidebar.html, footer.html 참고 필요
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -28,8 +29,8 @@ url: "https://kim-src.github.io"
 github:
   username: Kim-src # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+# twitter:
+#   username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -37,12 +38,13 @@ social:
   name: Chang-Seong Kim
   email: ceobaek153@gmail.com # change to your email address
   links:
-    # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/chang-seong-kim-7826142a0/ # change to your twitter homepage
     - https://github.com/Kim-src # change to your github homepage
+    - https://www.linkedin.com/in/chang-seong-kim-7826142a0
+    - https://www.instagram.com/changs_k_
+    # The first element serves as the copyright owner's link
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # - https://www.twitter.com/username    
 
 google_site_verification: "Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M"
 # ↑ --------------------------
