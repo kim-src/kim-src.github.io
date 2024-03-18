@@ -1,6 +1,6 @@
 ---
 title: VS Code에서 Spring Boot 실행을 위해 필요한 Extension
-date: 2024-04-20 18:00:00 +09:00
+date: 2074-01-01 18:00:00 +09:00
 categories: [A, B]
 tags: [A, B, C, D, E]
 ---

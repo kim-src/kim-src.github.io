@@ -40,9 +40,10 @@ refactor: true
 {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="card-wrapper card">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
+        <!-- 게시글 미리보기 내용 -->
         {% assign card_body_col = '12' %}
 
         {% if post.image %}
@@ -69,14 +70,14 @@ refactor: true
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
             <h1 class="card-title my-2 mt-md-0">
-              <span class="icon-title">{{ "✅" }}</span>
+              <span class="icon-title">{{ '✅' }}</span>
               {{ post.title }}
             </h1>
 
             <!-- 2024-03-14 10:09 수정된 코드 -->
             <div class="card-text content mt-0 mb-3">
-                <!-- h2 태그로 묶인 내용만 미리보기로 추출 -->
-                {% capture preview_subtitle %}
+              <!-- h2 태그로 묶인 내용만 미리보기로 추출 -->
+              {% capture preview_subtitle %}
                   {% if post.content contains "<h2>" %}
                     <!-- h2 태그 내용의 시작과 끝 추출 -->
                     {% assign h2_contents = post.content | split: "<h2>" %}

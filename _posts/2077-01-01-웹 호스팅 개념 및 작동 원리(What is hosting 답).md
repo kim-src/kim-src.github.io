@@ -1,6 +1,6 @@
 ---
-title: Template
-date: 2099-01-01 18:00:00 +09:00
+title: 웹 호스팅 개념 및 작동 원리(What is hosting 답)
+date: 2077-01-01 18:00:00 +09:00
 categories: [A, B]
 tags: [A, B, C, D, E]
 ---

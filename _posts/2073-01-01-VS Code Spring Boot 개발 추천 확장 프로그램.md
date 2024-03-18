@@ -1,6 +1,6 @@
 ---
-title: Template
-date: 2099-01-01 18:00:00 +09:00
+title: VS Code Spring Boot 개발 추천 확장 프로그램
+date: 2073-01-01 18:00:00 +09:00
 categories: [A, B]
 tags: [A, B, C, D, E]
 ---

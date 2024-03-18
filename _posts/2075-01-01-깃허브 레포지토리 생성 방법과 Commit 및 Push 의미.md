@@ -1,6 +1,6 @@
 ---
 title: 깃허브 레포지토리 생성 방법과 Commit 및 Push 의미
-date: 2099-01-01 18:00:00 +09:00
+date: 2075-01-01 18:00:00 +09:00
 categories: [GitHub, IDE Integration]
 tags: [A, B, C, D, E]
 ---

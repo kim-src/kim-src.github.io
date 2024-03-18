@@ -44,7 +44,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: 'Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M'
+google_site_verification: "Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M"
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
@@ -123,7 +123,7 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+paginate: 5
 
 # The base URL of your site
 baseurl: ""
