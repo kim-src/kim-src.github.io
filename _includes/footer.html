@@ -12,6 +12,7 @@
     <time>{{ 'now' | date: '%Y' }}</time>
 
     {% if site.social.links %}
+      <!-- site.social.links에서 인덱싱 되지 않음 -->
       <!-- <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a> -->
       <a href="https://github.com/Kim-src">{{ site.social.name }}</a>
     {% else %}

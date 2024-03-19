@@ -44,7 +44,7 @@ social:
     # The first element serves as the copyright owner's link
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.twitter.com/username    
+    # - https://www.twitter.com/username
 
 google_site_verification: "Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M"
 # ↑ --------------------------
@@ -67,9 +67,8 @@ goatcounter:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-
-theme_mode: [dark]
-
+# theme_mode: dark
+#
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
@@ -79,6 +78,10 @@ img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "https://github.com/Kim-src/Images/assets/150884526/9ba1ebbb-a79c-4e4c-a5f6-2149bb301cd8"
+
+# javascript 파일 포함
+include:
+  - _javascript
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

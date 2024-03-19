@@ -1,22 +1,30 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const themeToggleButton = document.getElementById('theme-toggle');
-    
-    if (themeToggleButton) {
-      themeToggleButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        // 로컬 스토리지에 테마 상태를 저장하여 사용자가 사이트를 재방문할 때 기억하게 함
-        if(document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('theme', 'dark');
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // 저장된 테마가 없으면 시스템 환경에 따른 테마 적용
+    if (!currentTheme) {
+        if(prefersDarkScheme.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
         } else {
-          localStorage.setItem('theme', 'light');
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeToggle.innerHTML = '<i class="fa-regular fa-sun"></i>';
         }
-      });
-  
-      // 페이지 로드 시 로컬 스토리지에서 테마 상태를 불러와 적용
-      const savedTheme = localStorage.getItem('theme');
-      if(savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-      }
+    // 저장된 테마가 있으면 해당 테마 적용
+    } else {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        themeToggle.innerHTML = currentTheme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fa-regular fa-sun"></i>';
     }
-  });
-  
+
+    themeToggle.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        let switchToTheme = theme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', switchToTheme);
+        localStorage.setItem('theme', switchToTheme);
+
+        themeToggle.innerHTML = switchToTheme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fa-regular fa-sun"></i>';
+    })
+})

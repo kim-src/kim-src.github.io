@@ -919,7 +919,7 @@ $btn-mb: 0.5rem;
       @extend %no-cursor;
       @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
 
-      background-color: var(--sidebar-btn-color);
+      background-color: var(--sidebar-btn-bg);
       content: '';
       width: $btn-border-width;
       height: $btn-border-width;

@@ -44,7 +44,7 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+      <button id="theme-toggle" type="button" class="mode-toggle btn" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
       </button>
 
@@ -55,7 +55,8 @@
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
-        {% when 'github' %} <!-- 'github', 'twitter' -->
+        {% when 'github' %}
+          <!-- 'github', 'twitter' -->
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
@@ -95,5 +96,7 @@
     {% endfor %}
   </div>
   <!-- .sidebar-bottom -->
+  <!-- theme-toggle.js 참조-->
+  <script src="/_javascript/theme-toggle.js"></script>
 </aside>
 <!-- #sidebar -->
