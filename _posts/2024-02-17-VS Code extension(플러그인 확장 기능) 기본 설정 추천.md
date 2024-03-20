@@ -85,7 +85,7 @@ tags: [VS Code, Visual Studio Code, Extension, 익스텐션, 플러그인, Funda
 <br>
 
 ### 🎁 References
-> <a href="https://www.youtube.com/playlist?list=PL-eeIUD86IjQuP9iDbQn_1eMHlPB_qdgY">유튜브 수코딩 님의 HTML/CSS 기초 강의</a>
+> - <a href="https://www.youtube.com/playlist?list=PL-eeIUD86IjQuP9iDbQn_1eMHlPB_qdgY">유튜브 수코딩 님의 HTML/CSS 기초 강의</a>
 
 <br>
 <br>

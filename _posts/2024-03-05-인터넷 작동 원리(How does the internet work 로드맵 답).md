@@ -142,11 +142,11 @@ tags: [Fundamental, Computer Science, Internet, How does the internet work]
 <br>
 
 ### 🎁 References
-> 1. <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work">Mozilla.org</a>
-> 2. <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg&t=3s">Lesics 유튜브 채널</a>
-> 3. <a href="https://www.youtube.com/watch?v=Sfzo4xm5eX8">BLASTERTECHNOLOGY 유튜브 채널</a>
-> 4. <a href="https://www.youtube.com/watch?v=oFKYzp6gGfc&t=318">쉬운코드 유튜브 채널</a>
-> 5. <a href="https://www.cctvnews.co.kr/news/articleView.html?idxno=210852">CCTV 뉴스 최형주 기자님 글</a>
+> - <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work">Mozilla.org</a>
+> - <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg&t=3s">Lesics 유튜브 채널</a>
+> - <a href="https://www.youtube.com/watch?v=Sfzo4xm5eX8">BLASTERTECHNOLOGY 유튜브 채널</a>
+> - <a href="https://www.youtube.com/watch?v=oFKYzp6gGfc&t=318">쉬운코드 유튜브 채널</a>
+> - <a href="https://www.cctvnews.co.kr/news/articleView.html?idxno=210852">CCTV 뉴스 최형주 기자님 글</a>
 
 <br>
 <br>

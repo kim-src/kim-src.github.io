@@ -238,8 +238,8 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 
 ### 🎁 5. References
 
-> <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>  
-> <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
+> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>  
+> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
 
 <br>
 
