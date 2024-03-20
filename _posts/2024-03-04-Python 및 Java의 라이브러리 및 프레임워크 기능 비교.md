@@ -40,7 +40,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 > - Numpy는 다차원 배열 연산 기능을 제공하는 Python의 라이브러리입니다.  
 >   Numpy를 활용하는 대표적인 기업 등은 Google, Intel, NASA 등이 있습니다.  
 >   Numpy는 또한 필자가 개발중인 <a href="https://github.com/Kim-src/VisualCavity">싱크홀(공동) 자동 분석 AI 모델</a> 개발에도 이용중입니다.  
-> - ND4J(N-Dimensional Arrays for Java)는 Numpy와 유사한 기능을 제공하는 Java의 라이브러리입니다.  
+> - ND4J(N-Dimensional Arrays for Java)는 Numpy와 유사한 Java의 라이브러리입니다.  
 >   ND4J를 활용하는 대표적인 기업은 IBM 등이며 이는 아래 Deeplearning4j 시스템의 일부입니다.  
 
 ### 📌 Pandas vs Tablesaw
@@ -48,7 +48,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 >   Pandas를 활용하는 대표적인 기업은 금융회사인 J.P.Morgan, Uber 등입니다.  
 >   Pandas는 또한 필자의 Toy-Projects 중 하나인 <a href="https://github.com/Kim-src/Toy-Projects/tree/main/Python/Stock%20Information">주식 종가 조회 프로그램</a> 개발에도 사용되었습니다.  
 > - Tablesaw는 Pandas와 유사한 데이터 분석 기능을 제공하는 Java의 라이브러리입니다.  
->   Tablewas를 활용하는 대표적인 기업은 Netflix 등이며 데이터 중심의 애플리케이션 개발에 이용됩니다.  
+>   Tablewas를 활용하는 대표적인 기업은 Netflix 등이며 데이터를 이용한 개발에 사용됩니다.  
 
 ### 📌 TensorFlow vs DL4J
 > - Tensorflow는 Google이 개발한 Python의 머신 러닝 프레임워크입니다.  
@@ -62,7 +62,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 ### 🔔 3. DataBase & ORM (객체지향적 DB 관리 기능)
 ### 📌 SQL Alchemy vs Hibernate
 > - SQL Alchemy는 Python의 라이브러리이며 DBMS과의 호환성을 제공합니다.  
->   SQL Alchemy는 개발자가 SQL 쿼리를 직접 작성하지 않아도 DB를 관리할 수 있는 기능을 제공합니다.  
+>   SQL Alchemy는 SQL 쿼리를 직접 작성하지 않아도 DB를 관리할 수 있는 기능을 제공합니다.  
 >   SQL Alchemy를 활용하는 대표적인 기업은 Dropbox, Reddit, Yelp (맛집 추천 어플) 등입니다.  
 > - Hibernate는 Spring에서 DB 서버와의 연결 시 필요한 Java의 프레임워크입니다.  
 >   Hibernate를 활용하는 대표적인 기업은 LinkedIn, Dell, IBM 등이 있습니다.  
@@ -76,7 +76,7 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 >   Requests는 또한 필자의 Toy-Projects 중 하나인 <a href="https://github.com/Kim-src/Toy-Projects/tree/main/Python/Stock%20Information">주식 종가 조회 프로그램</a> 개발에도 사용되었습니다.  
 > - OkHttp는 주로 Android 애플리케이션 개발 중 HTTP 통신에 사용되는 Java의 라이브러리입니다.  
 >   OkHttp의 특징은 네트워크 연결이 종료된 상황에서도 자동으로 네트워크 연결을 요청하는 기능입니다.  
->   OkHttp는 비즈니스용 제품 서비스 기업인 Square에서 개발되었으며 Twitter 등에서도 활용 중입니다.  
+>   OkHttp는 비즈니스용 제품 서비스 기업인 Square에서 개발되었습니다.  
 
 <br>
 
@@ -91,17 +91,17 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 ### 🔔 6. Image Processing
 ### 📌 Pillow vs BufferedImage
 > - Pillow (PIL Fork)는 이미지 가공 목적의 Python 라이브러리입니다.  
-> - Pillow는 이미지 가공, 전처리(processing), 증강(augmentation) 등에 사용됩니다.  
+>   Pillow는 이미지 가공, 전처리(processing), 증강(augmentation) 등에 사용됩니다.  
 > - Buffered Image는 이미지에 저수준(픽셀 단위)의 접근을 가능하게 하는 하나의 Java class입니다.  
-> - Buffered Image는 고객의 신분증 사본, 전자 서명 등의 이미지 처리에 사용됩니다.  
+>   Buffered Image는 고객의 신분증 사본, 전자 서명 등의 이미지 처리에 사용됩니다.  
 
 ### 📌 OpenCV Python vs Java Binding
 > - OpenCV는 C++ 언어로부터 개발되었으며 Python, Java 등의 언어로 라이브러리가 제공됩니다.  
-> - Python의 OpenCV는 이미지 및 동영상 데이터의 처리 및 분석 기능을 제공합니다.  
-> - Python의 OpenCV의 사용 사례는 얼굴 인식, 이미지 필터링 등이 있습니다.  
-> - 이는 Google 뿐만 아니라 필자가 개발중인 <a href="https://github.com/Kim-src/VisualCavity">싱크홀(공동) 자동 분석 AI 모델</a>에도 이용중입니다.  
+>   Python의 OpenCV는 이미지 및 동영상 데이터의 처리 및 분석 기능을 제공합니다.  
+>   Python의 OpenCV의 사용 사례는 얼굴 인식, 이미지 필터링 등이 있습니다.  
+>   이는 Google 뿐만 아니라 필자가 개발중인 <a href="https://github.com/Kim-src/VisualCavity">싱크홀(공동) 자동 분석 AI 모델</a>에도 이용중입니다.  
 > - Java의 OpenCV 역시 좋은 이미지 및 동영상 데이터 처리 도구입니다.  
-> - Java의 OpenCV는 안드로이드 및 데스크톱 애플리케이션 프로그램 개발에 활발히 사용됩니다.  
+>   Java의 OpenCV는 안드로이드 및 데스크톱 애플리케이션 프로그램 개발에 활발히 사용됩니다.  
 
 <br>
 
@@ -119,11 +119,11 @@ tags: [Fundamental, Python, Java, Library, Framework, Python vs Java, Java vs Py
 ### 🔔 8. Graphic & Animation Processing
 ### 📌 Pygame vs Processing
 > - Pygame은 가벼운 미디어 게임 개발 기능을 제공하는 Python의 라이브러리입니다.  
-> - Pygame은 2D 게임 개발 도구로 SDL (Simple DirectMedia Layer) 라이브러리를 기반으로 합니다.  
-> - Pygame은 보통 게임 개발 입문자들의 교육용으로 사용됩니다.  
+>   Pygame은 2D 게임 개발 도구로 SDL (Simple DirectMedia Layer) 라이브러리를 기반으로 합니다.  
+>   Pygame은 보통 게임 개발 입문자들의 교육용으로 사용됩니다.  
 > - Processing은 애니메이션, 비주얼 아트 등 예술적인 미디어 제작을 위한 도구입니다.  
-> - Processing은 그래서 기업보다는 교육자, 예술가, 연구 기관 등에서 사용됩니다.  
-> - Processing은 Java 기반 도구이며 Processing IDE 등에서 사용되는 개별 프로그래밍 언어입니다.  
+>   Processing은 그래서 기업보다는 교육자, 예술가, 연구 기관 등에서 사용됩니다.  
+>   Processing은 Java 기반 도구이며 Processing IDE 등에서 사용되는 개별 프로그래밍 언어입니다.  
 
 <br>
 <br>

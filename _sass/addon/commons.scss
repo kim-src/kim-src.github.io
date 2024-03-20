@@ -148,15 +148,15 @@ blockquote {
   // margin-right: 0rem;
   // margin-bottom: 2rem;
   // margin-left: 0rem;
-  border-left: 4px solid var(--blockquote-border-color); // blockquote 좌측 막대
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: var(--blockquote-box-color);
   padding: 1rem 1rem 0.25rem 0.5rem; // blockquote 내부 간격
   // padding-top: 1rem;
   // padding-right: 1rem;
   // padding-bottom: 0.25rem;
   // padding-left: 0.5rem;
+  border-left: 4px solid var(--blockquote-border-color); // blockquote 좌측 막대
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--blockquote-box-color);
   color: var(--blockquote-text-color);
 }
 

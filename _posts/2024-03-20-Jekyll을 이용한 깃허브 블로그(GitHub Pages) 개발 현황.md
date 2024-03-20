@@ -7,7 +7,7 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 
 <!-- 2024-03-20 글 작성 시작; 2099-01-01 페이지 호출 완료 -->
 <h2>나만의 깃허브 블로그 개발 현황</h2>
-> - <a href="https://kim-src.github.io">운영중인 깃허브 블로그 주소</a> : https://kim-src.github.io
+> - <a href="https://kim-src.github.io">운영중인 깃허브 블로그 주소</a> : <a href="https://kim-src.github.io">https://kim-src.github.io</a>
 > - Tool :  
 <img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />
 <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
@@ -17,7 +17,46 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 
 <br>
 
-### 🔔 1. Introduction
+### 🔔 1. 깃허브 블로그 개발 현황
+### 📌 깃허브 블로그 초기
+> - 깃허브 블로그 개발을 위해 사이트 생성 툴인 Jekyll 기반의 Chirpy 테마를 사용하였습니다.
+> - 해당 블로그 생성 방법은 <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">지난 글</a>에 소개해드렸습니다.
+> - 아래 이미지는 Jekyll 사이트 생성 및 Chirpy 테마 직후의 깃허브 블로그 모습입니다.
+
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/ca1e61e9-1c99-4d02-bcb1-8b2e56816ce8" class="img" alt="figure">
+    <figcaption>Chirpy 테마가 적용된 웹 사이트</figcaption>
+</figure>
+
+### 📌 깃허브 블로그 현황
+> - Chirpy 테마를 참조하여 현재 필자만의 웹 사이트를 구성하였습니다.
+> - 블로그 개발은 주로 홈페이지 및 포스트 페이지 내용에 해당되는 것이었습니다.
+> - 눈으로 보기 편한 배경 위에 뚜렷한 글자가 있도록 설정하였습니다.
+> - 주로 html, scss, yml 파일을 수정하였으며 기능 추가를 위해 js 파일도 수정하였습니다.
+> - 추후 light 테마 색상 변경을 위한 scss 파일 수정이 필요합니다.
+
+### 📌 깃허브 블로그 주요 개발 내용
+> - 색상 조합을 ChatGPT, GitHub, Velog를 참조하여 보는 눈이 편하도록 설정하였습니다.
+> - 홈페이지 중앙의 글 미리보기에서 글 전체 내용이 아니라 부제목까지만 출력되도록 하였습니다.
+> - 홈페이지 하단의 페이지 번호에 맞게 글 미리보기 내용이 출력되도록 설정하였습니다.
+> - 사이드바 하단의 토글 버튼 및 SNS 아이콘 구성을 변경하였습니다.
+> - 토글 버튼을 클릭하면 dark/light 테마가 전환되면서 아이콘 모양도 변경되도록 하였습니다.
+> - 아래 이미지는 깃허브 블로그의 현재 dark/light 테마 모습입니다.
+
+<div class="image-container">
+    <figure>
+        <img src="https://github.com/Kim-src/Images/assets/150884526/03a9c5d9-5f70-4699-ad8e-b70f9f715612" class="img" width="300px" alt="figure">
+        <figcaption>깃허브 블로그의 dark 테마</figcaption>
+    </figure>
+    <figure>
+        <img src="https://github.com/Kim-src/Images/assets/150884526/5a675a98-b158-4439-a5bf-a6e5208bda51" class="img" width="300px" alt="figure">
+        <figcaption>깃허브 블로그의 light 테마</figcaption>
+    </figure>
+</div>
+
+<br>
+
+### 🔔 2. 깃허브 블로그 개발 후기
 ### 📌 깃허브 블로그와 대중 블로그의 차별성
 > - 깃허브 블로그를 운영하고 발전시키기 위해서는 상당한 개발 지식이 필요합니다.
 > - 대중적인 사이트에서 지원하는 UI 툴이 없고 원격 저장소와 연동시켜야 되기 때문입니다.
@@ -44,29 +83,6 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
     <img src="https://github.com/Kim-src/Images/assets/150884526/eee09eab-94f8-4dfa-878d-a14326e36215" class="img" alt="figure">
     <figcaption><a href="https://d.cafe24.com/sample?productCode=PTMD803573&frame=P">카페24에서 제공하는 유로 웹 테마 샘플 페이지</a></figcaption>
 </figure>
-
-
-### 📌 
-
-<br>
-
-### 🔔 2. Methodology
-### 📌 부제목
-
-<br>
-
-### 🔔 3. Results
-### 📌 부제목
-
-<br>
-
-### 🔔 4. Conclusions
-### 📌 부제목
-
-<br>
-
-### 🎁 5. References
-> 
 
 <br>
 <br>

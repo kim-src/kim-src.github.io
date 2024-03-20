@@ -1,6 +1,6 @@
 ---
 title: AI 싱크홀(공동) 분석 프로그램 VisualCavity v0.1.0
-date: 2024-03-10 18:00:00 +09:00
+date: 2069-01-01 18:00:00 +09:00
 categories: [VisualCavity, Desktop Application]
 tags: [VisualCavity, Desktop Application, Software, Program, Software Program, AI Program]
 ---

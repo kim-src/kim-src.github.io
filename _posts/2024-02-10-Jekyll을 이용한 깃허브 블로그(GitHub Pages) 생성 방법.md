@@ -12,7 +12,6 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 <img alt="Ruby" src="https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white" />
 <img alt="Jekyll" src="https://img.shields.io/badge/-Jekyll-CC0000?style=flat-square&logo=jekyll&logoColor=white" />
 <img alt="Git Bash" src="https://img.shields.io/badge/Git%20Bash-FFE000?style=flat&logo=git&logoColor=white" />
-<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
 
 <br>
 
@@ -67,12 +66,15 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 레포지토리 생성창은 중앙에 위치중입니다.
 > - Repository name 입력란에 `user-name.github.io` 내용을 입력합니다.
 > - 작성자의 Repository name 입력 내용은 아래와 같습니다.
->   ```
->   Kim-src.github.io
->   ```
-> - 아래는 Repository 생성창 모습입니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/26b0e2b4-22a9-4c59-9718-39333cf324de" class="img" alt="figure">
+```
+Kim-src.github.io
+```
+
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/26b0e2b4-22a9-4c59-9718-39333cf324de" class="img" alt="figure">
+    <figcaption>GitHub 홈페이지에서의 Repository 생성창</figcaption>
+</figure>
 
 ### 📌 블로그 전용 로컬 저장소 설정
 
@@ -91,12 +93,15 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 폴더에 공백이 있는 경우에는 작은 따옴표 등으로 구분해야 됩니다.
 > - 참고로 cd는 change directory의 축약어입니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ cd /c/Users/ceoba/Dropbox/'2. PJT'
->   ```
-> - 아래는 Git Bash로 작성자의 블로그 전용 로컬 저장소에 접근한 모습입니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/c53815f4-ef24-484f-88bc-340d1ba0ee3e" class="img" alt="figure">
+```bash
+$ cd /c/Users/ceoba/Dropbox/'2. PJT'
+```
+
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/c53815f4-ef24-484f-88bc-340d1ba0ee3e" class="img" alt="figure">
+    <figcaption>Git Bash에서 접근한 로컬 저장소</figcaption>
+</figure>
 
 ### 📌 로컬 저장소에 GitHub Repository 연동
 
@@ -106,9 +111,10 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 그러므로 `$ git clone 레포지토리 주소` 입력 후 엔터키를 누르면 됩니다.
 > - $ git clone이 완료되면 다음 Ruby 설치를 위해 Git Bash 창을 종료하시면 됩니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ git clone https://github.com/Kim-src/Kim-src.github.io
->   ```
+
+```bash
+$ git clone https://github.com/Kim-src/Kim-src.github.io
+```
 
 <br>
 
@@ -133,38 +139,43 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 처음으로 Enter 키를 1번 누르시면 설치가 진행되며 설치가 완료된 후 두 번째 Enter키를 누르시면 명령어 창이 종료됩니다.
 >   <a href="https://rubyinstaller.org/downloads/archives/">Ruby Development Kit 다운로드 링크 (3.1.3-1 (x64) 설치)</a>
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/a527c0d2-a6cf-4c48-adc0-e14efdf9a852" class="img" alt="figure">
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/a527c0d2-a6cf-4c48-adc0-e14efdf9a852" class="img" alt="figure">
+    <figcaption>Ruby 언어 설치 페이지</figcaption>
+</figure>
 
 ### 📌 Git Bash로 Jekyll 설치
 
 > - Jekyll은 Git Bash에서 설치 가능합니다.
 > - GIt Bash 실행 후 '초기 상태'에서 Jekyll을 설치하면 됩니다.
-> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
-> - Jekyll 설치 전 Ruby가 잘 설치되었는지부터 확인해보겠습니다.
->   ```bash
->   $ ruby -v
->   $ gem install jekyll
->   $ jekyll -v
->   ```
-> - 입력 결과 작성자의 Git Bash 출력 내용은 아래와 같습니다.
->   ```bash
->   ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x64-mingw-ucrt]
->   jekyll 4.3.3
->   ```
+> - ```ruby -v```는 Jekyll 설치 전 Ruby 설치 상태를 확인하는 명령문입니다.
+> - 작성자의 Git Bash 입력 내용 및 출력 내용은 아래와 같습니다.
+
+```bash
+$ ruby -v
+$ gem install jekyll
+$ jekyll -v
+```
+
+```bash
+ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x64-mingw-ucrt]
+jekyll 4.3.3
+```
 
 ### 📌 Git Bash로 Bundler 설치
 
 > - Bundler 역시 Git Bash '초기 상태'에서 설치 가능합니다.
 > - Git Bash가 실행된 상태에서 아래 내용을 입력하면 됩니다.
-> - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ gem install bundler
->   $ bundler -v
->   ```
-> - 입력 결과 작성자의 Git Bash 출력 내용은 아래와 같습니다.
->   ```bash
->   Bundler version 2.5.6
->   ```
+> - 작성자의 Git Bash 입력 내용 및 출력 내용은 아래와 같습니다.
+
+```bash
+$ gem install bundler
+$ bundler -v
+```
+
+```bash
+Bundler version 2.5.6
+```
 
 <br>
 
@@ -176,52 +187,70 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - Git Bash에서 로컬 저장소로 접근 후 Jekyll 프로젝트를 생성하겠습니다.
 > - 참고로 user-name/github.io 폴더 내에 파일 또는 폴더가 이미 있으면 설치가 진행되지 않습니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
->   $ jekyll new ./
->   ```
-> - 위 내용을 입력하면 Git Bash에 Jekyll 설치 관련 사항이 출력됩니다.
-> - 그리고 로컬 저장소명 우측에 '(main)'이라는 문구가 도시됩니다.
+
+```bash
+$ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
+$ jekyll new ./
+```
+
+### 📌 로컬 저장소 폴더 자동 구성
+> - 위 명령문을 입력하면 Git Bash에 Jekyll 설치 관련 사항이 출력됩니다.
+> - 그리고 로컬 저장소명 우측에 '(main)'이라는 문구가 출력됩니다.
 > - 또한 로컬 저장소의 main 폴더는 아래와 같은 상태로 변경됩니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" class="img" alt="figure">
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/e733d653-1afe-4345-80e4-13511d8d6b2d" class="img" alt="figure">
+    <figcaption>블로그용 Kim-src.github.io 폴더</figcaption>
+</figure>
 
 ### 📌 새로운 Bundle Tool 생성
 
 > - 다음으로 Bundle Tool 설치를 진행하겠습니다.
 > - 참고로 상기 `$ gem install bundler`는 이 Bundle 설치를 위한 초석입니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ bundle install
->   $ bundle update
->   $ bundle install
->   ```
-> - 위 내용을 입력하면 Git Bash에 Bundle tool 설치 관련 사항이 출력됩니다.
+
+```bash
+$ bundle install
+$ bundle update
+$ bundle install
+```
+
+### 📌 로컬 저장소 폴더 자동 구성
+> - 위 명령문을 입력하면 Git Bash에 Bundle tool 설치 관련 사항이 출력됩니다.
 > - 그리고 로컬 저장소의 main 폴더는 아래와 같은 상태로 다시 변경됩니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" class="img" alt="figure">
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/670d434d-ee37-473b-9978-df490b2784dd" class="img" alt="figure">
+    <figcaption>변경된 Kim-src.github.io 폴더</figcaption>
+</figure>
 
 ### 📌 Jekyll의 기본 웹 페이지 호출
 
 > - 드디어 기본 웹 페이지 호출 단계이며 로컬 서버 주소(URL)를 생성하겠습니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
->   ```bash
->   $ bundle exec jekyll serve
->   ```
+
+```bash
+$ bundle exec jekyll serve
+```
+
 > - 위 내용을 입력하면 Git Bash에 다양한 정보들과 함께 서버 주소가 출력됩니다.
 > - 서버 주소는 아래와 같은 형식으로 출력되었을 것입니다.
->   ```bash
->   Server address: http://127.0.0.1:4000/
->   ```
+
+```bash
+Server address: http://127.0.0.1:4000/
+```
+
 > - 50행 이상의 출력 내용 중에서 위 주소를 찾은 뒤 웹 브라우저에 주소를 입력하면 됩니다.
 > - 만일 발견하지 못하셨더라도 일반적인 주소는 위 주소와 동일하니 Ctrl + C/V 하시면 됩니다.
 > - 참고로 웹 브라우저란 Chrome, Microsoft Edge 등을 의미합니다.
 
 ### 📌 성공적으로 호출된 웹 페이지
-
 > - 아래 이미지는 성공적으로 웹 브라우저에 호출된 Jekyll 기본 웹 페이지의 모습입니다.
 
-<img src="https://github.com/Kim-src/Images/assets/150884526/33d309a9-8c3c-4b76-9728-a33b6b939968" class="img" alt="figure">
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/33d309a9-8c3c-4b76-9728-a33b6b939968" class="img" alt="figure">
+    <figcaption>성공적으로 호출된 Jekyll 웹 페이지</figcaption>
+</figure>
 
 <br>
 
@@ -233,17 +262,6 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 다음 글에서는 기본 Jekyll 블로그에 Chirpy 테마를 적용시켜보겠습니다.
 > - 또한 로컬 서버 주소만이 아니라 도메인 주소로 블로그에 접속해보겠습니다.
 > - 블로그 꾸미는 방법에 대한 글을 추후 작성하겠습니다.
-
-<br>
-
-### 🎁 5. References
-
-> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(1)/"> 프로의 개발일지 블로그 1</a>  
-> - <a href="https://devpro.kr/posts/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2)/"> 프로의 개발일지 블로그 2</a>
-
-<br>
-
----
 
 <br>
 <br>
