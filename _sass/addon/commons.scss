@@ -897,9 +897,12 @@ $btn-mb: 0.5rem;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
+      // 2024-03-19 17:32 사이드바 아이콘 사이에 필요없는 공백 제거
+      /*
       &:not(:last-child) {
         margin-right: $sb-btn-gap;
       }
+      */
     }
 
     i {
