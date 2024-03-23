@@ -23,7 +23,7 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 > - UI란 User Interface의 약자이며 사용자가 디지털 화면과 상호작용 할 수 있게 하는 것입니다.
 
 <figure>
-    <img src="https://github.com/Kim-src/Images/assets/150884526/ff0ef3e1-ea78-4f90-9d36-f1d61f188c15">
+    <img src="https://github.com/Kim-src/Images/assets/150884526/ff0ef3e1-ea78-4f90-9d36-f1d61f188c15" alt="figure">
     <figcaption>깃허브 블로그 사이드바 하단의 버튼 UI</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 >    - root/_sass/addon/commons.scss (기존 파일 참조)
 
 <figure>
-    <img src="https://github.com/Kim-src/Images/assets/150884526/bd649be1-42f1-4a3b-bb1b-9dbadb338e0e">
+    <img src="https://github.com/Kim-src/Images/assets/150884526/bd649be1-42f1-4a3b-bb1b-9dbadb338e0e" alt="figure">
     <figcaption>토글 버튼 관련 파일들의 복잡한 위치</figcaption>
 </figure>
 
@@ -194,7 +194,7 @@ html {
 ```
 
 <figure>
-  <img src="https://github.com/Kim-src/Images/assets/150884526/59369bf2-2a76-478a-a59c-eaa36e0f5bf4">
+  <img src="https://github.com/Kim-src/Images/assets/150884526/59369bf2-2a76-478a-a59c-eaa36e0f5bf4" alt="figure">
   <figcaption>웹 페이지 로딩 과정 (출처 : 가치관 제작소)</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ html {
 > - <a href="https://fontawesome.com/icons/moon?f=classic&s=solid">달 모양의 아이콘 이미지</a>
 
 <figure>
-  <img src="https://github.com/Kim-src/Images/assets/150884526/cebb0fa9-9c1b-42a4-a77c-095b5d7b4417">
+  <img src="https://github.com/Kim-src/Images/assets/150884526/cebb0fa9-9c1b-42a4-a77c-095b5d7b4417" alt="figure">
   <figcaption>달 모양의 아이콘에 대한 HTML 태그</figcaption>
 </figure>
 
