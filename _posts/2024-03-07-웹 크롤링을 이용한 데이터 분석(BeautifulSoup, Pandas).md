@@ -1,8 +1,8 @@
 ---
 title: 웹 크롤링을 이용한 데이터 분석(BeautifulSoup, Pandas)
 date: 2024-03-07 18:00:00 +09:00
-categories: [Toy Project, StockScraper]
-tags: [Toy Project, Toy, StockScraper, Stock, Web Crawling]
+categories: [3. Data Analysis, StockScraper]
+tags: [Data Analysis, Toy Project, Toy, StockScraper, Stock, Web Crawling]
 ---
 
 <!-- 2024-03-01 글 작성 시작; 2024-03-02 페이지 호출 완료 -->

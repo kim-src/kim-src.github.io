@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 Light 및 Dark 모드 스타일 적용 에러 해결 방법
 date: 2024-03-22 18:00:00 +09:00
-categories: [GitHub, GitHub Page]
+categories: [1. Web Development, GitHub Blog]
 tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, toggle, data-mode, dark-theme, light-theme, dark-scheme, light-theme]
 ---
 
@@ -18,7 +18,7 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 > - 토글 버튼 클릭 시 버튼의 아이콘이 바뀌면서 테마에 따른 블로그 스타일도 변경하였습니다.
 > - 그런데 Light 모드에서 새로고침 시 잠시 Dark 모드로 전환되는 에러를 발견하였습니다.
 > - 그래서 새로고침을 하면 밝은색 위주의 색상이 깜빡 거리는듯한 점멸 현상이 발생되었습니다.
-> - 한편 <a href="https://kim-src.github.io/">Light/Dark 스타일 변경을 위한 토글 버튼 추가 방법</a>은 이 문장과 링크된 글에 있습니다.
+> - 한편 <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">Light/Dark 스타일 변경을 위한 토글 버튼 추가 방법</a>은 이 문장과 링크된 글에 있습니다.
 
 ### 📌 FOUC : 스타일 적용 에러
 > - 새로고침 시 잠시 다른 스타일로 전환되는 에러인 FOUC는 웹 개발 시 종종 발생됩니다.
@@ -96,8 +96,10 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, togg
 <br>
 
 ### 🎁 4. 부록
-> - <a href="https://kim-src.github.io/categories/github-page/">필자의 깃허브 블로그 개발 기록</a>
+> - <a href="https://kim-src.github.io/categories/github-page/">나만의 깃허브 블로그 개발 기록</a>
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 만드는 방법</a>
+> - <a href="http://127.0.0.1:4000/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
+> - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A0%81%EC%9A%A9-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">Light/Dark 스타일 적용 에러 해결 방법</a>
 
 <br>
 

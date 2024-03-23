@@ -34,7 +34,7 @@
             <i class="fa-fw {{ tab.icon }}"></i>
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            <span>{{ site.data.locales[include.lang].tabs[tab_name] | default: tab.title | upcase }}</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -45,7 +45,7 @@
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
       <button id="theme-toggle" type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-moon"></i>
+        <!-- <i class="fas fa-moon"></i> -->
       </button>
       <span class="icon-border"></span>
     {% endunless %}

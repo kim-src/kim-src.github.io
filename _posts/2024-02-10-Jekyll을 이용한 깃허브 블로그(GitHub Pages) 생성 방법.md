@@ -1,7 +1,7 @@
 ---
 title: Jekyll을 이용한 깃허브 블로그(GitHub Pages) 생성 방법
 date: 2024-02-10 18:00:00 +09:00
-categories: [GitHub, GitHub Page]
+categories: [1. Web Development, GitHub Blog]
 tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 
@@ -16,7 +16,6 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 <br>
 
 ### 🔔 1. Introduction
-
 ### 📌 이 글에서 얻으실 수 있는 것
 
 > - Jekyll의 개념을 이해할 수 있고 초보자도 웹 사이트를 쉽게 생성할 수 있습니다.
@@ -59,7 +58,6 @@ tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy]
 <br>
 
 ### 🔔 2. Methodology (1/2) : Repository 연동
-
 ### 📌 블로그 전용 GitHub Repository 생성
 
 > - GitHub.com에 접속한 뒤 레포지토리를 생성해야 됩니다.
@@ -119,7 +117,6 @@ $ git clone https://github.com/Kim-src/Kim-src.github.io
 <br>
 
 ### 🔔 2. Methodology (2/2) : Ruby, Jekyll, Bundler 설치
-
 ### 📌 Ruby, Jekyll, Bundler 소개
 
 > - 웹 페이지 제작을 위해서 Ruby, Jekyll, Bundler가 필요합니다.
@@ -180,7 +177,6 @@ Bundler version 2.5.6
 <br>
 
 ### 🔔 3. Results : 브라우저에 웹 페이지 호출
-
 ### 📌 새로운 Jekyll Project 생성
 
 > - 이제 첫 깃허브 블로그 웹 페이지를 생성할 모든 준비가 완료되었습니다.
@@ -227,6 +223,7 @@ $ bundle install
 ### 📌 Jekyll의 기본 웹 페이지 호출
 
 > - 드디어 기본 웹 페이지 호출 단계이며 로컬 서버 주소(URL)를 생성하겠습니다.
+> - 웹 페이지 호출을 위해서는 아래와 같은 Jekyll의 bundle 명령문이 필요합니다.
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 
 ```bash
@@ -255,13 +252,20 @@ Server address: http://127.0.0.1:4000/
 <br>
 
 ### 🔔 4. Conclusions : 추후 단계
-
 ### 📌 정식 깃허브 블로그 개설 및 테마 적용
 
 > - Jekyll의 기본 웹 페이지 호출하기까지 고생 많으셨습니다.
 > - 다음 글에서는 기본 Jekyll 블로그에 Chirpy 테마를 적용시켜보겠습니다.
 > - 또한 로컬 서버 주소만이 아니라 도메인 주소로 블로그에 접속해보겠습니다.
 > - 블로그 꾸미는 방법에 대한 글을 추후 작성하겠습니다.
+
+<br>
+
+### 🎁 5. 부록
+> - <a href="https://kim-src.github.io/categories/github-page/">나만의 깃허브 블로그 개발 기록</a>
+> - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 만드는 방법</a>
+> - <a href="http://127.0.0.1:4000/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
+> - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A0%81%EC%9A%A9-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">Light/Dark 스타일 적용 에러 해결 방법</a>
 
 <br>
 <br>
