@@ -21,3 +21,4 @@ initLocaleDatetime();
 initClipboard();
 toc();
 basic();
+autoAddAltToImages();
