@@ -7,6 +7,12 @@ import {
   toc
 } from './modules/plugins';
 
+function autoAddAltToImages() {
+  document.querySelectorAll('img:not([alt])').forEach(img => {
+    img.setAttribute('alt', 'figure');
+  });
+}
+
 initSidebar();
 initTopbar();
 loadImg();
