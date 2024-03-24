@@ -17,7 +17,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 현재 Jekyll 웹 사이트가 제작되었고 웹 브라우저에 정상적으로 호출된 상태일 것입니다.
 > - 현재의 웹 페이지는 어떠한 테마도 적용되지 않은 상태입니다.
 > - 이제 Jekyll의 Chirpy 테마를 다운로드 받아보겠습니다.
-> - <a href="http://jekyllthemes.org/">Jekyll Themes</a> 사이트에서 Chirpy 테마를 다운로드 받아주시면 됩니다.
+> - http://jekyllthemes.org 사이트에서 Chirpy 테마를 다운로드 받아주시면 됩니다.
 > - 다운로드 및 압축 해제 후 폴더 내 모든 파일을 복사하여 root 폴더에 붙여넣기/덮어쓰기 합니다.
 > - 필자의 root 폴더명(블로그 폴더)은 아래와 같습니다.
 
