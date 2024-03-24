@@ -5,7 +5,7 @@ categories: [1. Web Development, GitHub Blog]
 tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 
-<!-- 2024-03-23 글 작성 시작; 2099-01-01 페이지 호출 완료 -->
+<!-- 2024-03-23 글 작성 시작; 2024-03-23 페이지 호출 완료 -->
 <h2>Chirpy 테마로 Jekyll 사이트 꾸미는 방법</h2>
 > - Tool :  
 <img alt="Git Bash" src="https://img.shields.io/badge/Git%20Bash-FFE000?style=flat&logo=git&logoColor=white" />
@@ -72,6 +72,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 >    - _posts 폴더 내부 파일은 markdown 언어로 작성된 파일(.md)이어야 됩니다.
 >    - md 파일명은 "2024-02-11-글 제목" 형식이어야 됩니다.
 >    - md 파일에는 아래 코드와 같은 내용으로 시작되어야 됩니다.
+>    - 참고로 VS Code 등을 이용하여 md 파일을 생성하고 글을 작성하고 수정할 수 있습니다.
 
 ``` md
 ---
@@ -107,6 +108,7 @@ $ git push
 ### 📌 CRLF 에러 이슈
 > - 포스팅을 위해 ```$ git add .``` 명령문을 입력하면 가끔 CRLF 에러를 마주할 때가 있습니다.
 > - 이때 ```$ git --config core.autocrlf true``` 코드를 입력해주시면 간단히 해결됩니다.
+> - 또는 ```$ git config --global core.autocrlf true``` 코드를 입력해주셔도 됩니다.
 > - 에러 해결 후 다시 ```$ git add .``` 등의 명령문을 입력해주시면 됩니다.
 
 <figure>
@@ -134,8 +136,6 @@ $ git push
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EA%B0%9C%EB%B0%9C-%ED%98%84%ED%99%A9/">나만의 Dark/Light 스타일 적용</a>
 > - <a href="http://127.0.0.1:4000/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
 > - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A0%81%EC%9A%A9-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">Light/Dark 스타일 적용 에러 해결 방법</a>
-
-<br>
 
 ### 📌 _config.yml 전체 코드
 
