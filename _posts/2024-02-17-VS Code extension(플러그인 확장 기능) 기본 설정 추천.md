@@ -12,8 +12,8 @@ tags: [VS Code, Visual Studio Code, Extension, Plugin, Fundamental, VS Code Exte
 
 <br>
 
-### 🔔 VS Code의 Extension이란
-> - VS Code를 사용하는 이유 중 하나가 Extension 기능이 있기 때문입니다.
+### 🔔 VS Code의 장점
+> - VS Code의 장점 중 하나는 Extensions로 다양한 기능을 사용할 수 있다는 것입니다.
 > - 이 확장 기능(플러그인)은 VS Code Marketplace에서 보통 무료로 구비할 수 있습니다.
 > - Extension의 종류로는 각종 개발 언어부터 코딩 기능까지 다양합니다.
 > - 그런데 Extension의 개수가 너무 많기 때문에 필수적인 것을 선택하기 어렵습니다.
@@ -22,7 +22,7 @@ tags: [VS Code, Visual Studio Code, Extension, Plugin, Fundamental, VS Code Exte
 
 <br>
 
-### 🔔 Extension 추천
+### 🔔 HTML / CSS / Liquid / SASS / JavaScript 개발을 위한 Extensions
 ### 📌 Material Theme
 > - VS Code의 전체적인 색 테마를 설정하는 기능입니다.
 > - 대표적으로 Material Theme Darker High Contrast 테마가 있습니다.
@@ -84,8 +84,33 @@ tags: [VS Code, Visual Studio Code, Extension, Plugin, Fundamental, VS Code Exte
 
 <br>
 
-### 🎁 References
-> - <a href="https://www.youtube.com/playlist?list=PL-eeIUD86IjQuP9iDbQn_1eMHlPB_qdgY">유튜브 수코딩 님의 HTML/CSS 기초 강의</a>
+### 🔔 Spring Boot 개발을 위한 Extensions
+### 📌 Spring Boot Extension Pack
+> - Spring Boot 개발에 필요한 주요 확장 프로그램을 통합해놓은 것입니다.
+> - 마치 보안 모듈 관리 프로그램을 통합한 VeraPort와 비슷한 것입니다.
+> - 이 통합 프로그램에는 아래의 Extension이 포함됩니다.
+>    - Spring Boot Support
+>    - Spring Initializr Java Support
+>    - Spring Boot Dashboard
+
+### 📌 Java Extension Pack
+> - Java 개발에 필요한 주요 확장 프로그램입니다.
+> - 이 프로그램에는 아래의 기능이 포함됩니다.
+>    - Java 언어 지원
+>    - 디버깅 도구
+>    - 테스트 러너
+
+### 📌 Maven for Java
+> - Maven 프로젝트 생성을 위한 확장 프로그램입니다.
+> - 이 프로그램에는 아래의 기능이 포함됩니다.
+>    - Maven 라이프사이클 및 플러그인 목록 관리
+>    - 의존성 추가 및 업데이트
+
+### 📌 Lombok Annotations Support for VS Code
+> - Java의 Lombok 라이브러리를 사용할 경우 이 확장 프로그램이 필요합니다.
+> - Lombok은 어노테이션 기능을 지원하며 반복되는 코드를 최소화 하는 것이 목적입니다.
+> - 예를들어 Getter 또는 Setter 메서드 자동 생성을 위해 @Getter 또는 @Setter를 사용합니다.
+> - 추가적인 예시로는 toString(), equals(), hashCode(), 생성자 메서드 등이 있습니다.
 
 <br>
 <br>
