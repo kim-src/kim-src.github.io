@@ -91,7 +91,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 > - git push가 완료되면 Git Actions에서 빌드 및 배포 과정을 거칩니다.
 > - 빌드/배포 과정 중을 의미하는 노란색 아이콘이 초록색 아이콘으로 변경되면 포스팅 성공입니다.
 > - 포스팅은 _config.yml의 url에 입력한 사이트에서 확인하실 수 있습니다.
-> - 참고로 git 명령문 관련 상세한 내용은 <a href="https://kim-src.github.io/">다음 글</a>에 잘 작성되어 있습니다.
+> - 참고로 git 명령문 관련 상세한 내용은 <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-Commit-&-Push-%EC%9D%98%EB%AF%B8-%EB%B0%8F-Actions-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">다음 글</a>에 잘 작성되어 있습니다.
 
 ``` bash
 $ git add .
@@ -130,7 +130,7 @@ $ git push
 
 ### 🎁 5. 부록
 ### 📌 참고 포스팅
-> - <a href="https://kim-src.github.io/categories/github-page/">나만의 깃허브 블로그 개발 기록</a>
+> - <a href="https://kim-src.github.io/categories/github-blog/">나만의 깃허브 블로그 개발 기록</a>
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 만드는 방법</a>
 > - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Jekyll%EC%9D%98-Chirpy-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 꾸미는 방법</a>
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EA%B0%9C%EB%B0%9C-%ED%98%84%ED%99%A9/">나만의 Dark/Light 스타일 적용</a>

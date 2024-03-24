@@ -21,7 +21,7 @@ tags: [Python, TensorFlow, AI, AI Model, Numpy, VisualCavity, VisualCavity AI, M
 > - 주요 자료 : 지하 물리 탐사로 획득한 70,732장의 싱크홀 또는 지장물 이미지
 
 ### 📌 VisualCavity AI v0.1.0 개략
-> - <a href="https://kim-src.github.io/categories/visualcavity/">VisualCavity AI v0.1.0 개발 현황 (링크)</a>
+> - <a href="https://kim-src.github.io/categories/visualcavity-ai/">VisualCavity AI v0.1.0 개발 현황 (링크)</a>
 >   - VisualCavity v0.1.0 소개
 >   - 전문 용어 및 개념 정리 : GPR, 싱크홀, 지장물, 맨홀, GPR 탐사, CNN 등
 >   - 싱크홀 및 지장물에 대한 GPR 이미지 설명
