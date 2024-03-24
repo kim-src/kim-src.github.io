@@ -96,7 +96,49 @@ tags: [Web, Github, Github Actions, Actions, Commit, Push, git add, git status, 
 
 <br>
 
-### 🔔 3. Git 추가 개념
+### 🔔 3. GitHub Actions
+### 📌 Build & Deploy
+> - ```git push``` 이후 로컬 저장소의 데이터는 깃허브 레포지토리로 전송됩니다.
+> - 이때 GitHub Pages(일명 깃허브 블로그)의 경우 데이터가 웹 브라우저로 바로 빌드/배포됩니다.
+> - 그런데 빌드 과정에서는 로컬 서버에서 없었던 에러가 종종 발생될 수 있습니다.
+> - GitHub Actions에서는 아래와 같이 아이콘으로 빌드/배포 과정 및 결과를 구분합니다.
+>    - 노란색 아이콘 : Build & Deploy 진행중
+>    - 초록색 아이콘 : Build & Deploy 성공
+>    - 빨간색 아이콘 : Build & Deploy 실패
+
+### 📌 Build
+> - Build는 사람(개발자)이 작성한 코드를 컴퓨터가 실행할 수 있게 변환하는 전체적인 과정입니다.
+> - Build는 컴파일을 포함한 개념이며 작성된 코드가 소프트웨어로 변환되는 중요한 과정입니다.
+
+### 📌 Deploy
+> - Deploy는 컴퓨터가 빌드된 결과물을 사람이 접근 가능한 환경으로 전송하는 전체적인 과정입니다.
+> - 사람이 접근할 수 있는 플랫폼 또는 장치는 컴퓨터, 스마트폰, 브라우저, 서버 등 다양합니다.
+
+<figure>
+    <img src="https://github.com/Kim-src/Images/assets/150884526/1c2d08c5-db23-4478-82c8-0b43ec9e1aba" alt="figure">
+    <figcaption>GitHub Actions의 각기 다른 아이콘</figcaption>
+</figure>
+
+### 📌 에러 이슈 해결 방법
+> - Build & Deploy 과정에서는 크고 작은 에러 이슈가 끊임없이 발생됩니다.
+> - 그런데 GitHub Actions에서는 이러한 에러 이슈에 상대적으로 쉽게 대응할 수 있습니다.
+> - 'Build & Deploy 실패'를 의미하는 아이콘을 클릭하면 에러에 대한 설명이 있기 때문입니다.
+> - 설명 내용은 에러를 유발시킨 파일명, 코드, 코드 내용 등이며 아래 이미지와 같습니다.
+
+<div class="image-container">
+    <figure>
+        <img src="https://github.com/Kim-src/Images/assets/150884526/1ffa1c76-8d5e-4271-99f2-5edc99b2530e" width="300px" alt="figure">
+        <figcaption>GitHub Actions의 Build 에러 확인 방법</figcaption>
+    </figure>
+    <figure>
+        <img src="https://github.com/Kim-src/Images/assets/150884526/5a53fab5-eae2-4eb7-91d8-aac3d03e2fff" width="300px" alt="figure">
+        <figcaption>GitHub Actions의 Build 에러 상세 내용</figcaption>
+    </figure>
+</div>
+
+<br>
+
+### 🔔 4. Git 추가 개념
 ### 📌 Staging Area
 > - 스테이징 영역은 Commit 전 변경사항이 임시로 저장되는 공간입니다.
 > - Commit 전 준비 단계이지만 아직 로컬 저장소에 변경이 반영(기록)된 것은 아닙니다.
@@ -107,4 +149,25 @@ tags: [Web, Github, Github Actions, Actions, Commit, Push, git add, git status, 
 >   4. ```git commit``` : 스테이징 영역에 임시저장 된 변경사항을 로컬 저장소에 반영구적 기록
 
 ### 📌 Version Control System (VCS)
-> - <a href="https://kim-src.github.io/categories/development-tool/">Git을 이용한 웹, 앱, 애플리케이션 버전 관리 방법</a>
+> - Git 명령어를 이용하는 이유는 소프트웨어 개발의 버전을 관리하기 위해서입니다.
+> - 이러한 버전 관리 방법은 아래와 같이 크게 두 가지로 구분됩니다.
+>    - 분산 버전 관리 시스템 (DVCS)
+>    - 중앙 집중식 버전 관리 시스템 (CVCS)
+> - DVCS는 개별 로컬 저장소로 복사본이 저장시키는 방식이며 데이터 손실을 최소화 할 수 있습니다.
+> - CVCS는 중앙 저장소에 직접적으로 Commit하여 개발 속도를 높일 수 있는 방식입니다.
+> - DVCS의 예시는 Git 및 Mercurial이며 CVCS의 예시는 Subversion(SVN)입니다.
+
+<br>
+
+### 🎁 5. 부록
+> - <a href="https://kim-src.github.io/categories/github-blog/">나만의 깃허브 블로그 개발 기록</a>
+> - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 만드는 방법</a>
+> - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Jekyll%EC%9D%98-Chirpy-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 꾸미는 방법</a>
+> - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EA%B0%9C%EB%B0%9C-%ED%98%84%ED%99%A9/">나만의 Dark/Light 스타일 적용</a>
+> - <a href="http://127.0.0.1:4000/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
+> - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A0%81%EC%9A%A9-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">Light/Dark 스타일 적용 에러 해결 방법</a>
+> - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-Commit-&-Push-%EC%9D%98%EB%AF%B8-%EB%B0%8F-Actions-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">깃허브 Commit & Push 의미 및 Actions 에러 해결 방법</a>
+
+<br>
+<br>
+<br>
