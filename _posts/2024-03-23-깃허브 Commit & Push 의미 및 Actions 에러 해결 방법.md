@@ -2,7 +2,7 @@
 title: 깃허브 Commit & Push 의미 및 Actions 에러 해결 방법
 date: 2024-03-23 18:00:00 +09:00
 categories: [1. Web Development, GitHub Blog]
-tags: [Web, Github, Github Actions, Actions, Commit, Push, git add, git status, git commit, git psuh, build, deploy]
+tags: [Web, GitHub Actions, Actions, Commit, Push, git add, git status, git commit, git psuh, build, deploy]
 ---
 
 <!-- 2024-03-24 글 작성 시작; 2024-03-24 페이지 호출 필요 -->
