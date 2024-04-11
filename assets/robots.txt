@@ -5,6 +5,6 @@ permalink: /robots.txt
 
 User-agent: *
 
-Disallow: /norobots/
+Disallow: /norobots/  # 웹사이트에 해당 디렉토리가 실제로 존재하지 않거나 검색 엔진에서 숨기고 싶은 경우만 유지하세요.
 
-Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: https://kim-src.github.io/sitemap.xml

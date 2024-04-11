@@ -16,6 +16,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 <br>
 
 ### 🔔 1. Introduction
+
 ### 📌 이 글에서 얻으실 수 있는 것
 
 > - Jekyll의 개념을 이해할 수 있고 초보자도 웹 사이트를 쉽게 생성할 수 있습니다.
@@ -58,6 +59,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 <br>
 
 ### 🔔 2. Methodology (1/2) : Repository 연동
+
 ### 📌 블로그 전용 GitHub Repository 생성
 
 > - GitHub.com에 접속한 뒤 레포지토리를 생성해야 됩니다.
@@ -117,6 +119,7 @@ $ git clone https://github.com/Kim-src/Kim-src.github.io
 <br>
 
 ### 🔔 2. Methodology (2/2) : Ruby, Jekyll, Bundler 설치
+
 ### 📌 Ruby, Jekyll, Bundler 소개
 
 > - 웹 페이지 제작을 위해서 Ruby, Jekyll, Bundler가 필요합니다.
@@ -145,7 +148,7 @@ $ git clone https://github.com/Kim-src/Kim-src.github.io
 
 > - Jekyll은 Git Bash에서 설치 가능합니다.
 > - GIt Bash 실행 후 '초기 상태'에서 Jekyll을 설치하면 됩니다.
-> - ```ruby -v```는 Jekyll 설치 전 Ruby 설치 상태를 확인하는 명령문입니다.
+> - `ruby -v`는 Jekyll 설치 전 Ruby 설치 상태를 확인하는 명령문입니다.
 > - 작성자의 Git Bash 입력 내용 및 출력 내용은 아래와 같습니다.
 
 ```bash
@@ -177,6 +180,7 @@ Bundler version 2.5.6
 <br>
 
 ### 🔔 3. Results : 브라우저에 웹 페이지 호출
+
 ### 📌 새로운 Jekyll Project 생성
 
 > - 이제 첫 깃허브 블로그 웹 페이지를 생성할 모든 준비가 완료되었습니다.
@@ -190,6 +194,7 @@ $ jekyll new ./
 ```
 
 ### 📌 로컬 저장소 폴더 자동 구성
+
 > - 위 명령문을 입력하면 Git Bash에 Jekyll 설치 관련 사항이 출력됩니다.
 > - 그리고 로컬 저장소명 우측에 '(main)'이라는 문구가 출력됩니다.
 > - 또한 로컬 저장소의 main 폴더는 아래와 같은 상태로 변경됩니다.
@@ -212,6 +217,7 @@ $ bundle install
 ```
 
 ### 📌 로컬 저장소 폴더 자동 구성
+
 > - 위 명령문을 입력하면 Git Bash에 Bundle tool 설치 관련 사항이 출력됩니다.
 > - 그리고 로컬 저장소의 main 폴더는 아래와 같은 상태로 다시 변경됩니다.
 
@@ -242,6 +248,7 @@ Server address: http://127.0.0.1:4000/
 > - 참고로 웹 브라우저란 Chrome, Microsoft Edge 등을 의미합니다.
 
 ### 📌 성공적으로 호출된 웹 페이지
+
 > - 아래 이미지는 성공적으로 웹 브라우저에 호출된 Jekyll 기본 웹 페이지의 모습입니다.
 
 <figure>
@@ -252,6 +259,7 @@ Server address: http://127.0.0.1:4000/
 <br>
 
 ### 🔔 4. Conclusions : 추후 단계
+
 ### 📌 정식 깃허브 블로그 개설 및 테마 적용
 
 > - Jekyll의 기본 웹 페이지 호출하기까지 고생 많으셨습니다.
@@ -262,11 +270,12 @@ Server address: http://127.0.0.1:4000/
 <br>
 
 ### 🎁 5. 부록
+
 > - <a href="https://kim-src.github.io/categories/github-blog/">나만의 깃허브 블로그 개발 기록</a>
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 만드는 방법</a>
 > - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Jekyll%EC%9D%98-Chirpy-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/">나만의 깃허브 블로그 꾸미는 방법</a>
 > - <a href="https://kim-src.github.io/posts/Jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8(GitHub-Pages)-%EA%B0%9C%EB%B0%9C-%ED%98%84%ED%99%A9/">나만의 Dark/Light 스타일 적용</a>
-> - <a href="http://127.0.0.1:4000/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
+> - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%A0%84%ED%99%98%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%86%A0%EA%B8%80-%EB%B2%84%ED%8A%BC-%EC%B6%94%EA%B0%80/">나만의 깃허브 블로그에 Light/Dark 테마 전환 기능 부여</a>
 > - <a href="https://kim-src.github.io/posts/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-Light-%EB%B0%8F-Dark-%EB%AA%A8%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A0%81%EC%9A%A9-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">Light/Dark 스타일 적용 에러 해결 방법</a>
 > - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-Commit-&-Push-%EC%9D%98%EB%AF%B8-%EB%B0%8F-Actions-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">깃허브 Commit & Push 의미 및 Actions 에러 해결 방법</a>
 > - <a href="https://kim-src.github.io/posts/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0-%EA%B8%80-%EC%B6%9C%EB%A0%A5-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/">깃허브 블로그 홈페이지 미리보기 글 출력 에러 해결 방법</a>
