@@ -30,11 +30,11 @@ tags: [Fundamental, Spring, Service, Repository, Annotation, DI, Dependency Inje
 > - 이는 MemberController뿐만 아니라 일전에 생성하였던 HelloController도 마찬가지입니다.
 
 ### 📌 @Autowired
-> - 명칭 그대로 객체를 자동으로 연결해주어 의존 관계를 형성시키는 역할을 합니다.
+> - 명칭 그대로 클래스를 자동으로 연결해주어 의존 관계를 형성시키는 역할을 합니다.
 > - 즉, 객체의 의존성 주입(DI; Dependency Injection)을 발생시킵니다.
 > - 컨트롤러 어노테이션이 부여된 객체에서 @Autowired를 사용하면 아래와 같은 과정이 진행됩니다.
 >    - <a href="https://github.com/Kim-src/Study-Spring/blob/main/src/main/java/hello/hellospring/controller/MemberController.java">MemberController</a> 생성 : 컨트롤러 어노테이션으로 컨트롤러가 컨테이너에 생성됨
->    - <a href="https://github.com/Kim-src/Study-Spring/blob/main/src/main/java/hello/hellospring/service/MemberService.java">MemberService</a> 포함 : 스프링 빈에 등록되어 있는 서비스 객체를 컨테이너에 포함시킴
+>    - <a href="https://github.com/Kim-src/Study-Spring/blob/main/src/main/java/hello/hellospring/service/MemberService.java">MemberService</a> 포함 : 스프링 빈에 등록되어 있는 서비스 클래스를 컨테이너에 포함시킴
 
 ### 📌 @Service & @Repository
 > - <a href="https://kim-src.github.io/posts/%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9D%EC%B2%B4,-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4,-%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95/#-%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-%EC%9B%B9-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EA%B3%84%EC%B8%B5-%EA%B5%AC%EC%A1%B0">웹 애플리케이션 계층 구조</a>는 보통 컨트롤러, 서비스, 리포지토리, 도메인으로 구성됩니다.
@@ -55,7 +55,7 @@ tags: [Fundamental, Spring, Service, Repository, Annotation, DI, Dependency Inje
 ### 🔔 개념 보충
 ### 📌 스프링 빈(bean)
 > - 스프링 빈과 관련된 자세한 내용은 <a href="https://kim-src.github.io/">다음 블로그 글</a>에 잘 작성되어 있습니다.
-> - 다음 글에는 스프링 빈 등록의 장점, AOP 등에 대한 내용이 포함됩니다.
+> - 다음 글에는 스프링 빈 등록(= 정의) 방법 등 전반적인 개념 설명이 포함됩니다.
 > - 그리고 스프링 빈 등록 방법 중 Java 코드로 직접 등록하는 방법에 대한 내용도 포함됩니다.
 > - 참고로 스프링 빈 등록 방법 중 하나인 '컴포넌트 스캔'에 대한 내용이 본 글의 내용입니다.
 
