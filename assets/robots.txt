@@ -5,6 +5,6 @@ permalink: /robots.txt
 
 User-agent: *
 
-Disallow:
+Allow: /
 
 Sitemap: https://kim-src.github.io/sitemap.xml
