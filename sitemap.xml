@@ -29,4 +29,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             {% endif %}
         </url>
     {% endfor %}
+
+    {% for tag in site.tags %}
+        <url>
+            <loc>{{ site.url }}/tags/{{ tag | first | slugify }}/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+        </url>
+    {% endfor %}
+
+    {% for category in site.categories %}
+        <url>
+            <loc>{{ site.url }}/categories/{{ category | first | slugify }}/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+        </url>
+    {% endfor %}
 </urlset>
