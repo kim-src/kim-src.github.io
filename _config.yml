@@ -53,10 +53,6 @@ google_site_verification: "Wq-qzmlzrOqocCVvKfMT2QIhiTllDDHZEu9bIRIqw1M"
 google_analytics:
   id: G-8D7YMLX11H # fill in your Google Analytics ID
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
 goatcounter:
   id: # fill in your Goatcounter ID
 

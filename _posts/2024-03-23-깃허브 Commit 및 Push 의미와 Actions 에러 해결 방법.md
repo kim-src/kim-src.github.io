@@ -1,5 +1,5 @@
 ---
-title: 깃허브 Commit & Push 의미 및 Actions 에러 해결 방법
+title: 깃허브 Commit 및 Push 의미와 Actions 에러 해결 방법
 date: 2024-03-23 18:00:00 +09:00
 categories: [1. Web Development, GitHub Blog]
 tags: [Web, GitHub Actions, Actions, Commit, Push, git add, git status, git commit, git psuh, build, deploy]
