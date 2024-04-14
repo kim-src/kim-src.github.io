@@ -1,5 +1,5 @@
 ---
-title: 컴포넌트 스캔을 이용한 스프링 빈 등록 및 Autowired
+title: 컴포넌트 스캔을 이용한 스프링 빈 정의 및 Autowired
 date: 2024-04-12 18:00:00 +09:00
 categories: [4. Fundamental, Spring]
 tags: [Fundamental, Spring, Service, Repository, Annotation, DI, Dependency Injection, Constructor Method, Autowired, Spring Bean]
@@ -54,7 +54,7 @@ tags: [Fundamental, Spring, Service, Repository, Annotation, DI, Dependency Inje
 
 ### 🔔 개념 보충
 ### 📌 스프링 빈(bean)
-> - 스프링 빈과 관련된 자세한 내용은 <a href="https://kim-src.github.io/">다음 블로그 글</a>에 잘 작성되어 있습니다.
+> - 스프링 빈과 관련된 자세한 내용은 <a href="https://kim-src.github.io/posts/Configuration-%EB%B0%8F-Bean%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B9%88-%EB%93%B1%EB%A1%9D-%EB%B0%A9%EB%B2%95/">다음 블로그 글</a>에 잘 작성되어 있습니다.
 > - 다음 글에는 스프링 빈 등록(= 정의) 방법 등 전반적인 개념 설명이 포함됩니다.
 > - 그리고 스프링 빈 등록 방법 중 Java 코드로 직접 등록하는 방법에 대한 내용도 포함됩니다.
 > - 참고로 스프링 빈 등록 방법 중 하나인 '컴포넌트 스캔'에 대한 내용이 본 글의 내용입니다.

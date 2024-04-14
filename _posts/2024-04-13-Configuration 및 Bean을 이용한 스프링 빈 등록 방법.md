@@ -21,7 +21,7 @@ tags: [Fundamental, Spring, Annotation, Configuration, Bean, DI, Dependency Inje
 ### 📌 스프링 빈 등록(= 정의) 방법
 > - 과거 스프링 프로젝트에서는 xml 파일 내에서 bean 태그를 사용하여 정의했습니다.
 > - 최근 방식의 스프링 빈 등록 방법은 어노테이션을 이용하는 것입니다.
-> - 이 방식에는 @Component를 포함한 어노테이션 등이 사용되며 클래스를 스프링 빈에 등록시킵니다.
+> - 이 방식에는 @Component를 포함한 어노테이션이 사용되며 클래스를 스프링 빈에 등록시킵니다.
 > - 등록 방법은 자동(컴포넌트 스캔 방식) 및 수동(Java 클래스 설정)으로 구분됩니다.
 
 ### 📌 스프링 빈 등록 자동 방식 : 컴포넌트 스캔 방식
@@ -52,7 +52,7 @@ tags: [Fundamental, Spring, Annotation, Configuration, Bean, DI, Dependency Inje
 > - @Service 및 @Repository는 @Component를 이용하여 스프링 빈에 클래스를 등록하는 방법입니다.
 > - 이와달리 @Configuration, @Bean은 Java를 이용하여 스프링 빈에 클래스를 등록하는 방법입니다.
 > - 두 방법에는 장단점이 있으며 xml 파일을 이용한 스프링 빈 등록 방법보다는 최신입니다.
-> - 두 방법 중 실무에서는 <a href="https://kim-src.github.io/posts/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B9%88-%EB%93%B1%EB%A1%9D-%EB%B0%8F-Autowired/">컴포넌스 스캔 방식</a>이 주로 사용됩니다.
+> - 두 방법 중 실무에서는 <a href="https://kim-src.github.io/posts/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B9%88-%EC%A0%95%EC%9D%98-%EB%B0%8F-Autowired/">컴포넌스 스캔 방식</a>이 주로 사용됩니다.
 > - 참고로 @Configuration에는 @Service & @Repository와 마찬가지로 @Component가 포함됩니다.
 
 ### 🔔 로직 이해
