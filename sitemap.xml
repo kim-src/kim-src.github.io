@@ -43,4 +43,30 @@ layout: null
             <priority>0.5</priority>
         </url>
     {% endfor %}
+
+    <url>
+        <loc>https://kim-src.github.io/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kim-src.github.io/categories/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kim-src.github.io/tags/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kim-src.github.io/archives/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kim-src.github.io/about/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>
