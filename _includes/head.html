@@ -10,6 +10,10 @@
     })();
   </script>
 
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | xml_escape }}">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
@@ -19,6 +23,7 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+  <!-- <meta property="og:description" content="{{ page.description | xml_escape | strip_html }}"> -->
 
   {%- capture seo_tags -%}
     {% seo title=false %}
