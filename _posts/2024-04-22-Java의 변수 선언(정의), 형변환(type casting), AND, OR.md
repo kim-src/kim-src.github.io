@@ -1,7 +1,7 @@
 ---
 title: Java의 변수 선언(정의), 형변환(type casting), AND, OR
 date: 2024-04-22 18:00:00 +09:00
-categories: [4. Fundamental, Java]
+categories: [1. Fundamental, Java]
 tags: [Java, Fundamental, Variable, Definition, Type Casting, Explicit Casting, Implicit Casting, Type Coercion, AND, OR]
 ---
 

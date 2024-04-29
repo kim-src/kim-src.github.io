@@ -1,7 +1,7 @@
 ---
 title: Configuration 및 Bean을 이용한 스프링 빈 등록 방법
 date: 2024-04-13 18:00:00 +09:00
-categories: [4. Fundamental, Spring]
+categories: [1. Fundamental, Spring]
 tags: [Fundamental, Spring, Annotation, Configuration, Bean, DI, Dependency Injection, Constructor Method, Autowired, Spring Bean]
 ---
 

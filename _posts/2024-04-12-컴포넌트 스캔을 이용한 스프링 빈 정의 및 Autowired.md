@@ -1,7 +1,7 @@
 ---
 title: 컴포넌트 스캔을 이용한 스프링 빈 정의 및 Autowired
 date: 2024-04-12 18:00:00 +09:00
-categories: [4. Fundamental, Spring]
+categories: [1. Fundamental, Spring]
 tags: [Fundamental, Spring, Service, Repository, Annotation, DI, Dependency Injection, Constructor Method, Autowired, Spring Bean]
 ---
 
