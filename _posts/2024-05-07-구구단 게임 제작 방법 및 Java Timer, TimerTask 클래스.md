@@ -6,7 +6,7 @@ tags: [Java, GoogoodanGame, Googoodan, Multiplication, Timer, TimerTask, schedul
 ---
 
 <!-- 2024-05-07 글 작성 시작; 2024-05-07 페이지 호출 완료 -->
-<h2>Java 기반의 순발력 구구단 게임</h2>
+<h2>Java 기반의 순발력을 요구하는 구구단 게임</h2>
 > - Tool :  
 <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
 <img alt="Eclipse" src="https://img.shields.io/badge/-Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white" />
@@ -63,6 +63,8 @@ tags: [Java, GoogoodanGame, Googoodan, Multiplication, Timer, TimerTask, schedul
 > - 에러 해결 방법은 main 메서드 실행 전에 static을 이용하여 변수를 정의하는 것이었습니다.
 > - static을 이용하여 변수를 정의하면 모든 인스턴스가 동일한 시간을 적용받게 됩니다.
 
+### 📌 구구단 곱셈식 생성
+
 <br>
 
 ### 🔔 학습 내용(소감)
@@ -77,9 +79,9 @@ tags: [Java, GoogoodanGame, Googoodan, Multiplication, Timer, TimerTask, schedul
 
 ### 📌 학습 경험 : 타이머 사용의 어려움
 > - Java의 시간 관련 알고리즘을 이해하는 데 2시간 이상이 소요되었습니다.
-> - 문제는 Java의 Timer 및 TimerTask 클래스는 반복문 중간에 취소할 수 없다는 것이었습니다.
-> - 즉, 타이머를 중간에 초기화한 후 재시작하는 기능이 없는 것이었습니다.
-> - 이는 버그를 양산하지 못하도록 하려는 목적일 것 같지만 이로 인해 사용이 어려웠습니다.
+> - 문제는 Java의 Timer 및 TimerTask 클래스는 실행 도중 취소시킬 수 없다는 것이었습니다.
+> - 즉, 타이머를 중간에 중지시키고 재시작하는 기능이 없는 것이었습니다.
+> - 그래서 구구단 정답 입력 및 채점 후 타이머의 시간을 리셋시키는 것이 고단하였습니다.
 
 ### 📌 학습 내용 : 타이머 활용 방법
 > - 대략 5시간의 시간을 투자하며 생각해낸 것은 타이머를 종료시키지 않는 것이었습니다.
@@ -92,7 +94,7 @@ tags: [Java, GoogoodanGame, Googoodan, Multiplication, Timer, TimerTask, schedul
 <br>
 
 ### 🔔 프로그램 구현
-### 📌 본 게임에 대한 전체 코드입니다.
+### 📌 전체 소스 코드
 
 ``` java
 import java.util.Date;
