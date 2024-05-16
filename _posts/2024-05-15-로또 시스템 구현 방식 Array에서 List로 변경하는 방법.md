@@ -6,7 +6,7 @@ tags: [Java, Fundamental, Lotto Generator, Lotto, Random Number Generator, Lotto
 ---
 
 <!-- 2024-05-15 글 작성 시작; 2024-05-15 페이지 호출 완료 -->
-<h2>Java 기반의 순발력을 요구하는 구구단 게임</h2>
+<h2>Java 기반의 로또 시스템 구현</h2>
 > - Tool :  
 <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
 <img alt="Eclipse" src="https://img.shields.io/badge/-Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white" />
