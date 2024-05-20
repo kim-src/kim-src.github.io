@@ -27,7 +27,6 @@ tags: [Database, Fundamental, DBMS, MariaDB, Oracle, MySQL, MongoDB, DBeaver, RD
 > - 따라서 MariaDB와 MySQL은 거의 동일한 SQL 구문 및 기능이 지원됩니다.
 > - 참고로 MariaDB는 설치 및 사용이 쉽다는 장점이 있으며 기본적인 기능은 무료입니다.
 
-
 ### 📌 DBeaver
 > - 데이터베이스를 설치했다면 데이터 관리 체계를 구축해야 됩니다.
 > - 데이터를 관리하기 위해서는 SQL 편집 기능이 있는 소프트웨어가 필요합니다.
@@ -97,7 +96,24 @@ tags: [Database, Fundamental, DBMS, MariaDB, Oracle, MySQL, MongoDB, DBeaver, RD
 ### 📌 테이블, 속성, 레코드 생성
 > - 아래는 데이터베이스에 포함시킬 데이터를 생성시킨 예시입니다.
 > - SQL 명령어를 이용하여 테이블 생성, 데이터 입력, 데이터 조회 기능을 구현하였습니다.
-> - 참고로 데이터 조회 시 별 기호(*)는 '전체'를 의미합니다.
+
+### 📌 속성(Attribute)
+> - 테이블 생성 시 컬럼명, 속성값, not null, comment 등을 입력합니다.
+> - 이때 속성값은 테이블에 저장될 레코드를 제한하는 역할을 합니다.
+> - 속성값은 열(column)의 이름과 함께 정의됩니다.
+> - 참고로 속성값은 Java의 변수 정의 시 사용되는 데이터 타입의 역할을 합니다.
+
+### 📌 레코드(Record)
+> - 각각의 열은 행(row)과 교차되며 행에 입력된 실제 값은 레코드라고 표현됩니다.
+> - INSERT INTO 문을 이용하여 레코드를 생성시킬 수 있습니다.
+> - 각 데이터(레코드)를 추가하고 싶은 컬럼명을 먼저 작성합니다.
+> - 이후 VALUES를 이용하여 각 컬럼에 맞는 데이터를 삽입합니다.
+
+### 📌 SELECT
+> - 생성된 테이블은 SQL 구문 중 SELECT를 이용하여 조회할 수 있습니다.
+> - 데이터 조회 시 별 기호(*)를 이용하면 전체 데이터를 조회할 수 있습니다.
+> - SELECT 문은 SQL에서 가장 기초적인 구문이자 가장 중요한 구문이기도 합니다.
+> - <a href="https://kim-src.github.io/">다음 글</a>에서는 다양한 데이터 조회 방법에 대해 알아보겠습니다.
 
 ``` sql
 CREATE TABLE basic_test (
@@ -118,7 +134,6 @@ VALUES('st101', '김군', 21, '남자'),
 
 select * from basic_test;
 ```
-
 
 <br>
 <br>
