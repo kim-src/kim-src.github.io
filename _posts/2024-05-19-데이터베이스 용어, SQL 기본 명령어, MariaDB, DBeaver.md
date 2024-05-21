@@ -127,10 +127,10 @@ CREATE TABLE basic_test (
 
 INSERT INTO basic_test(std_num, std_name, std_age, std_gender)
 VALUES('st101', '김군', 21, '남자'),
-	  ('st102', '이군', 22, '여자'),
-	  ('st103', '박군', 23, '남자'),
-	  ('st104', '민군', 24, '여자'),
-	  ('st105', '유군', 25, '남자');
+	('st102', '이군', 22, '여자'),
+	('st103', '박군', 23, '남자'),
+	('st104', '민군', 24, '여자'),
+	('st105', '유군', 25, '남자');
 
 select * from basic_test;
 ```
