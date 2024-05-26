@@ -6,7 +6,7 @@ tags: [Database, Fundamental, DBMS, MariaDB, Oracle, MySQL, MongoDB, DBeaver, RD
 ---
 
 <!-- 2024-05-16 글 작성 시작; 2024-05-19 페이지 호출 완료 -->
-<h2>강의 내용 복습 : 코리아IT 신촌점 자바 강의 (2024-05-09 강의)</h2>
+<h2>강의 내용 복습 : 코리아IT 신촌점 데이터베이스 강의 (2024-05-09 강의)</h2>
 > - Tool :  
 <img alt="SQL" src="https://img.shields.io/badge/-SQL-336791?style=flat-square&logo=sqlite&logoColor=white" />
 <img alt="MariaDB" src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" />
