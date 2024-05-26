@@ -2,7 +2,7 @@
 title: 접근제한자, 캡슐화, 오버로딩, Getter, Setter 의미 및 관계
 date: 2024-05-26 18:00:00 +09:00
 categories: [1. Fundamental, Java]
-tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Information Hiding, Modularity, Getter, Setter, Executable Class, Utility Class, Parameter, Return, Void]
+tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Information Hiding, Modularity, Getter, Setter, Executable Class, DTO Class, VO Class, DAO Class, Utility Class, Parameter, Return, Void]
 ---
 
 <!-- 2024-05-20 글 작성 시작; 2024-05-26 페이지 호출 완료 -->
@@ -51,9 +51,13 @@ tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Informati
 >    - 데이터 보호 : 데이터의 잘못된 접근이나 수정을 방지할 수 있습니다.
 >    - 모듈화 : 각 클래스가 특정 기능을 수행하게 하여 코드의 복잡성을 감소시킬 수 있습니다.
 
-### 📌 오버로딩
-> - 같은 이름의 메서드 여러 개
-> - 아래는 오버로딩의 규칙
+### 📌 오버로딩(Overloading)
+> - 오버로딩은 동일한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 기능을 의미합니다.
+> - 오버로딩은 프로그래밍의 유연성과 가독성을 증대시킵니다.
+> - 동일한 이름의 메서드는 동일한 기능을 수행하며 아래와 같은 규칙을 따릅니다.
+>    - 동일한 메서드 이름 : 오버로딩은 메서드 이름이 동일해야 됩니다.
+>    - 상이한 파라미터 : 파라미터의 타입, 개수, 순서가 하나 이상 달리 정의되어야 합니다.
+>    - 자유로운 반환 타입 : 반환 타입은 메서드를 구분하는 데 사용되지 않습니다.
 
 <br>
 
@@ -165,21 +169,45 @@ public static void main(String[] args) {
 
 <br>
 
-### 🔔 응용 학습
-### 📌 Car 유틸리티 클래스 생성
+### 🔔 응용 실습
+### 📌 기본 생성자
+> - Java에서 상위 클래스에 기본 생성자를 정의하면 하위 클래스에서 호출을 생략할 수 있습니다.
+> - 예를들면 하위 클래스에 ```Car car = new Car();```를 입력하지 않아도 됩니다.
+> - 그렇다고 하위 클래스에 상위 클래스를 호출하지 않아도 되는 것은 아닙니다.
+> - 대신 하위 클래스에서 별도로 호출하지 않아도 컴파일 과정에서 super()가 삽입됩니다.
+> - super()는 기본 생성자를 호출하는 코드이며 컴파일러가 자동으로 삽입시킵니다.
+
+### 📌 DTO, VO, DAO, Utility 객체
+> - 객체는 각기 다양한 목적과 기능을 갖고 있으며 대표적인 객체는 아래와 같습니다.
+>    - 📌 DTO (Data Transfer Object)
+>    - 데이터를 저장하기 위한 필드(변수)와 데이터에 접근하기 위한 메서드를 포함합니다.
+>    - DTO의 예시로는 아래의 Car 객체가 있습니다.
+>    - 📌 VO (Value Object)
+>    - DTO와 비슷한 역할을 하는 객체입니다.
+>    - 전통적으로는 데이터를 저장하는 역할만 하고 로직을 포함하지 않는 객체로 구분됩니다.
+>    - 현대적으로는 DTO와 큰 차이가 없는 것으로 평가됩니다.
+>    - 📌 DAO (Data Access Object)
+>    - 데이터베이스 또는 외부 데이터 소스와의 상호작용을 하는 역할을 합니다.
+>    - 코드에 SQL (Structured Query Language)을 포함합니다.
+>    - 📌 Utility 객체
+>    - 유틸리티 객체의 예시로는 random 메서드를 포함하는 Math 객체가 있습니다.
+>    - 여러 객체에 다양한 목적으로 활용하는 객체를 일컫습니다.
+
+### 📌 Car DTO 클래스 생성
 > - 자동차 정보 데이터 관리를 위한 객체를 생성하였습니다.
 > - 안전한 데이터 삽입 및 삭제 등을 위해 변수는 private 접근제한자로 선언하였습니다.
 > - 그리고 변수로 파생되는 기능을 사용하기 위해 getter 및 setter 메서드를 사용하였습니다.
 > - 저장된 데이터를 일괄적으로 처리할 수 있도록 carInfo 메서드를 정의하였습니다.
 
 ``` java
-public class Car {
+public class CarDTO {
 
     // 변수의 접근제한자를 private으로 설정하였습니다.
     private String carName;
     private String carCompany;
     private int carPrice;
 
+    
     /* Getter */
     // 값을 반환하는 Getter 메서드를 선언하였습니다.
     // Getter의 경우 값을 반환해야 되기 때문에 return 키워드가 있습니다.
@@ -194,6 +222,7 @@ public class Car {
     public int getCarPrice() {
         return this.carPrice;
     }
+    
     
     /* Setter */
     // 값을 저장하는 Setter 메서드를 선언하였습니다.
@@ -218,17 +247,17 @@ public class Car {
     	System.out.print(", 제조사 = " + this.getCarCompany());
     	System.out.println(", 판매가 = " + this.getCarPrice());
     }
-
+    
 }
 ```
 
-### 📌 CarInfoScanner 클래스 생성
-> - Car 객체의 필드에 데이터를 저장하기 위해 CarInfoScanner에서는 Scanner를 이용하였습니다.
-> - Array를 이용하여 인덱스 순서대로 데이터가 저장되도록 설정하였습니다.
+### 📌 CarInfo 클래스 생성
+> - Car 객체의 필드에 데이터를 저장하기 위해 CarInfo 클래스에서는 Scanner를 이용하였습니다.
+> - Array를 이용하여 데이터가 인덱스 순서대로 저장되도록 설정하였습니다.
 > - 참고로 필드(field)란 클래스 내에서 데이터가 저장되는 변수를 의미합니다.
 
 ``` java
-public class CarInfoScanner {
+public class CarInfo {
 	
 	public static void main(String[] args) {
 		
@@ -276,14 +305,26 @@ public class CarInfoScanner {
 
 ### 📌 CalculatorOperation 클래스 생성
 > - 수학 계산 공식이 담긴 객체를 생성하였습니다.
+> - add 메서드를 생성하고 2~5개의 정수를 더할 수 있도록 오버로딩하였습니다.
 > - CalculatorOperation 객체에는 덧셈과 삼항연산자 연산 공식을 포함합니다.
 
 ``` java
 public class CalculatorOperation {
 
+	// add 메서드를 생성하고 2~5개의 정수를 더할 수 있도록 오버로딩하였습니다.
 	// 2개의 정수를 더하는 계산식을 생성하였습니다.
 	public int add(int a, int b) {
 		return a + b;
+	}
+	
+	// 3개의 정수를 더하는 계산식을 생성하였습니다.
+	public int add(int a, int b, int c) {
+		return a + b + c;
+	}
+	
+	// 4개의 정수를 더하는 계산식을 생성하였습니다.
+	public int add(int a, int b, int c, int d) {
+		return a + b + c + d;
 	}
 	
 	// 5개의 정수를 더하는 계산식을 생성하였습니다.
@@ -308,14 +349,20 @@ public class Calculator {
 	public static void main(String[] args) {
 		
 		CalculatorOperation operator = new CalculatorOperation();
-		CalculatorOperation addTwo = new CalculatorOperation();
-		CalculatorOperation addFive = new CalculatorOperation();
+		CalculatorOperation add2 = new CalculatorOperation();
+		CalculatorOperation add3 = new CalculatorOperation();
+		CalculatorOperation add4 = new CalculatorOperation();
+		CalculatorOperation add5 = new CalculatorOperation();
 		
 		// add 메서드에는 정수 2개 또는 5개만 할당이 가능합니다.
 		System.out.println(operator.add(10, 20));
+		System.out.println(operator.add(10, 20, 30));
+		System.out.println(operator.add(10, 20, 30, 40));
 		System.out.println(operator.add(10, 20, 30, 40, 50));
-		System.out.println(addTwo.add(10, 20));
-		System.out.println(addFive.add(10, 20, 30, 40, 50));
+		System.out.println(add2.add(10, 20));
+		System.out.println(add3.add(10, 20, 30));
+		System.out.println(add4.add(10, 20, 30, 40));
+		System.out.println(add5.add(10, 20, 30, 40, 50));
 		// ternary 메서드는 값을 비교하는 기능이 있습니다.
 		System.out.println(operator.ternary(10, 20));
 		
