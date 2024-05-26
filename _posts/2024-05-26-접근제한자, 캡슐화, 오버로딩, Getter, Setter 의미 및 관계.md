@@ -198,6 +198,9 @@ public static void main(String[] args) {
 > - 안전한 데이터 삽입 및 삭제 등을 위해 변수는 private 접근제한자로 선언하였습니다.
 > - 그리고 변수로 파생되는 기능을 사용하기 위해 getter 및 setter 메서드를 사용하였습니다.
 > - 저장된 데이터를 일괄적으로 처리할 수 있도록 carInfo 메서드를 정의하였습니다.
+> - 오버로딩 된 메서드의 경우 규칙에 맞게 5가지를 정의하였습니다.
+> - 참고로 컴파일러는 메서드를 구분할 때 파라미터의 타입, 개수, 순서에 집중합니다.
+> - 즉, 사람 보기 좋게 경우의 수에 맞게 메서드를 정의하면 에러가 발생될 수 있습니다.
 
 ``` java
 public class CarDTO {
@@ -248,11 +251,42 @@ public class CarDTO {
     	System.out.println(", 판매가 = " + this.getCarPrice());
     }
     
+    
+    /* 오버로딩 */
+    // 데이터를 유연하게 처리하기 위해 CarDTO 메서드를 오버로딩하였습니다.
+    // 오버로딩의 규칙은 파라미터
+    public CarDTO() {
+    }
+    
+    public CarDTO(String carName, String carCompany, int carPrice) {
+    	this.carName = carName;
+    	this.carCompany = carCompany;
+    	this.carPrice = carPrice;
+    }
+    
+    public CarDTO(String carName, String carCompany) {
+    	this.carName = carName;
+    	this.carCompany = carCompany;
+    }
+    
+    public CarDTO(String carName, int carPrice) {
+    	this.carName = carName;
+    	this.carPrice = carPrice;
+    }
+    
+    public CarDTO(String carName) {
+    	this.carName = carName;
+    }
+    
+    public CarDTO(int carPrice) {
+    	this.carPrice = carPrice;
+    }
+    
 }
 ```
 
-### 📌 CarInfo 클래스 생성
-> - Car 객체의 필드에 데이터를 저장하기 위해 CarInfo 클래스에서는 Scanner를 이용하였습니다.
+### 📌 CarInfo 기본 클래스 생성
+> - CarDTO 객체의 필드에 데이터를 저장하기 위해 CarInfo에서는 Scanner를 이용하였습니다.
 > - Array를 이용하여 데이터가 인덱스 순서대로 저장되도록 설정하였습니다.
 > - 참고로 필드(field)란 클래스 내에서 데이터가 저장되는 변수를 의미합니다.
 
@@ -262,7 +296,7 @@ public class CarInfo {
 	public static void main(String[] args) {
 		
 		// Array를 이용하여 데이터를 일괄적으로 관리하였습니다.
-		Car[] carList = new Car[5];
+		CarDTO[] carList = new CarDTO[5];
 		// 입력을 통해 Car 데이터가 저장될 수 있도록 설정하였습니다.
 		Scanner scan = new Scanner(System.in);
 		
@@ -270,11 +304,11 @@ public class CarInfo {
 		for(int i = 0; i < carList.length; i++) {
 			// public 접근제한자의 Car 클래스를 호출하였습니다.
 			// 매 반복문마다 새로운 인스턴스를 생성하였습니다.
-			Car car = new Car();
+			CarDTO car = new CarDTO();
 			// 값은 Scanner 입력을 통해 할당시켰습니다.
 			System.out.print((i+1) + "번째 자동차 모델명을 입력하세요. = ");
 			car.setCarName(scan.next());
-			System.out.print((i+1) + "번째 자동차제조사를 입력하세요. = ");
+			System.out.print((i+1) + "번째 자동차 제조사를 입력하세요. = ");
 			car.setCarCompany(scan.next());
 			System.out.print((i+1) + "번째 자동차 판매가를 입력하세요. = ");
 			car.setCarPrice(scan.nextInt());
@@ -294,12 +328,107 @@ public class CarInfo {
 		// 향상된 for 반복문은 carList의 전체 요소에 순차적으로 접근합니다.
 		// carInfo()의 경우 Car 객체에 자동차 정보를 출력하도록 정의한 상태입니다.
 		System.out.println("* 보유중인 자동차 정보");
-		for(Car car : carList) {
+		for(CarDTO car : carList) {
 			car.carInfo();
 		}
 				
 	}
 
+}
+```
+
+### 📌 CarInfo 응용 클래스 생성
+> - CarDTO 객체의 필드에 데이터를 저장하기 위해 CarInfo에서는 Scanner를 이용하였습니다.
+> - CarInfo 기본 클래스와 응용 클래스의 차이점은 오버로딩 및 setter 메서드의 적용 여부입니다.
+> - 응용 클래스에서는 trim 메서드를 이용하여 데이터 입력이 없을 경우를 처리하였습니다.
+> - 그리고 isEmpty 메서드를 이용하여 경우에 따른 조건문을 작성하였습니다.
+> - 참고로 trim 및 isEmpty의 경우 Java의 String 클래스에 기본적으로 내장된 메서드입니다.
+
+### 📌 Setter 메서드의 효용성
+> - 아래 구현된 CarInfoUpdate 클래스는 setter 메서드를 사용하고 있지 않습니다.
+> - 이유는 생성자를 통해 CarList[i]에 데이터가 입력되며 초기화되었기 때문입니다.
+> - 이미 CarDTO에 파라미터 값이 채워졌기 때문에 객체의 상태를 다시 변경할 필요가 없습니다.
+
+``` java
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class CarInfoUpdate {
+
+	public static void main(String[] args) {
+		
+		// Array를 이용하여 데이터를 일괄적으로 관리하였습니다.
+		CarDTO[] carList = new CarDTO[1];
+		// 입력을 통해 Car 데이터가 저장될 수 있도록 설정하였습니다.
+		Scanner scan = new Scanner(System.in);
+		// 예외 처리를 위해 carPrice 변수를 0으로 초기화하였습니다.
+		int carPrice = 0;
+		
+		// 순차적인 데이터 저장을 위해 반복문을 설정하였습니다.
+		for(int i = 0; i < carList.length; i++) {
+			// 값은 Scanner 입력을 통해 할당시켰습니다.
+			// 값이 없는 경우 공백을 입력받을 수 있도록 trim 메서드를 사용하였습니다.
+			// 참고로 nextInt에는 trim 메서드를 이용할 수 없습니다.
+			System.out.println((i+1) + "번째 자동차 정보를 입력하세요.");			
+			System.out.print("자동차 모델명(없으면 공백 입력) = ");
+			// 공백을 포함한 라인 전체를 입력으로 받기 위해 nextLine 메서드를 사용하였습니다.
+			String carName = scan.nextLine().trim();
+			System.out.print("자동차 제조사(없으면 공백 입력) = ");
+			// 공백을 포함한 라인 전체를 입력으로 받기 위해 nextLine 메서드를 사용하였습니다.
+			String carCompany = scan.nextLine().trim();
+			System.out.print("자동차 판매가(없으면 0 입력) = ");
+			// nextInt 메서드에 정수가 아닌 다른 값이 입력되었을 경우를 위해 try-catch block을 설정하였습니다.
+			// nextInt 메서드를 실행시킨 뒤 예상되는 에러가 발생되면 carPrice 변수에 0을 할당시켰습니다.
+			try {
+				carPrice = scan.nextInt();
+				// 입력 버퍼를 비우기 위해 개행 문자('\n' 등)를 제거하였습니다.
+				scan.nextLine();
+			} catch(InputMismatchException e) {
+				carPrice = 0;
+				// 입력 버퍼를 비우기 위해 개행 문자('\n' 등)를 제거하였습니다.
+				scan.nextLine();
+			}
+			
+			// 조건문에 따라 값이 제대로 입력된 데이터만 필드(변수)에 할당되게 설정하였습니다.
+			// isEmpty 메서드를 이용하여 필드가 비어있는지 확인하였습니다.
+			// 생성자를 이용하여 carList 배열에 저장될 데이터를 초기화하였습니다.
+			// CarDTO의 오버로딩 정의 시와 다르게 경우의 수에 맞게 조건문을 작성하였습니다.
+			// 데이터를 입력받지 못하는 경우 null 값을 할당시켰습니다.
+			// 참고로 int의 경우 null 값을 받지 못합니다.
+			if(!carName.isEmpty() && !carCompany.isEmpty() && carPrice != 0) {
+				carList[i] = new CarDTO(carName, carCompany, carPrice);
+			} else if(!carName.isEmpty() && !carCompany.isEmpty()) {
+				carList[i] = new CarDTO(carName, carCompany);
+			} else if(!carName.isEmpty() && carPrice != 0) {
+				carList[i] = new CarDTO(carName, null, carPrice);
+			} else if(!carCompany.isEmpty() && carPrice != 0) {
+				carList[i] = new CarDTO(null, carCompany, carPrice);
+			} else if(!carName.isEmpty()) {
+				carList[i] = new CarDTO(carName, null);
+			} else if(!carCompany.isEmpty()) {
+				carList[i] = new CarDTO(null, carCompany);
+			} else if(carPrice != 0) {
+				carList[i] = new CarDTO(null, null, carPrice);
+			} else if(carName.isEmpty() && carCompany.isEmpty() && carPrice == 0) {
+				carList[i] = new CarDTO(null, null, 0);
+			}
+		}
+		
+		// Scanner 클래스는 리소스가 해제되기 전 또는 프로그램 종료 전까지 계속 실행됩니다.
+		// 따라서 close 메서드를 이용하여 리소스를 해제시키고 리소스 누수를 방지하였습니다.
+		scan.close();
+		System.out.println();
+		
+		// 보유중인 자동차 정보를 향상된 for 반복문으로 출력하였습니다.
+		// 향상된 for 반복문은 carList의 전체 요소에 순차적으로 접근합니다.
+		// carInfo()의 경우 CarDTO에서 자동차 정보를 출력하도록 정의한 상태입니다.
+		System.out.println("* 보유중인 자동차 정보");
+		for(CarDTO car : carList) {
+			car.carInfo();
+		}
+				
+	}	
+	
 }
 ```
 
