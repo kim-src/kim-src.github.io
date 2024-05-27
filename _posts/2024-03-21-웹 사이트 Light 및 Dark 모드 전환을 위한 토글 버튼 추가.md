@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 Light 및 Dark 모드 전환을 위한 토글 버튼 추가
 date: 2024-03-21 18:00:00 +09:00
-categories: [3. Web Development, GitHub Blog]
+categories: [3. Hobby Project, GitHub Blog]
 tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, toggle, data-mode, dark-theme, light-theme, dark-scheme, light-theme]
 ---
 

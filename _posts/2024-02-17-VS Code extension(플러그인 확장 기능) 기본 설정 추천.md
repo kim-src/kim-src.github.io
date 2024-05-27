@@ -1,7 +1,7 @@
 ---
 title: VS Code extension(플러그인 확장 기능) 기본 설정 추천
 date: 2024-02-17 18:00:00 +09:00
-categories: [1. Fundamental, Development Tool]
+categories: [3. Hobby Project, Development Tool]
 tags: [VS Code, Visual Studio Code, Extension, Plugin, Fundamental, VS Code Extension]
 ---
 

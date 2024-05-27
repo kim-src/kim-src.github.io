@@ -1,7 +1,7 @@
 ---
 title: 깃허브 블로그에 Jekyll의 Chirpy 테마 적용시키는 방법
 date: 2024-02-11 18:00:00 +09:00
-categories: [3. Web Development, GitHub Blog]
+categories: [3. Hobby Project, GitHub Blog]
 tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 
@@ -78,7 +78,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 title: 깃허브 블로그에 Jekyll의 Chirpy 테마 적용시키는 방법
 date: 2024-02-11 18:00:00 +09:00
-categories: [3. Web Development, GitHub Blog]
+categories: [3. Hobby Project, GitHub Blog]
 tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 
