@@ -8,7 +8,7 @@ tags: [VS Code, Visual Studio Code, Extension, Plugin, Fundamental, VS Code Exte
 <!-- 2024-02-18 글 작성 시작; 2024-02-18 페이지 호출 검토 완료 -->
 <h2>Visual Studio Code의 기본 Extension 추천</h2>
 > - Tool :  
-<img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
+<img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
 
 <br>
 
