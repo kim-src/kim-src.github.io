@@ -1,5 +1,5 @@
 ---
-title: HTML 및 CSS의 핵심 기능, 시맨틱 태그, BootStrap 소개
+title: HTML 및 CSS의 핵심 개념, 시맨틱 태그, BootStrap 실습
 date: 2024-05-29 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
 tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic Tag, Live Server, IDE, Browser, Plugin]
@@ -23,6 +23,17 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic T
 > - 요소는 태그를 포함하는 개념이며 시작 태그, 태그 내부 콘텐츠, 종료 태그로 구성됩니다.
 > - 참고로 HTML의 기본적인 문서 구조는 head 및 body 태그로 구분됩니다.
 
+### 📌 HTML 요소
+> - 각각의 HTML의 요소(element) 중에는 특정 속성을 부여할 수 있는 키워드가 있습니다.
+> - id : 개별 요소를 식별하기 위한 식별자 역할을 하며 페이지 내에서 중복될 수 없습니다.
+> - class : 중복하여 사용할 수 있으며 클래스에 따른 스타일 등을 정의할 수 있습니다.
+> - name : 입력 필드를 그룹화하거나 식별할 때 이용됩니다.
+> - type : input 요소의 유형을 지정하는 것이며 text, password 등으로 정의됩니다.
+> - style : 요소에 직접적으로 스타일을 적용시키기 위해 사용됩니다.
+> - value : 입력 요소에 현재 값을 설정하기 위해 사용됩니다.
+> - placeholder : 사용자가 입력하기 전에 표시되는 안내 문구 입력을 위해 사용됩니다.
+> - readonly : 입력 필드를 읽기 전용으로 설정하기 위해 사용됩니다.
+
 ### 📌 HTML 속성
 > - HTML에서 요소(elements), 태그(tags), 속성(attributes)은 중요한 개념입니다.
 > - 속성은 요소의 기능 또는 특성을 정의합니다.
@@ -30,6 +41,14 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic T
 > - id는 요소를 유일하게 식별하는 식별자 역할을 합니다.
 > - class에는 보통 요소에 적용할 스타일을 지정합니다.
 > - name의 경우 서버로 전송되는 데이터를 식별하는 데 사용된다고 합니다.
+
+### 📌 HTML 태그의 종류
+> - HTML 태그는 아래와 같이 구분할 수 있습니다.
+> - 아래 태그를 활용하면 HTML 문서를 효율적으로 작성하고 꾸밀 수 있습니다.
+>    - 싱글 태그 : 종료 태그가 필요 없이 홀로 사용되는 태그(br, img, input 등)
+>    - 쌍 태그 : 시작 태그와 종료 태그가 서로 연결되는 태그(head, body, li 등)
+>    - 블록 레벨 태그 : 주변 내용과 상/하로 간격을 갖는 태그(div, p 등)
+>    - 인라인 태그 : 내용만큼만 공간을 차지하는 태그(span 등)
 
 ### 📌 head 태그
 > - head 태그에는 웹 페이지의 메타 데이터가 포함됩니다.
