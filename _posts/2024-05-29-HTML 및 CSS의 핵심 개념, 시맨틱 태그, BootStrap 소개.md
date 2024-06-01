@@ -1,5 +1,5 @@
 ---
-title: HTML 및 CSS의 핵심 개념, 시맨틱 태그, BootStrap 실습
+title: HTML 및 CSS의 핵심 개념, 시맨틱 태그, BootStrap 소개
 date: 2024-05-29 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
 tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic Tag, Live Server, IDE, Browser, Plugin]
@@ -324,7 +324,7 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic T
 </html>
 ```
 
-### 📌 웹 페이지에 테이블 도시
+### 📌 웹 페이지에 테이블 구현
 > - HTML로 구현된 표에 담긴 데이터는 총 25개입니다.
 > - CSS을 이용하여 표 및 텍스트 콘텐츠의 스타일을 정의하였습니다.
 
@@ -524,6 +524,84 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic T
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</html>
+```
+
+### 📌 웹 페이지에 폼 필드(form field) 구현
+> - 자기소개와 관련된 다양한 데이터를 입력받기 위해 폼 필드를 구현하였습니다.
+> - 다양한 목적의 각 폼 필드는 label 태그로 구분하였습니다.
+> - 데이터 입력을 받기 위해 input 태그에 text, number, checkbox를 속성값으로 설정하였습니다.
+> - 성별을 선택할 수 있도록 select, option 태그를 사용하였습니다.
+> - 데이터 입력 및 선택을 완료한 후 저장 또는 초기화할 수 있도록 유관 버튼을 생성하였습니다.
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .resultButton {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="introduce">
+        <!-- 이름 입력을 위한 input 태그 -->
+        <label for="nameType">
+            이름 : 
+            <input type="text" id="nameType" name="nameType" value="" placeholder="이름을 입력하세요.">
+        </label>
+
+        <br>
+        
+        <!-- 나이 입력을 위한 input 태그 -->
+        <label for="ageType">
+            나이 : 
+            <input type="number" id="ageType" name="ageType" value="" placeholder="나이를 입력하세요.">
+        </label>
+
+        <br>
+        
+        <!-- 취미 선택을 위한 input 태그 -->
+        <label for="movie">
+            <input type="checkbox" id="movie" name="hobby" value="movie">
+            영화감상
+        </label>
+        
+        <!-- 취미 선택을 위한 input 태그 -->
+        <label for="walk">
+            <input type="checkbox" id="walk" name="hobby" value="walk">
+            산책
+        </label>
+        
+        <!-- 취미 선택을 위한 input 태그 -->
+        <label for="book">
+            <input type="checkbox" id="book" name="hobby" value="book">
+            독서
+        </label>
+
+        <br>
+
+        <!-- 성별 선택을 위한 select, option 태그 -->
+        <label for="gender">
+            성별 : 
+            <select id="gender" name="gender">
+                <option value="man">남자</option>
+                <option value="woman">여자</option>
+            </select>
+        </label>
+
+        <div class="resultButton">
+            <!-- form 데이터 전송용 저장 버튼 -->
+            <button type="submit">저장</button>
+            <!-- form 데이터 전체 삭제용 취소 버튼 -->
+            <input type="reset" value="취소">
+        </div>
+    </div>
+</body>
 </html>
 ```
 
