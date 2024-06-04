@@ -145,6 +145,8 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Funct
 > - 하지만 이는 인터프리팅 단계를 거친 후이며 JIT 컴파일로 성능을 최적화 한 것입니다.
 > - 다양한 컴파일 방식이 있으며 이는 JavaScript 사용 목적이나 브라우저에 따라 다양합니다.
 
+``` html
+```
 
 ### 📌 JavaScript에서의 신규 변수 삽입 방식
 > - ES6 이후 백틱(`)을 사용하여 문자열 등에 변수를 정적/동적으로 삽입시킬 수 있습니다.
