@@ -30,7 +30,7 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Funct
 > - 인터프리터에 의해 실행되는 언어는 JavaScript, Python, PHP 등이 있습니다.
 > - 컴파일러에 의해 실행되는 언어는 Java, C++, C, Swift 등이 있습니다.
 
-### 📌 JavaScript vs Java 유의점
+### 📌 JavaScript vs Java 유사점
 > - JavaScript와 Java는 명확히 다른 언어이지만 코드 작성 방법은 비슷한 편입니다.
 > - JavaScript에서는 Java와 마찬가지로 변수와 메서드를 선언하고 작성해야 됩니다.
 > - Java에서는 변수 선언 시 String, int 등의 데이터 타입을 지정해야 됩니다.
