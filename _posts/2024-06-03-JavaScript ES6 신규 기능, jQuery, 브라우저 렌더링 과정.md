@@ -1,11 +1,11 @@
 ---
 title: JavaScript ES6 신규 기능, jQuery, 브라우저 렌더링 과정
-date: 2024-06-02 18:00:00 +09:00
+date: 2024-06-03 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
 tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Function, Callback Function, Synchronous Function, Asynchronous Function, jQuery]
 ---
 
-<!-- 2024-05-31 글 작성 시작; 2024-06-02 페이지 호출 완료 -->
+<!-- 2024-05-31 글 작성 시작; 2024-06-04 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-05-22,23,27 강의)</h2>
 > - Tool :  
 <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white">
@@ -144,8 +144,63 @@ tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Funct
 > - 한 예시로 JIT (Just-In-Time) 컴파일의 경우 실시간으로 코드를 기계어로 변환합니다.
 > - 하지만 이는 인터프리팅 단계를 거친 후이며 JIT 컴파일로 성능을 최적화 한 것입니다.
 > - 다양한 컴파일 방식이 있으며 이는 JavaScript 사용 목적이나 브라우저에 따라 다양합니다.
+> - 아래는 클래스 기반 문법을 사용한 예시입니다.
 
 ``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    /* 부모 클래스 생성 */
+    // class 키워드를 사용하여 Phone 클래스 생성
+    class Phone {
+        // constructor 키워드를 사용하여 클래스의 속성 생성
+        constructor(model, company) {
+            this.model = model;
+            this.company = company;
+        }
+
+        // 클래스의 메서드 정의
+        phoneInfo() {
+            document.write(`이 스마트폰은 ${this.model}이고 ${this.company}에서 제작하였습니다.`);
+        }
+    }
+
+    // 변수 및 인스턴스 생성(실질적인 값 할당)
+    let myPhone = new Phone("S23 Ultra", "Samsung");
+    myPhone.phoneInfo();
+
+    document.write("<br>");
+
+    /* 자식 클래스 생성 */
+    // class 키워드를 사용하여 User 클래스 생성
+    // extends 키워드를 사용하여 Phone 클래스 상속
+    class User extends Phone {
+        // constructor 키워드를 사용하여 클래스의 속성 생성
+        constructor(model, company, user) {
+            // super 키워드를 이용하여 부모 클래스 생성자 호출 및 초기화
+            super(model, company);
+            this.user = user;
+        }
+
+        // Phone 클래스의 phoneInfo 메서드 오버라이딩
+        phoneInfo() {
+            document.write(`이 스마트폰은 ${this.model}이고 ${this.company}에서 제작하였으며 사용자는 ${this.user}입니다.`);
+        }
+        // Phone 클래스의 
+    }
+
+    // 변수 및 인스턴스 생성
+    let myPhoneUser = new User("S23 Ultra", "Samsung", "Kim");
+    myPhoneUser.phoneInfo();
+</script>
+</html>
 ```
 
 ### 📌 JavaScript에서의 신규 변수 삽입 방식
