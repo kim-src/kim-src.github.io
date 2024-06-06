@@ -1,5 +1,5 @@
 ---
-title: 접근제한자, 캡슐화, 오버로딩, Getter, Setter 의미 및 관계
+title: 접근제한자, 캡슐화, 오버로딩, Getter, Setter 의미
 date: 2024-05-26 18:00:00 +09:00
 categories: [1. Fundamental, Java]
 tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Information Hiding, Modularity, Getter, Setter, Executable Class, DTO Class, VO Class, DAO Class, Utility Class, Parameter, Return, Void]
