@@ -1,11 +1,11 @@
 ---
 title: JavaScript ES6 신규 기능, jQuery, 브라우저 렌더링 과정
-date: 2024-06-03 18:00:00 +09:00
+date: 2024-06-08 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
-tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Function, Callback Function, Synchronous Function, Asynchronous Function, jQuery]
+tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Function, Callback Function, Async, Await, Browser, Rendering, Synchronous Function, Asynchronous Function, jQuery]
 ---
 
-<!-- 2024-05-31 글 작성 시작; 2024-06-05 페이지 호출 완료 -->
+<!-- 2024-05-31 글 작성 시작; 2024-06-06 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-05-22,23,27 강의)</h2>
 > - Tool :  
 <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white">
@@ -162,12 +162,126 @@ setTimeout(function() {
 > - 상기 setTimeout 함수와 같이 비동기적 프로그래밍에는 콜백 함수 개념이 포함됩니다.
 > - 다른 함수의 파라미터로 들어가는 함수의 이름은 명명하기 애매한 부분이 있습니다.
 > - 왜냐하면 해당 함수는 재활용이 아닌 일회용으로만 활용될 가능성이 크기 때문입니다.
-> - 참고로 ```() => {}```는 화살표 함수를 뜻하며 링크된 글에 설명이 있습니다.
+> - 참고로 ```() => {}```는 <a href="https://kim-src.github.io/posts/JavaScript-ES6-%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5,-jQuery,-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/#-javascript%EC%97%90%EC%84%9C%EC%9D%98-%EC%8B%A0%EA%B7%9C-%ED%95%A8%EC%88%98-%EC%A0%95%EC%9D%98-%EB%B0%A9%EC%8B%9D">화살표 함수</a>를 뜻하며 링크된 글에 설명이 있습니다.
 
 ### 📌 함수의 스코프(scope)
+> - 스코프란 JavaScript 코드가 변수 또는 함수에 접근할 수 있는 범위를 의미합니다.
+> - 이는 전역(global) 스코프, 블록(block) 스코프, 함수(function) 스코프로 구분됩니다.
+> - 전역 스코프에 선언된 변수 또는 함수에는 코드의 어느 곳에서든지 접근 가능합니다.
+> - 블록 스코프에 선언된 변수 또는 함수에는 블록 내부에서만 접근 가능합니다.
+> - 함수 스코프에 선언된 변수 또는 함수에는 함수 내부에서만 접근 가능합니다.
+> - 아래 예시로 스코프에 대한 부연 설명을 하겠습니다.
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    /* global scope */
+    let a = 10;
+
+    for(i = 0; i < 1; i++) {
+        /* block scope */
+        let b = 20;
+
+        if(true) {
+            /* function scope */
+            let c = 30;
+            // function scope에 선언된 변수 c이기 때문에 이곳에서 활용 가능합니다.
+            console.log(c);
+        }
+
+        // block scope에 선언된 변수 b이기 때문에 이곳에서 활용 가능합니다.
+        console.log(b);
+        // function scope에 선언된 변수 c이기 때문에 함수 내에서만 활용 가능합니다.
+        // console.log(c);
+    }
+
+    // global scope에 선언된 변수 a는 어느 곳에서나 활용 가능합니다.
+    console.log(a);
+    // block scope에 선언된 변수 b는 블록 내부에서만 활용 가능합니다.
+    // console.log(b);
+    // function scope에 선언된 변수 c는 함수 내에서만 활용 가능합니다.
+    // console.log(c);
+</script>
+</html>
+```
+
+``` console
+jsfunc_5.html:60 30
+jsfunc_5.html:64 20
+jsfunc_5.html:70 10
+```
 
 ### 📌 변수의 중복(redeclaration) 선언
+> - ES6 이후부터추가된 변수 선언 방식인 const 및 let 키워드로는 변수명을 중복시킬 수 없습니다.
+> - ES6 이전 기존의 변수 선언 방식인 var 키워드로는 변수명을 중복시킬 수 있습니다.
+> - var 키워드에 의존중이었던 변수 또는 상수를 선언 방식에는 변수명 중복 문제가 있었습니다.
+> - 변수명이 중복되면 상위 변수에서 할당시켰던 값이 덮어씌워졌기 때문입니다.
+> - 이는 프로그램을 구성하는 코드의 양이 많아지거나 협업할 시 치명적인 문제가 있었습니다.
+> - 이를 보완할 수 있는 것이 const 및 let 키워드입니다.
 
+### 📌 jQuery
+> - jQuery는 JavaScript 코드를 보다 간결하게 작성하는 것을 목적으로 하는 라이브러리입니다.
+> - 한때 웹 개발에서 유명했지만 대체적인 React, Angular 등이 부상하며 인기가 감소하였습니다.
+> - 그럼에도 jQuery로 제작된 웹 사이트에 대한 유지/보수를 위해 사용 방법을 알면 좋습니다.
+> - 아래는 jQuery 코드를 이용한 예시이며 순수 JavaScript 코드와 비교하였습니다.
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="area1"></div>
+    <div class="area2"></div>
+</body>
+<!-- jQuery 라이브러리 이용 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+    /* 기본 JavaScript를 이용한 스타일 부여 방식 */
+    // querySelector는 css 선택자를 이용하는 메서드
+    // html 문서에서 첫 번째로 일치하는 css 요소를 찾아 해당 요소를 반환
+    const basicBox = document.querySelector('.area1');
+
+    // basicBox 속성이 존재할 경우 스타일 적용
+    // querySelector 메서드 = DOM 메서드
+    // 요소가 존재하지 않을 경우 null 반환
+    if(basicBox) {
+        // style 객체의 cssText 속성에 css 속성 및 값 부여
+        // JavaScript에서는 하이픈(-)이 아닌 카멜 케이스로 코드 작성
+        basicBox.style.cssText = 'width: 100px; height: 100px';
+        // style 객체의 backgroundColor 속성에 값 부여
+        // JavaScript에서는 하이픈(-)이 아닌 카멜 케이스로 코드 작성
+        basicBox.style.backgroundColor = 'red';
+    }
+
+    /* jQuery를 이용한 스타일 부여 방식 */
+    // jQuery($) 라이브러리를 사용하여 area2 class에 접근
+    const queryBox = $('.area2');
+
+    // queryBox 속성이 존재할 경우 스타일 적용
+    // jQuery = 배열 유사 객체
+    // 요소가 존재하지 않더라도 배열 유사 객체 반환
+    // 즉, 항상 true 반환
+    if(queryBox.length > 0) {
+        // jQuery에서는 중괄호 내에 css 속성 및 값 부여
+        queryBox.css({width: '200px', height: '200px'});
+        // jQuery에서는 css와 마찬가지로 하이픈을 사용하여 코드 작성
+        queryBox.css('background-color', 'orange');
+    }
+</script>
+</html>
+```
 
 <br>
 
@@ -190,9 +304,11 @@ setTimeout(function() {
 > - JavaScript는 변수를 선언할 때 const, let, var 키워드를 사용합니다.
 > - JavaScript는 변수를 선언할 때 데이터 타입을 명시하지 않아도 괜찮습니다.
 > - 왜냐하면 데이터 타입이 동적으로 결정되고 자동으로 할당되기 때문입니다.
-> - ES6 이전에는 var 키워드가 변수/상수를 선언하는 주요 키워드였습니다.
-> - 따라서 코드 작성 자체는 더욱 편리하였지만 유지/보수 측면에서는 다루기 어려웠습니다.
-> - 이를 보완하기 위해 개발된 것이 const 및 let 키워드입니다.
+> - ES6 이전에는 var 키워드가 변수 또는 상수를 선언하는 주요 키워드였습니다.
+> - 그런데 var는 함수 스코프에서만 활용 가능하고 변수명이 중복될 수 있다는 단점이 있습니다.
+> - 또한 var를 전역 스코프로 활용하면 window 객체에 영향을 미치는 위험 가능성이 있습니다.
+> - 따라서 코드 작성 시 var는 편리하지만 유지/보수 측면에서는 치명적인 문제가 있습니다.
+> - 이를 보완할 수 있는 것이 const 및 let 키워드입니다.
 > - 아래는 const, let, var 키워드를 사용하여 변수를 선언 및 값을 수정한 예시입니다.
 
 ``` html
@@ -383,11 +499,90 @@ setTimeout(function() {
 > - Callback Hell은 개발자들의 커뮤니티에서 사용되는 단어입니다.
 > - Promise 객체가 없던 시기의 JavaScript는 비동기적 로직이 복잡하였습니다.
 > - 왜냐하면 콜백 함수가 중첩되어 함수 내부의 함수를 구분하기 어려웠기 때문입니다.
-> - 아래와 같은 형태의 콜백 함수 더미는 유지/보수가 어려울 수밖에 없었습니다.
 > - 이를 해결하기 위해 ES8 (ES2017) 이후로는 async, await 키워드가 도입되었습니다.
-> - 아래는 async, await 키워드 사용 예시입니다.
+> - 아래는 Promise 객체, async 및 await 키워드를 사용한 서버 데이터 처리 예시입니다.
+> - 참고로 ES6 이전 JavaScript 코드는 상당히 복잡하기 때문에 예시는 없습니다.
 
 ``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    /* Promise 객체 사용 예시 */
+    // url을 인자로 받는 fetchData1 함수를 정의하였습니다.
+    // fetchData1 함수는 전달받은 url을 가지고 서버에 데이터를 요청합니다.
+    function fetchData1(url) {
+        // url을 인자로 받는 fetch 함수를 사용하였습니다.
+        // fetch 함수는 JavaScript의 내장 함수입니다.
+        // fetch 함수는 url을 인자로 받아 서버로 데이터를 요청하는 역할을 합니다.
+        fetch(url)
+            // 서버로부터 응답을 받으면 실행될 함수를 정의하였습니다.
+            // 화살표 함수 내용은 response를 인자로 받았을 때 실행될 내용입니다.
+            .then(response => {
+                // 데이터를 응답받지 못했으면 아래의 에러를 발생시킵니다.
+                if(!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+                // 데이터를 응답 받았으면 응답을 JSON 형태로 변환합니다.
+                return response.json();
+            })
+        // 서버로부터 data를 받으면 실행될 내용을 정의하였습니다.
+        .then(data => {
+            // data를 콘솔에 출력합니다.
+            console.log(data);
+        })
+        // 에러 처리를 정의하였습니다.
+        .catch(error => {
+            // error 내용을 콘솔에 출력하였습니다.
+            console.error('Error: ', error);
+        })
+    }
+
+    // 예시로 필자의 블로그 url을 입력하였습니다.
+    // 아래 메서드는 fetchData1 함수를 호출하고 url을 전달합니다.
+    // 해당 url의 블로그로부터 응답을 받으면 응답 내용이 JSON 형태로 변환됩니다.
+    // 해당 url의 블로그로부터 데이터를 받으면 콘솔에 출력됩니다.
+    // 해당 url의 블로그 데이터 교환 과정에서 에러가 발생되면 콜솔에 출력됩니다. 
+    fetchData1('https://kim-src.github.io/');
+
+
+    /* async/await 키워드 사용 예시 */
+    // url을 인자로 받는 fetchData 함수를 정의하였습니다.
+    // fetchData 함수는 전달받은 url을 가지고 서버에 데이터를 요청합니다.
+    async function fetchData2(url) {
+        // try 블록에 데이터 요청에 대한 응답 및 결과 관련 로직을 정의하였습니다.
+        try {
+            // await 키워드를 이용하여 fetch 함수가 url을 인자로 받을 때까지 대기합니다.
+            const response = await fetch(url);
+            // 데이터를 응답받지 못했으면 아래의 에러를 발생시킵니다.
+            if(!response.ok) {
+                throw new Error('Network response was not ok.');
+            }
+            // 데이터를 응답 받았으면 응답을 JSON 형태로 변환합니다.
+            const data = await response.json();
+            // 서버로부터 data를 받으면 콘솔에 출력합니다.
+            console.log(data);
+        // catch 블록에 에러 발생 로직을 정의하였습니다.
+        } catch(error) {
+            // error 내용을 콘솔에 출력하였습니다.
+            console.error('Error: ', error);
+        }
+    }
+
+    // 예시로 필자의 블로그 url을 입력하였습니다.
+    // 아래 메서드는 fetchData1 함수를 호출하고 url을 전달합니다.
+    // 해당 url의 블로그로부터 응답을 받으면 응답 내용이 JSON 형태로 변환됩니다.
+    // 해당 url의 블로그로부터 데이터를 받으면 콘솔에 출력됩니다.
+    // 해당 url의 블로그 데이터 교환 과정에서 에러가 발생되면 콜솔에 출력됩니다. 
+    fetchData2('https://kim-src.github.io/');
+</script>
+</html>
 ```
 
 ### 📌 JavaScript에서의 코드 모듈화 및 공유 방식
@@ -591,12 +786,6 @@ const login = () => {
     }
 };
 ```
-
-<br>
-
-### 🔔 jQuery
-### 📌 부제목
-> - 글 내용
 
 <br>
 
