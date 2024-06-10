@@ -162,7 +162,7 @@ setTimeout(function() {
 > - 상기 setTimeout 함수와 같이 비동기적 프로그래밍에는 콜백 함수 개념이 포함됩니다.
 > - 다른 함수의 파라미터로 들어가는 함수의 이름은 명명하기 애매한 부분이 있습니다.
 > - 왜냐하면 해당 함수는 재활용이 아닌 일회용으로만 활용될 가능성이 크기 때문입니다.
-> - 참고로 ```() => {}```는 <a href="https://kim-src.github.io/posts/JavaScript-ES6-%EC%8B%A0%EA%B7%9C-%EA%B8%B0%EB%8A%A5,-jQuery,-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/#-javascript%EC%97%90%EC%84%9C%EC%9D%98-%EC%8B%A0%EA%B7%9C-%ED%95%A8%EC%88%98-%EC%A0%95%EC%9D%98-%EB%B0%A9%EC%8B%9D">화살표 함수</a>를 뜻하며 링크된 글에 설명이 있습니다.
+> - 참고로 ```() => {}```는 <a href="https://kim-src.github.io/posts/JavaScript-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98,-Promise,-async,-await,-ES6-%EA%B8%B0%EB%8A%A5/#-javascript%EC%97%90%EC%84%9C%EC%9D%98-%EC%8B%A0%EA%B7%9C-%ED%95%A8%EC%88%98-%EC%A0%95%EC%9D%98-%EB%B0%A9%EC%8B%9D">화살표 함수</a>를 뜻하며 링크된 글에 설명이 있습니다.
 
 ### 📌 함수의 스코프(scope)
 > - 스코프란 JavaScript 코드가 변수 또는 함수에 접근할 수 있는 범위를 의미합니다.

@@ -37,7 +37,8 @@ tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Informati
 
 ### 📌 default
 > - 접근제한자를 지정해두지 않으면 default로 자동 지정됩니다.
-> - 이 경우 동일 패키지의 다른 클래스에서만 접근 가능합니다.
+> - 이 경우 동일 패키지에서만 접근 가능합니다.
+> - 클래스 또는 멤버를 숨기려는 목적일 때 사용됩니다.
 
 <br>
 
