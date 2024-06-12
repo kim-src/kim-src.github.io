@@ -68,6 +68,7 @@ tags: [Java, Fundamental, Access Modifier, Encapsulation, Overloading, Informati
 > - 사용자 입장에서 Getter는 외부 클래스의 값을 내부로 '가져오는' 역할을 합니다.
 > - 개발자 입장에서 Setter는 외부에서 제공된 값을 클래스 내부에 '저장하는' 역할을 합니다.
 > - 사용자 입장에서 Setter는 외부 클래스의 속성(변수)에 값을 '제공하는' 역할을 합니다.
+> - 즉, getter 메서드는 접근자 메서드이고, setter 메서드는 설정자 메서드입니다.
 > - 참고로 값은 입력 메서드나 설정된 함수 등으로 통해 제공됩니다.
 
 ### 📌 Getter and Setter 사용 이유
