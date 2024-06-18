@@ -22,7 +22,7 @@ tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 > - 필자의 root 폴더명(블로그 폴더)은 아래와 같습니다.
 
 ``` bash
-/c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
+/c/Users/ceoba/Dropbox/pjt/Kim-src.github.io
 ```
 
 <br>

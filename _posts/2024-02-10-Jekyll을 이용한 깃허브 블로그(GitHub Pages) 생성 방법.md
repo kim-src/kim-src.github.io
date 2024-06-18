@@ -93,7 +93,7 @@ Kim-src.github.io
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 
 ```bash
-$ cd /c/Users/ceoba/Dropbox/'2. PJT'
+$ cd /c/Users/ceoba/Dropbox/pjt
 ```
 
 <figure>
@@ -185,7 +185,7 @@ Bundler version 2.5.6
 > - 작성자의 Git Bash 입력 내용은 아래와 같습니다.
 
 ```bash
-$ cd /c/Users/ceoba/Dropbox/'2. PJT'/Kim-src.github.io
+$ cd /c/Users/ceoba/Dropbox/pjt/Kim-src.github.io
 $ jekyll new ./
 ```
 
