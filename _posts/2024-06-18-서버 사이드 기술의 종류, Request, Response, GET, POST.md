@@ -2,14 +2,14 @@
 title: 서버 사이드 기술의 종류, Request, Response, GET, POST
 date: 2024-06-18 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
-tags: [Spring, Server, Server Side, Request, Response, GET, POST]
+tags: [Spring, Fundamental, Server, Server Side, Request, Response, GET, POST]
 ---
 
 <!-- 2024-06-18 글 작성 시작; 2024-06-18 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-12 강의)</h2>
 > - Tool :  
-<img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
-<img alt="Eclipse" src="https://img.shields.io/badge/-Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white" />
+<img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />
+<img alt="Spring Tool Suite 4" src="https://img.shields.io/badge/-Spring%20Tool%20Suite%204-6DB33F?style=flat-square&logo=eclipse&logoColor=white" />
 
 <br>
 
