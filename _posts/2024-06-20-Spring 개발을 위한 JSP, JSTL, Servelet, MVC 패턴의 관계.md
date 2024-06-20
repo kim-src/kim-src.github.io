@@ -1,12 +1,12 @@
 ---
 title: Spring 개발을 위한 JSP, JSTL, Servlet, MVC 패턴의 관계
-date: 2024-06-19 18:00:00 +09:00
+date: 2024-06-20 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
 tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framework]
 ---
 
-<!-- 2024-06-18 글 작성 시작; 2024-06-99 페이지 호출 완료 -->
-<h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-10,12 강의)</h2>
+<!-- 2024-06-18 글 작성 시작; 2024-06-20 페이지 호출 완료 -->
+<h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-10,12,17,18 강의)</h2>
 > - Tool : 
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />
 <img alt="Spring Tool Suite 4" src="https://img.shields.io/badge/-Spring%20Tool%20Suite%204-6DB33F?style=flat-square&logo=eclipse&logoColor=white" />
@@ -61,13 +61,81 @@ tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framewor
 </html>
 ```
 
+### 📌 JSTL (Java Server Tag Library)
+> - JSTL과 El (Expression Language)은 JSP에 활용되는 주요 기술입니다.
+> - JSTL은 말 그대로 태그 라이브러리의 집합이고 JSP에서 로직이 수행될 수 있게 합니다.
+> - JSTL의 장점은 JSP에서 복잡한 Java 코드의 역할을 EL로 간단하게 처리할 수 있다는 것입니다.
+> - JSTL을 사용할 때는 JSP 상단에 'prefix="c"'를 이용해서 JSTL임을 명시해야 됩니다.
+> - EL은 Java의 객체와 컬렉션에 포함되는 접근하는 표현식 언어이며 '${}'로 표현됩니다.
+> - 참고로 Spring Boot에서는 JSTL이 아닌 타임리프(Thymeleaf) 템플릿을 사용합니다.
+> - 아래는 JSTL의 예시입니다.
+
+### 📌 JSTL 사용 예시
+> - 아래의 예시의 JSP는 할당된 name, age, hobby 값을 뷰포트에 표시하는 기능을 수행합니다.
+> - 2개의 예시 중 상부는 기존 방식의 Java 코드를 이용한 렌더링 로직입니다.
+> - 2개의 예시 중 하부는 JSTL 및 EL을 사용한 렌더링 로직입니다.
+
+``` jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		String myName = request.getParameter("myName");
+		int myAge = Integer.parseInt(request.getParameter("myAge"));
+		String[] hobbies = request.getParameterValues("hobby");
+		
+		out.print("<div><h4>" + myName + "</h4></div>");
+		out.print("<div><h4>" + myAge + "</h4></div>");
+		
+		if(hobbies != null) {
+			for(String hobby : hobbies) {
+				out.print("<div><h4>" + hobby + "</h4></div>");
+			}
+		}
+	%>
+</body>
+</html>
+```
+
+``` jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h4>${param.myName}</h4>
+	</div>
+	<div>
+		<h4>${param.myAge}</h4>
+	</div>
+	<c:forEach var="item" items="${paramValues.hobby}">
+		<div>
+			<h4>${item}</h4>
+		</div>
+	</c:forEach>
+</body>
+</html>
+```
+
 <br>
 
 ### 🔔 Servlet
 ### 📌 Servlet 소개
 > - Servlet은 웹 서버 상에서 실행되는 프로그램으로 웹 요청 및 응답을 생성하는 데 사용됩니다.
 > - Servlet은 클라이언트의 요청을 받아 내부 로직에 따라 처리한 후 결과를 반환합니다.
-> - Servlet은 MVC 구조에서 클라이언트와의 상호작용을 담당하는 Controller 역할을 합니다.
+> - Servlet은 MVC 패턴에서 클라이언트와의 상호작용을 담당하는 Controller 역할을 합니다.
 
 ### 📌 Servlet 사용 방법
 > - Servlet은 HTTP 프로토콜 통신을 위해 Java의 HttpServlet API를 상속 받아 사용합니다.
@@ -150,7 +218,7 @@ public class HelloServlet extends HttpServlet {
 
 <br>
 
-### 🔔 MVC 구조/패턴 (Model-View-Controller)
+### 🔔 MVC 패턴 (Model-View-Controller)
 ### 📌 JSP & Servlet
 > - JSP는 HTML 코드 안에 Java 코드를 '<% %>' 태그를 사용하여 삽입하고 웹 페이지를 구현합니다.
 > - 즉, JSP는 디자인 안에 Java 코드를 삽입한 형태입니다.
@@ -164,17 +232,32 @@ public class HelloServlet extends HttpServlet {
 > - JSP는 프레젠테이션 로직과 비즈니스 로직이 혼합되어 있기 때문에 관리하기 복잡합니다.
 > - 또한 JSP는 서버 설정이나 코드 작성 방식에 따라 정보 유출 가능성이 있습니다.
 
-### 📌 MVC 구조 소개
-> - MVC 구조는 JSP 및 Servlet의 단점을 보완하고자 개발되었습니다.
+### 📌 MVC 패턴 소개
+> - MVC 패턴은 JSP 및 Servlet의 단점을 보완하고자 개발되었습니다.
 > - MVC의 Model은 데이터베이스, View에는 JSP, Controller에는 Servlet을 주로 사용합니다.
-> - MVC 구조는 웹 애플리케이션의 유지보수성과 확장성을 높이기 위해 개발된 것입니다.
-> - MVC 구조는 각 요소가 명확하게 분리되어 있기 때문에 관리가 용이합니다.
+> - MVC 패턴은 웹 애플리케이션의 유지보수성과 확장성을 높이기 위해 개발된 것입니다.
+> - MVC 패턴은 각 요소가 명확하게 분리되어 있기 때문에 관리가 용이합니다.
 
-### 📌 MVC 실제 위치
-> - 각각의 MVC의 일반적인 위치는 아래와 같습니다.
-> - Controller : root/src/main/java/co/code/mvc/ControllerName.java
+### 📌 MVC 패턴의 구조
+> - MVC 패턴의 일반적인 구조는 아래와 같으며 실제 파일의 위치와 함께 표시하였습니다.
+> - Controller : root/src/main/java/package/ControllerName.java
 > - View : root/src/main/webapp/WEB-INF/views/jsp/ViewName.jsp
-> - Model : Java 클래스에서 데이터베이스 연결 로직 처리
+> - Model : Java 클래스에서 JPA 또는 MyBatis 등의 기술로 데이터베이스 접근
+
+### 📌 Controller 
+> - Controller에서 페이지 이동을 처리하는 방법으로는 주로 forward 또는 redirect가 사용됩니다.
+> - forward는 Request 객체, redirect는 Response 객체에 각각 포함된 메서드입니다.
+> - forward는 사용자가 원하는, redirect는 서버가 원하는 목적지로 이동시킵니다.
+> - forward는 현재의 Request/Response 객체를 그대로 전달하기에 데이터가 그대로 유지됩니다.
+> - redirect는 새로운 요청이 발생되는 것이기에 원래의 요청/응답이 유지되지 않습니다.
+> - forward는 상담 센터에 대표 전화로 연락을 취하면 전화를 내부적으로 돌리는 것과 비슷합니다.
+> - redirect는 전화 번호가 바뀌어 새로운 번호로 다시 연락하라는 안내를 받는 것과 비슷합니다.
+
+### 📌 WEB-INF
+> - WEB-INF 디렉토리는 클라이언트가 JSP에 직접적으로 접근하지 못하게 차단할 수 있습니다.
+> - 웹 또는 애플리케이션 서버에 의한 접근은 가능하지만 HTTP를 통한 접근은 허용되지 않습니다.
+> - 즉, JSP 파일 등의 보안을 강화하기 위해서는 WEB-INF 디렉토리 아래에 저장해야 됩니다.
+> - 참고로 INF는 information의 축약어입니다.
 
 ### 📌 Spring MVC
 > - Spring Framework에서는 MVC, Boot, Security, Data, WebFlux 등의 기능을 지원합니다.
@@ -182,6 +265,15 @@ public class HelloServlet extends HttpServlet {
 > - Spring MVC는 Java EE의 Servlet API를 기반으로 구축된 웹 프레임워크입니다.
 > - Spring MVC는 DispatcherServlet이라는 중앙 서블릿을 사용하여 웹 요청을 처리합니다.
 > - DispatcherServlet은 모든 웹 요청을 받아 적절한 컨트롤러로 라우팅하는 역할을 수행합니다.
+
+### 📌 MVC 패턴의 발전 과정
+> - 초기 웹 페이지는 JSP와 Servlet을 이용하여 개발되었습니다.
+> - 이후 JSTL의 커스텀 태그를 사용하면서 JSP 페이지의 로직 처리를 단순화하였습니다.
+> - 이후 JSP와 Servlet의 복잡한 혼합 구조를 단순화 한 MVC 패턴이 개발되었습니다.
+> - 초기 MVC 1 패턴은 주로 하나의 Servlet이 여러 개의 JSP 뷰와 상호작용하는 형태였습니다.
+> - 그렇다보니 애플리케이션 규모가 커질수록 세션 처리가 빈번해지는 등 비효율적이었습니다.
+> - 이후 MVC 2 패턴은 모든 요청을 DispatcherServlet이 처리하게 설정하였습니다.
+> - MVC 2 이후 애플리케이션의 세션 관리가 단순화되면서 유지/보수가 용이해졌습니다.
 
 <br>
 <br>
