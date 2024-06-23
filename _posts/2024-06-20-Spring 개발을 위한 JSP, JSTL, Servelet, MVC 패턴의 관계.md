@@ -280,10 +280,10 @@ public class HelloServlet extends HttpServlet {
 
 ### 📌 Spring 동작 원리
 > - 아래 이미지는 Spring이 작동되는 원리에 대한 모식도입니다.
-> - Spring의 작동 원리에 대한 상세한 내용은 링크된 글에 있습니다.
+> - <a href="https://kim-src.github.io/posts/Spring-Maven-Project-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95,-Tomcat-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/">Spring의 작동 원리에 대한 상세한 내용</a>은 링크된 글에 있습니다.
 
 <figure>
-	<img src="https://github.com/kim-src/Images/assets/150884526/da3840fb-0cc4-4f80-b51a-85e8d6330bb0">
+	<img src="https://github.com/kim-src/Images/assets/150884526/da3840fb-0cc4-4f80-b51a-85e8d6330bb0" width="500px" alt="figure">
 	<figcaption>Spring 동작 원리</figcaption>
 </figure>
 
