@@ -234,15 +234,18 @@ public class HelloServlet extends HttpServlet {
 
 ### 📌 MVC 패턴 소개
 > - MVC 패턴은 JSP 및 Servlet의 단점을 보완하고자 개발되었습니다.
-> - MVC의 Model은 데이터베이스, View에는 JSP, Controller에는 Servlet을 주로 사용합니다.
+> - MVC의 Model은 데이터, View는 Thymeleaf/JSP, Controller는 Servlet을 주로 사용합니다.
 > - MVC 패턴은 웹 애플리케이션의 유지보수성과 확장성을 높이기 위해 개발된 것입니다.
 > - MVC 패턴은 각 요소가 명확하게 분리되어 있기 때문에 관리가 용이합니다.
 
-### 📌 MVC 패턴의 구조
-> - MVC 패턴의 일반적인 구조는 아래와 같으며 실제 파일의 위치와 함께 표시하였습니다.
-> - Controller : root/src/main/java/package/ControllerName.java
-> - View : root/src/main/webapp/WEB-INF/views/jsp/ViewName.jsp
-> - Model : Java 클래스에서 JPA 또는 MyBatis 등의 기술로 데이터베이스 접근
+### 📌 MVC 패턴 역할
+> - MVC 패턴을 구성하는 요소의 각각의 역할과 실제 위치는 아래와 같습니다.
+> - Model : Model은 getter/setter를 포함하는 클래스로 데이터의 상태를 저장하고 관리합니다.
+> - View : View는 모델을 통해 전달된 데이터를 사용자가 이해할 수 있는 형태로 렌더링합니다.
+> - Controller : 사용자의 입력을 처리하고 모델을 업데이트하고 적절한 뷰를 선택합니다.
+>    - Controller : root/src/main/java/package/ControllerName.java
+>    - View : root/src/main/webapp/WEB-INF/views/jsp/ViewName.jsp
+>    - Model : root/src/main/java/package/ModelName.java
 
 ### 📌 Controller 
 > - Controller에서 페이지 이동을 처리하는 방법으로는 주로 forward 또는 redirect가 사용됩니다.
@@ -274,6 +277,15 @@ public class HelloServlet extends HttpServlet {
 > - 그렇다보니 애플리케이션 규모가 커질수록 세션 처리가 빈번해지는 등 비효율적이었습니다.
 > - 이후 MVC 2 패턴은 모든 요청을 DispatcherServlet이 처리하게 설정하였습니다.
 > - MVC 2 이후 애플리케이션의 세션 관리가 단순화되면서 유지/보수가 용이해졌습니다.
+
+### 📌 Spring 동작 원리
+> - 아래 이미지는 Spring이 작동되는 원리에 대한 모식도입니다.
+> - Spring의 작동 원리에 대한 상세한 내용은 링크된 글에 있습니다.
+
+<figure>
+	<img src="https://github.com/kim-src/Images/assets/150884526/da3840fb-0cc4-4f80-b51a-85e8d6330bb0">
+	<figcaption>Spring 동작 원리</figcaption>
+</figure>
 
 <br>
 <br>

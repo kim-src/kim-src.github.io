@@ -1,6 +1,6 @@
 ---
 title: Spring 개념 및 동작 원리, HTTP 요청 및 응답 메커니즘
-date: 2024-06-23 18:00:00 +09:00
+date: 2024-06-22 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
 tags: [Spring, Fundamental]
 ---
