@@ -7,7 +7,7 @@ tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servle
 
 <!-- 2024-06-18 글 작성 시작; 2024-06-22 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-11,12,20,21 강의)</h2>
-> - Tool : 
+> - Tool :  
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />
 <img alt="Spring Tool Suite 4" src="https://img.shields.io/badge/-Spring%20Tool%20Suite%204-6DB33F?style=flat-square&logo=eclipse&logoColor=white" />
 

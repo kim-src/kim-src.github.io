@@ -7,7 +7,7 @@ tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framewor
 
 <!-- 2024-06-18 글 작성 시작; 2024-06-20 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-10,12,17,18 강의)</h2>
-> - Tool : 
+> - Tool :  
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />
 <img alt="Spring Tool Suite 4" src="https://img.shields.io/badge/-Spring%20Tool%20Suite%204-6DB33F?style=flat-square&logo=eclipse&logoColor=white" />
 
@@ -280,10 +280,10 @@ public class HelloServlet extends HttpServlet {
 
 ### 📌 Spring 동작 원리
 > - 아래 이미지는 Spring이 작동되는 원리에 대한 모식도입니다.
-> - <a href="https://kim-src.github.io/posts/Spring-Maven-Project-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95,-Tomcat-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/">Spring의 작동 원리에 대한 상세한 내용</a>은 링크된 글에 있습니다.
+> - <a href="https://kim-src.github.io/posts/Spring-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC,-HTTP-%EC%9A%94%EC%B2%AD-%EB%B0%8F-%EC%9D%91%EB%8B%B5-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98/">Spring의 작동 원리에 대한 상세한 내용</a>은 링크된 글에 있습니다.
 
 <figure>
-	<img src="https://github.com/kim-src/Images/assets/150884526/da3840fb-0cc4-4f80-b51a-85e8d6330bb0" width="500px" alt="figure">
+	<img src="https://github.com/kim-src/Images/assets/150884526/d40ceaa4-8871-4e4b-a1fd-13c5a277fc17" width="500px" alt="figure">
 	<figcaption>Spring 동작 원리</figcaption>
 </figure>
 
