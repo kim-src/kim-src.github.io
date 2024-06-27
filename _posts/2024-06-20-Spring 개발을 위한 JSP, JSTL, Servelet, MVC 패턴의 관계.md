@@ -70,12 +70,16 @@ tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framewor
 > - 참고로 Spring Boot에서는 JSTL이 아닌 타임리프(Thymeleaf) 템플릿을 사용합니다.
 > - 아래는 JSTL의 예시입니다.
 
-### 📌 JSTL 사용 예시
+#### 🚩 prefix
+> - JSTL에서의 prefix는 태그를 식별하기 위해 사용되는 접두어입니다.
+> - taglib에서 prefix가 'c'인 이유는 관례적으로 'core'의 첫 글자를 사용하기 때문입니다.
+> - 참고로 taglib는 JSP에서 추가적으로 사용할 수 있는 태그를 제공히는 라이브러리입니다.
+
+#### 🚩 JSTL 사용 예시
 > - 아래의 예시의 JSP는 할당된 name, age, hobby 값을 뷰포트에 표시하는 기능을 수행합니다.
-> - 2개의 예시 중 상부는 기존 방식의 Java 코드를 이용한 렌더링 로직입니다.
-> - 2개의 예시 중 하부는 JSTL 및 EL을 사용한 렌더링 로직입니다.
 
 ``` jsp
+<!-- 기존 JSP 방식 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -104,6 +108,7 @@ tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framewor
 ```
 
 ``` jsp
+<!-- JSTL 사용 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>

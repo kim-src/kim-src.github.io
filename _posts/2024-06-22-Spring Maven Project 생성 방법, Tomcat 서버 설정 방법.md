@@ -194,11 +194,16 @@ tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servle
 > - Lombok과 관련된 jar 파일을 클릭하고 경로 등을 설정하면 설치가 완료됩니다.
 
 ### 📌 jar 파일
+#### 🚩 jar 소개
 > - Spring을 개발하다보면 jar 파일을 사용해야 될 때가 있습니다.
-> - jar는 Java Archive 파일의 축약어이며 Java 로고 아이콘의 압축 파일입니다.
-> - jar에는 여러 Java 클래스, 메타 데이터, 리소스 파일 등이 포함됩니다.
+> - jar는 Java Archive 파일의 축약어이며 Java Build Path 중 하나입니다.
+> - Java Build Path는 내부 라이브러리를 Java 프로젝트에 적용할 때 사용되는 개념입니다.
+> - jar는 여러 Java 클래스, 메타 데이터, 프로그램 리소스 등이 포함될 수 있는 압축 포맷입니다.
 > - 사용자는 jar 파일 하나만으로도 애플리케이션의 기능을 쉽게 확장시킬 수 있습니다.
+
+#### 🚩 jar 활용
 > - jar 파일은 실행 가능한 압축 파일 형태일 수 있으며 더블 클릭하면 실행되는 경우가 있습니다.
+> - Deployment Assembly에서는 프로젝트에 jar 내용이 잘 적용되었는지 확인할 수 있습니다.
 > - jar 파일의 예시는 각종 라이브러리와 STS, lombok 설치 파일 등입니다.
 
 <br>
