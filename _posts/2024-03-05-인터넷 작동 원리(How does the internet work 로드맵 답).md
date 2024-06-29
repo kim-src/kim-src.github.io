@@ -1,7 +1,7 @@
 ---
 title: 인터넷 작동 원리(How does the internet work 로드맵 답)
 date: 2024-03-05 18:00:00 +09:00
-categories: [3. Hobby Project, Computer Science]
+categories: [4. Hobby Project, Computer Science]
 tags: [Fundamental, Computer Science, Internet, How does the internet work]
 ---
 

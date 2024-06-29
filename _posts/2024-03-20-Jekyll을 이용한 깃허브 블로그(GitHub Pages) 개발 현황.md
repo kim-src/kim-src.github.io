@@ -1,7 +1,7 @@
 ---
 title: Jekyll을 이용한 깃허브 블로그(GitHub Pages) 개발 현황
 date: 2024-03-20 18:00:00 +09:00
-categories: [3. Hobby Project, GitHub Blog]
+categories: [2. Main Project, GitHub Blog]
 tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, toggle, data-mode, dark-theme, light-theme, dark-scheme, light-theme]
 ---
 

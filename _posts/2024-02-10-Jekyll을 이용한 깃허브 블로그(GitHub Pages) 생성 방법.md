@@ -1,7 +1,7 @@
 ---
 title: Jekyll을 이용한 깃허브 블로그(GitHub Pages) 생성 방법
 date: 2024-02-10 18:00:00 +09:00
-categories: [3. Hobby Project, GitHub Blog]
+categories: [2. Main Project, GitHub Blog]
 tags: [Blog, GitHub Page, Ruby, Jekyll, Chirpy]
 ---
 

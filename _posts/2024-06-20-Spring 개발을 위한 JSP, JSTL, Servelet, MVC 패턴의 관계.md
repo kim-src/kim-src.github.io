@@ -71,7 +71,7 @@ tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framewor
 > - 아래는 JSTL의 예시입니다.
 
 #### 🚩 prefix
-> - JSTL에서의 prefix는 태그를 식별하기 위해 사용되는 접두어입니다.
+> - JSTL에서의 prefix는 태그를 식별하기 위해 사용되는 접두사입니다.
 > - taglib에서 prefix가 'c'인 이유는 관례적으로 'core'의 첫 글자를 사용하기 때문입니다.
 > - 참고로 taglib는 JSP에서 추가적으로 사용할 수 있는 태그를 제공히는 라이브러리입니다.
 

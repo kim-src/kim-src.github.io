@@ -1,7 +1,7 @@
 ---
 title: 구구단 게임 제작 방법 및 Java Timer, TimerTask 클래스
 date: 2024-05-07 18:00:00 +09:00
-categories: [2. Toy Project, GoogoodanGame]
+categories: [3. Toy Project, GoogoodanGame]
 tags: [Java, GoogoodanGame, Googoodan, Multiplication, Timer, TimerTask, schedule]
 ---
 

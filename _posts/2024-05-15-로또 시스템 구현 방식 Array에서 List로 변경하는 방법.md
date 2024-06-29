@@ -1,7 +1,7 @@
 ---
 title: 로또 시스템 구현 방식 Array에서 List로 변경하는 방법
 date: 2024-05-15 18:00:00 +09:00
-categories: [2. Toy Project, LottoGenerator_List]
+categories: [3. Toy Project, LottoGenerator_List]
 tags: [Java, Fundamental, Lotto Generator, Lotto, Random Number Generator, Lotto App Development, Lotto Program, Lotto Application, Lotto Web Site, Duplicate Check, Duplicate Value, List]
 ---
 

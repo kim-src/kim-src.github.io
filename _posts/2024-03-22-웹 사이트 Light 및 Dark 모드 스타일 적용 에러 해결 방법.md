@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 Light 및 Dark 모드 스타일 적용 에러 해결 방법
 date: 2024-03-22 18:00:00 +09:00
-categories: [3. Hobby Project, GitHub Blog]
+categories: [2. Main Project, GitHub Blog]
 tags: [블로그, GitHub Page, Ruby, Jekyll, Chirpy, Kim-src, theme-toggle, toggle, data-mode, dark-theme, light-theme, dark-scheme, light-theme]
 ---
 
