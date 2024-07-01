@@ -113,6 +113,8 @@ public class Member {
 #### 🚩 MyBatis
 > - MyBatis는 ORM이 아닌 SQL 매핑 프레임워크입니다.
 > - MyBatis는 IDE에 SQL 쿼리를 직접 작성할 수 있고 이를 객체와 매핑시킵니다.
+> - MyBatis는 데이터베이스에 접근하기 위해 JDBC API를 이용합니다.
+> - MyBatis에서 dataSource 객체는 DB 연결, sqlSessionFactory는 SQL 세션 관리를 합니다.
 > - MyBatis의 장점은 개발자가 SQL을 직접 제어할 수 있다는 것입니다.
 > - MyBatis는 SQL을 직접 관리하기 때문에 SQL 및 데이터베이스에 대한 이해가 있어야 됩니다.
 > - MyBatis의 사용 예시는 아래와 같습니다.
@@ -135,6 +137,31 @@ public class Member {
 	</select>
 
 </mapper>
+```
+
+### 📌 DBCP (Database Connection Pool)
+> - MyBatis를 구현하기 위해서는 xml 파일에서 DBCP를 사용해야 됩니다.
+> - 필자의 경우 Apache Commons의 DBCP 라이브러리를 사용하였습니다.
+> - DBCP는 DB에 대한 연결을 미리 구성해놓았다가 요청이 있을 때마다 사용하는 기술입니다.
+> - DBCP 라이브러리의 BasicDataSource 클래스를 사용하면 데이터 소스를 정의할 수 있습니다.
+> - 데이터 소스를 미리 정의해두면 DB 접근 요청이 있을 때마다 자동으로 연결됩니다.
+> - DB 접근을 완료하면 사용된 연결은 다시 DBCP로 반환됩니다.
+> - 아래는 DBCP를 구현한 내용이고 주석에 상세 내용을 작성하였습니다.
+
+``` xml
+<!-- Bean이 종료되면 close 메서드를 호출하여 리소스 정리 -->
+<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" 
+destroy-method="close">
+  <!-- 사용할 JDBC 드라이버 지정 -->
+  <property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+  <!-- DB 서버 위치와 JDBC URL 제공 -->
+  <property name="url" value="jdbc:mariadb://localhost:13306/boot_web" />
+  <!-- DB 접속에 필요한 아이디 -->
+  <property name="username" value="root" />
+  <!-- DB 접속에 필요한 비밀번호 -->
+  <property name="password" value="0000" />
+</bean>
+
 ```
 
 ### 📌 @Repository vs @Mapper

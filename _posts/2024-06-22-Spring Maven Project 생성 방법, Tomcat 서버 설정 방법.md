@@ -84,6 +84,18 @@ tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servle
 > - 데이터베이스 유관 프레임워크 : JPA, MyBatis
 > - 각종 DBMS : MySQL, Oracle, MaiaDB, MongoDB 등
 
+### 📌 WAS (Web Application Server)
+> - WAS는 웹 서버와 함께 동작하는 소프트웨어입니다.
+> - WAS의 대표적인 예시로는 Apache Tomcat이 있습니다.
+> - 웹 서버가 클라이언트의 요청을 받으면 WAS는 동적인 페이지를 생성합니다.
+> - 동적인 페이지는 DB 조회, 트랜잭션 처리 결과 등을 포함합니다.
+
+### 📌 UserAgent
+> - UserAgent는 웹 브라우저 등이 사용자를 식별하기 위해 사용하는 문자열입니다.
+> - UserAgent는 서버 사이드에 요청을 보낼 때 사용됩니다.
+> - 예를들면 웹 사이트 정보를 크롤링할 때 UserAgent를 요청 객체에 포함시킵니다.
+> - UserAgent에는 클라이언트의 OS, 브라우저 정보 등이 포함됩니다.
+
 <br>
 
 ### 🔔 Apache Tomcat
