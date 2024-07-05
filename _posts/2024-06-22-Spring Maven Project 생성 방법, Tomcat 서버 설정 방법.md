@@ -15,43 +15,63 @@ tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servle
 
 ### 🔔 Spring Maven Project 초기 세팅
 ### 📌 Spring Tool Suite 4 다운로드
-> - Spring 개발을 할 수 있는 IDE는 다양하며 주로 IntelliJ 또는 Eclipse가 사용됩니다.
-> - 필자는 <a href="https://spring.io/tools">Eclipse에서 Spring 개발에 초점을 맞춘 IDE인 STS4</a>를 사용하였습니다.
+> - Java EE 기반의 Spring 개발을 할 수 있는 IDE는 다양하고, 필자는 Eclipse를 사용하였습니다.
+> - Eclipse 종류 중에서도 <a href="https://spring.io/tools">Spring 개발에 최적화 된 IDE인 STS4</a>를 사용하였습니다.
 > - STS4 개발 환경은 Eclipse와 매우 흡사하고 링크된 글에서 다운로드 받으실 수 있습니다.
 > - 이번 문단에서는 Spring의 Maven Project를 이용하여 브라우저 뷰포트에 호출해보겠습니다.
 
 ### 📌 메모리 할당량 설정
+> - STS4 다운로드 완료 후 루트 폴더를 원하는 디렉토리에 위치시킵니다.
 > - 다운로드 받았던 STS 루트 폴더를 열고 'SpringToolSuite4.ini'를 클릭합니다.
 > - ini 파일의 본문 내용 하단부에 위치한 Xms 값을 Xmx (최댓값)와 동일하게 2048m로 변경합니다.
 > - 이는 메모리 할당량을 증가시키는 설정이며 메모리를 요구하는 프로젝트를 개발할 수 있습니다.
 > - 예를들면 Dispatcher Servlet에 의해 메모리 사용량이 많은 Spring 웹 개발을 할 수 있습니다.
 
 ### 📌 Perspective 설정
-> - 필자는 Perspective를 Java EE로 설정하였습니다.
-> - Perspective는 프로젝트의 성격에 맞게 설정하시면 됩니다.
-> - Perspective는 STS4 화면의 우측 상단에 위치하였으며 여러가지 중 선택할 수 있습니다.
-
-### 📌 UTF-8 설정
-> - UTF-8은 국제적으로 널리 사용되는 문자 인코딩 방식이며 한국어가 포함됩니다.
-> - 전역 인코딩 설정은 Preferences로 가능하며 UTF-8로 설정하는 방법은 아래와 같습니다.
+> - 메모리 할당량 설정을 마친 후 STS4를 실행시킨 뒤 Perspective를 설정하겠습니다.
+> - Perspective는 STS 작업창의 우측 상단에 있으며 기본적으로 Java로 설정되어 있습니다.
+> - 애플리케이션 개발을 위한 Maven Project를 생성하려면 이를 Java EE로 변경해야 됩니다.
+> - Java EE는 아래 경로를 따라 다운로드 받으시면 됩니다.
+> - 다운로드 받으신 후 일정시간 대기하시면 STS를 다시 시작하라는 안내문이 팝업됩니다.
+> - STS를 다시 시작하신 뒤 Perspective를 Java EE로 수정해주시면 됩니다.
 
 ```
-- Windows 탭 → Preferences → General → Content Types → Text → Spring Properties File → Default encoding 입력창 → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → JSP → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → JSP → JSP Fragment → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → JSP → JSP Tag Definition → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → CSS → 공란에 UTF-8 입력 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → HTML → 공란에 UTF-8 입력 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → Java Source File → 공란에 UTF-8 입력 → Update → Apply and Close
-- Windows 탭 → Preferences → General → Content Types → Text → Java Properties File → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
+Help 탭 → Eclipse Marketplace → Popular 탭 → Eclipse Enterprise Java 다운로드
+```
+
+### 📌 UTF-8 설정
+> - Java EE로 Perspective를 수정하셨다면 이제 프로젝트에 적용될 인코딩 설정을 하겠습니다.
+> - 인코딩이란 목적에 맞게 데이터를 특정 형식이나 코드로 변환시키는 과정입니다.
+> - 소프트웨어의 인코딩이 일치하지 않으면 문자가 정상적으로 표시되지 않습니다.
+> - 예를들어 '한글을 입력했는데 글자가 깨지는 현상'이 발생됩니다.
+> - 프로그램 상에 한글을 정상적으로 표시하기 위해서는 인코딩을 UTF-8로 설정해야 됩니다.
+> - STS에서는 모든 프로젝트에 공통적으로 적용시킬 인코딩을 설정할 수 있습니다.
+> - 아래의 인코딩 설정을 전부 수행하시면 대부분의 파일의 인코딩이 UTF-8로 설정됩니다.
+
+```
+- Window 탭 → Preferences → General → Content Types → Text → Spring Properties File → Default encoding 입력창 → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → JSP → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → JSP → JSP Fragment → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → JSP → JSP Tag Definition → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → CSS → 공란에 UTF-8 입력 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → HTML → 공란에 UTF-8 입력 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → Java Source File → 공란에 UTF-8 입력 → Update → Apply and Close
+- Window 탭 → Preferences → General → Content Types → Text → Java Properties File → ISO-8859-1 내용을 UTF-8로 수정 → Update → Apply and Close
 ```
 
 ### 📌 JDK 경로 설정
-> - JDK는 Java Devlopment Kit의 축약어이며 컴파일러 등이 포함된 개발 환경입니다.
-> - 필자의 경우 좋은 호환성을 위해 JDK 17을 사용 중입니다.
+> - Java를 이용한 애플리케이션을 개발할 때 JDK (Java Development Kit)는 필수적입니다.
+> - 왜냐하면 JDK에는 'Java 컴파일러', '라이브러리', '실행 환경' 등이 포함되기 때문입니다.
+> - 또한 서버의 역할을 하는 Tomcat은 JDK가 있어야 Java 애플리케이션을 실행시킬 수 있습니다.
+> - 왜냐하면 Tomcat은 JDK에 포함된 JRE를 사용하여 애플리케이션을 실행시키기 때문입니다.
+> - 참고로 JRE (Java Runtime Envrionment)는 JDK에서 제공하는 '실행 환경'입니다.
+> - JDK의 여러 버전 중 JDK 17의 호환성이 가장 좋은 것을 평가받기 때문에 이를 사용하였습니다.
+> - <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">JDK 17을 링크된 사이트</a>에서 다운로드 받으신 후 원하는 디렉토리로 이동시키시면 됩니다.
+> - 이동시키신 후 시스템 환경 변수에서 JAVA_HOME, Path 등을 JDK 17로 설정하시면 됩니다.
+> - JDK 17은 아래 Tomcat 설정에서 다시 말씀드리겠습니다.
 
 ```
-- Windows 탭 → Preferences → Java → Installed JREs → Edit → C드라이브 등에 위치된 JDK 17 선택 → 'jre'를 'jdk-17'로 수정 → Finish
+- Window 탭 → Preferences → Java → Installed JREs → Edit → C드라이브 등에 위치된 JDK 17 선택 → 'jre'를 'jdk-17'로 수정 → Finish
 ```
 
 <br>
@@ -113,47 +133,44 @@ tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servle
 > - 따라서 함께 사용되는 Apache Tomcat은 담당하는 정적/동적 콘텐츠가 상이합니다.
 
 ### 📌 Apache Tomcat 다운로드
-> - <a href="https://tomcat.apache.org">Tomcat은 링크된 글</a>에서 다운로드 받으실 수 있습니다.
-> - 사이트 접속 → Tomcat 9 → Core → zip이 일반적인 Tomcat을 다운로드 받는 방법입니다.
+> - Spring 프로젝트의 서버 설정을 위해 <a href="https://tomcat.apache.org">링크된 사이트</a>에서 Tomcat 9를 다운로드 받겠습니다.
+> - 사이트 접속 후 좌측의 'Tomcat 9' 클릭 → Core → zip을 다운로드 받아주시면 됩니다.
+> - 다운로드 및 압축 해제 후 원하는 디렉토리에 위치시키면 됩니다.
+> - Tomcat을 STS에서 본격적으로 사용하기 전에 포트 번호 등을 변경하겠습니다.
 
 ### 📌 Tomcat 서버 포트 및 인코딩 방식 변경 방법
-> - 8080 서버 포트는 다양한 곳에서 이미 사용 중이기 때문에 다른 포트로 변경하는 것이 좋습니다.
-> - 참고로 8005 서버 포트는 서버 종료 시 사용되기 때문에 변경할 필요 없습니다.
-> - 서버 포트를 변경하기 위해서는 conf 디렉토리의 server.xml 파일에 접근해야 됩니다.
-> - server.xml 파일 하단부의 'Connector port="8080"'에서 번호를 '9090'으로 변경합니다.
-> - 그리고 'maxParameterCount="1000"' 뒤에 'URIEncoding="UTF-8"'을 입력합니다.
-> - server.xml 파일의 주석과 실사용 코드를 구분하기 위해서 VS Code를 이용하면 좋습니다.
-
-### 📌 Tomcat 가상 서버 설정 방법
-> - STS, Eclipse와 같은 IDE에서는 Tomcat 가상 서버를 설정할 수 있습니다.
-> - 즉, 실제 서버 전용 환경을 구비하지 않더라도 프로그램을 테스트할 수 있습니다.
-> - 프로젝트 Properties의 Targeted Runtimes에서는 서버 설정이 잘 됐는지 확인할 수 있습니다.
-> - STS, Eclipse에서 가상 서버 설정하는 방법은 아래와 같습니다.
-
-```
-- Windows 탭 → Preferences → Server → Runtime Environment → Add → Apache → Apache Tomcat v9.0 → Next → Browse → Tomcat 경로 선택 → JRE → jdk-17 → Finish → Apply and Close
-```
+> - Tomcat 서버의 기본적인 포트 번호는 8080으로 설정되어 있습니다.
+> - 그런데 이 8080 포트 번호는 다른 프로그램에서 이미 사용중일 가능성이 큽니다.
+> - 따라서 Tomcat 서버의 포트 번호를 9090으로 변경해보겠습니다.
+> - 포트 번호 변경을 위해서 Tomcat 루트 폴더에서 conf/server.xml에 접근해보겠습니다.
+> - server.xml 파일 하단부에 위치중인 ```Connector port="8080"```에서 9090으로 변경하겠습니다.
+> - 그리고 ```maxParameterCount="1000"``` 하단부에 ```URIEncoding="UTF-8"``` 인코딩을 추가하겠습니다.
+> - 참고로 server.xml에 있는 코드와 주석을 쉽게 구분하려면 VS Code를 이용하면 됩니다.
 
 ### 📌 Tomcat 가상 서버 생성 방법
-> - 이제 개별 프로젝트와 연결되는 실질적인 가상의 Tomcat 서버를 생성해보겠습니다.
-> - 서버 생성을 위해 Server 탭에 접근해야 되며 STS에서는 Console 탭 근처에 있습니다.
-> - 서버 생성을 완료하고 서버를 더블 클릭하면 Overview 탭과 Modules 탭을 확인할 수 있습니다.
-> - Moudles 탭을 확인했을 때 생성된 서버가 표시되고 Enable 상태라면 정상입니다.
-> - 아래는 서버 생성 방법입니다.
+> - 이제 STS를 실행시키고 아래 소개된 순서대로 Tomcat 서버를 생성해보겠습니다.
+> - STS에 Server가 없을 경우 ```Window 탭 → Show View → Servers```를 클릭하시면 됩니다.
+> - 프로젝트 하나 당 서버 하나와 연결시키는 것이 개발하기에 용이합니다.
+> - 각종 라이브러리들과 데이터베이스 연동 시 서버 연결을 단순화하기 위해서입니다.
+> - 참고로 STS에서 사용되는 Tomcat은 프로그램 테스트용 가상 서버라고 이해하셔도 좋습니다.
+> - 왜냐하면 현재 개발중인 PC가 서버 전용 프로그램이 구비된 컴퓨터가 아니기 때문입니다.
 
 ```
-- Server 탭 마우스 우클릭 → New → Server → Apache → Tomcat v9.0 Server → Next → 해당 프로젝트 클릭 → Add → Finish
+- New Server → Apache → Tomcat v9.0 Server → Next
+- 서버 대상 프로젝트 선택 → Add → Next
+- Window 탭 → Preferences → Server → Runtime Environment → Add → Apache → Apache Tomcat v9.0 → Next → Browse → Tomcat 경로 선택
+- JRE에서 jdk-17로 변경 → Finish → Apply and Close
 ```
 
-### 📌 웹 페이지 호출 URL 변경
-> - 브라우저에 웹 페이지를 호출하려면 로컬 호스트 주소를 입력해야 됩니다.
-> - 이때 'locatlhost:8080/projectname/location' 등으로 주소를 입력합니다.
-> - URL 내용 중 프로젝트명을 반드시 입력하지 않고 호출시키는 아래와 같은 방법이 있습니다.
-> - 아래와 같이 작업 시 'locatlhost:8080/location'으로 보다 용이한 호출이 가능합니다.
-> - 참고로 Document base는 프로젝트명이 작성되어 있을 것입니다.
+### 📌 웹 페이지 호출 방법 변경
+> - 브라우저에 JSP 등의 웹 페이지를 호출하는 방법은 localhost 주소를 입력하는 것입니다.
+> - 이때 'localhost:8080/projectname/location' 등의 주소를 입력합니다.
+> - 그런데 이러한 방식의 URL 주소는 프로젝트명을 입력해야 되기에 불편할 수 있습니다.
+> - URL 주소 입력을 더 간단하게 입력하기 위해서는 아래 방법을 따라하시면 됩니다.
+> - URL을 간편화시키면 'localhost:8080/location' 주소만 입력해도 페이지 호출이 가능합니다.
 
 ```
-- 서버 더블클릭 → Modules 탭 → 서버 클릭 → Edit 클릭 → Path 내용 전부 제거
+- 생성된 Server 더블 클릭 → STS 전체 작업창의 중앙으로부터 7시 방향에 위치한 Modules 탭 클릭 → Enabled 상태의 서버 클릭 → Edit 버튼 클릭 → Path 내용 전부 제거
 ```
 
 <br>
