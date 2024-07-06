@@ -70,6 +70,7 @@ tags: [Database, Fundamental, DBMS, Transaction, MariaDB, Oracle, MySQL, MongoDB
 > - 트랜잭션의 특징은 모든 작업이 성공적으로 완료되거나 전부 실패 처리되어야 하는 것입니다.
 > - 즉, 트랜잭션에는 원자성(atomicity)이 적용되며 중간 단계가 존재할 수 없습니다.
 > - 해당 개념은 은행 계좌 이체, 환전 등의 금융 거래, 주문, 재고 관리 등에 적용됩니다.
+> - 트랜잭션에 대한 더욱 자세한 설명은 링크된 글에 잘 작성되어 있습니다.
 
 <br>
 
