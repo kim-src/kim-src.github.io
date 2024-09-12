@@ -1,11 +1,11 @@
 ---
 title: HTML 및 CSS의 핵심 개념, 시맨틱 태그, BootStrap 소개
-date: 2024-05-29 18:00:00 +09:00
+date: 2024-06-01 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
 tags: [Fundamental, HTML, CSS, JavaScript, Frontend, Tag, Head, Body, Semantic Tag, Live Server, IDE, Browser, Plugin]
 ---
 
-<!-- 2024-05-27 글 작성 시작; 2024-05-29 페이지 호출 완료 -->
+<!-- 2024-05-27 글 작성 시작; 2024-06-01 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-05-20,21 강의)</h2>
 > - Tool :  
 <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />

@@ -1,11 +1,11 @@
 ---
 title: JavaScript ES6 신규 기능, jQuery, 브라우저 렌더링 과정
-date: 2024-06-08 18:00:00 +09:00
+date: 2024-06-13 18:00:00 +09:00
 categories: [1. Fundamental, Frontend]
 tags: [Fundamental, HTML, CSS, JavaScript, Frontend, JavaScript, Anonymous Function, Callback Function, Async, Await, Browser, Rendering, Synchronous Function, Asynchronous Function, jQuery]
 ---
 
-<!-- 2024-05-31 글 작성 시작; 2024-06-08 페이지 호출 완료 -->
+<!-- 2024-05-31 글 작성 시작; 2024-06-13 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-05-22,23,27 강의)</h2>
 > - Tool :  
 <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white">

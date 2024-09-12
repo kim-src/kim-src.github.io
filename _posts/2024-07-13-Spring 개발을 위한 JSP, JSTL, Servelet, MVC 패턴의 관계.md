@@ -1,11 +1,11 @@
 ---
 title: Spring 개발을 위한 JSP, JSTL, Servlet, MVC 패턴의 관계
-date: 2024-06-20 18:00:00 +09:00
+date: 2024-07-13 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
 tags: [Spring, Fundamental, JSP, JSTL, Servlet, MVC, Spring MVC, Spring Framework]
 ---
 
-<!-- 2024-06-18 글 작성 시작; 2024-06-20 페이지 호출 완료 -->
+<!-- 2024-06-18 글 작성 시작; 2024-07-13 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-10,12,17,18 강의)</h2>
 > - Tool :  
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />

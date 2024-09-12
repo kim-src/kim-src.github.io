@@ -1,11 +1,11 @@
 ---
 title: Spring 개념 및 동작 원리, HTTP 요청 및 응답 메커니즘
-date: 2024-06-27 18:00:00 +09:00
+date: 2024-07-25 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
 tags: [Spring, Fundamental, IOC, DI, Inversion of Control, Dependency Injection, Controller, RestController, Service, Mapper, Repository, Component, Bean, Configuration, HTTP, Prefix, Suffix, URL, URI, Request, Response, GET, POST, JPA, MyBatis, Apache Tomcat, Tomcat, Parameter, Attribute]
 ---
 
-<!-- 2024-06-22 글 작성 시작; 2024-06-27 페이지 호출 완료 -->
+<!-- 2024-06-22 글 작성 시작; 2024-07-25 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-10,12,21 강의)</h2>
 > - Tool :  
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />

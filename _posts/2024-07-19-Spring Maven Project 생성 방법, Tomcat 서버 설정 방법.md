@@ -1,11 +1,11 @@
 ---
 title: Spring Maven Project 생성 방법, Tomcat 서버 설정 방법
-date: 2024-06-22 18:00:00 +09:00
+date: 2024-07-19 18:00:00 +09:00
 categories: [1. Fundamental, Spring]
 tags: [Spring, Fundamental, Java EE, STS, STS4, Spring Tool Suite 4, JSP, Servlet, UTF-8, Tomcat, JPA, MyBatis, Server, Server Side, Request, Response, GET, POST, WEB-INF]
 ---
 
-<!-- 2024-06-18 글 작성 시작; 2024-06-22 페이지 호출 완료 -->
+<!-- 2024-06-18 글 작성 시작; 2024-07-19 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-06-11,12,20,21 강의)</h2>
 > - Tool :  
 <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />

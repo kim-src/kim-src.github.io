@@ -1,11 +1,11 @@
 ---
 title: Java의 Wrapper 클래스, Generic 제네릭, 예외 처리 방법
-date: 2024-06-15 18:00:00 +09:00
+date: 2024-07-02 18:00:00 +09:00
 categories: [1. Fundamental, Java]
 tags: [Java, Fundamental, Wrapper Class, Generic, Exception, Try-Catch]
 ---
 
-<!-- 2024-06-14 글 작성 시작; 2024-06-15 페이지 호출 완료 -->
+<!-- 2024-06-14 글 작성 시작; 2024-07-02 페이지 호출 완료 -->
 <h2>강의 내용 복습 : 코리아IT 신촌점 강의 (2024-05-07,13 강의)</h2>
 > - Tool :  
 <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" />
